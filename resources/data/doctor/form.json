@@ -1,0 +1,384 @@
+[
+    {
+        "sequence": 0,
+        "node_type": "text",
+        "node_label": "First Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "First Name",
+        "node_required": "First Name required",
+        "node_code": "first_name",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Last Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Last Name",
+        "node_required": "Last Name required",
+        "node_code": "last_name",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Email",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Email",
+        "node_required": "Email required",
+        "node_code": "email",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "number",
+        "node_label": "Phone Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Phone Number",
+        "node_required": "Phone required",
+        "node_code": "phone",
+        "node_class": "form-control",
+        "node_maxlength":10,
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 2,
+        "node_type": "select",
+        "node_label": "Gender",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "Gender required",
+        "node_code": "gender",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Gender",
+                "sequence": 0
+            },
+            {
+                "option_value": "Male",
+                "option_label": "Male",
+                "sequence": 1
+            },
+            {
+                "option_value": "Female",
+                "option_label": "Female",
+                "sequence": 2
+            },
+            {
+                "option_value": "Others",
+                "option_label": "Others",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Highest Qualification",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Highest Qualification",
+        "node_required": "Highest Qualification required",
+        "node_code": "highest_qualification",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Years of experience",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Years of experience",
+        "node_required": "Years of experience required",
+        "node_code": "years_of_experience",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Current Designation",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Current Designation",
+        "node_required": "Current Designation required",
+        "node_code": "current_designation",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 11,
+        "node_type": "select",
+        "node_label": "Hospital Availability",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Hospital Availability",
+        "node_required": "Hospital Availability required",
+        "node_code": "hospital_availability",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Hospital Availability",
+                "sequence": 0
+            },
+            {
+                "option_value": "Cuttack",
+                "option_label": "Cuttack",
+                "sequence": 1
+            },
+            {
+                "option_value": "Bhubaneswar",
+                "option_label": "Bhubaneswar",
+                "sequence": 2
+            },
+            {
+                "option_value": "Balasore",
+                "option_label": "Balasore",
+                "sequence": 3
+            },
+            {
+                "option_value": "Sambalpur",
+                "option_label": "Sambalpur",
+                "sequence": 4
+            },
+            {
+                "option_value": "Rourkela",
+                "option_label": "Rourkela",
+                "sequence": 5
+            },
+            {
+                "option_value": "Berhampur",
+                "option_label": "Berhampur",
+                "sequence": 6
+            },
+            {
+                "option_value": "Baripada",
+                "option_label": "Baripada",
+                "sequence": 7
+            },
+            {
+                "option_value": "Mayurbhanj",
+                "option_label": "Mayurbhanj",
+                "sequence": 8
+            },
+            {
+                "option_value": "Sundargarh",
+                "option_label": "Sundargarh",
+                "sequence": 9
+            },
+            {
+                "option_value": "Angul",
+                "option_label": "Angul",
+                "sequence": 10
+            }
+        ]
+    },
+    {
+        "sequence": 5,
+        "node_type": "textarea",
+        "node_label": "Present Address",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Present Address",
+        "node_required": "Present Address required",
+        "node_code": "present_address",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 5,
+        "node_type": "textarea",
+        "node_label": "Permanent Address",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Permanent Address",
+        "node_required": "Permanent Address required",
+        "node_code": "permanent_address",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 9,
+        "node_type": "text",
+        "node_label": "Availability From Time",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Availability From Time",
+        "node_required": "Availability From Time required",
+        "node_code": "availability_from_time",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Availability To Time",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Availability To Time",
+        "node_required": "Availability To Time required",
+        "node_code": "availability_to_time",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Fees Per Appointment",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Fees Per Appointment",
+        "node_required": "Fees Per Appointment required",
+        "node_code": "fees_per_appointment",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Clinic Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Clinic Name",
+        "node_required": "Clinic Name required",
+        "node_code": "clinic_name",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Clinic Address",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Clinic Address",
+        "node_required": "Clinic Address required",
+        "node_code": "clinic_address",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 12,
+        "node_type": "textarea",
+        "node_label": "Payment Information",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Payment Information",
+        "node_required": "Payment Information required",
+        "node_code": "payment_information",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 13,
+        "node_type": "file",
+        "node_label": "Photo",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "photo required",
+        "node_code": "photo",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 13,
+        "node_type": "file",
+        "node_label": "Identity Information",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "Identity Information required",
+        "node_code": "identity_information",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    }
+]

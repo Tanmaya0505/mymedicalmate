@@ -1,0 +1,151 @@
+{
+  "menu": [
+    {
+      "url": "cms-admin/dashboard",
+      "name": "Dashboard",
+      "icon": "fal fa-tachometer-alt-slow"
+    },
+    {
+      "url": "cms-admin/account-settings",
+      "name": "Account Settings",
+      "icon": "fal fa-users-cog"
+    },
+    {
+      "url": "cms-admin/sub-admin",
+      "name": "Sub Admin Management",
+      "icon": "fal fa-users-cog"
+    },
+     {
+      "url": "/cms-admin/roles",
+      "name": "Role & Permission",
+      "icon": "fal fa-user-shield",
+      "tagcustom": "badge badge-light-danger badge-pill badge-round float-right mr-2",
+      "submenu": [
+        {
+          "url": "/cms-admin/roles",
+          "name": "Roles",
+          "i18n": "Roles",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "dashboard-ecommerce"
+        },
+        {
+          "url": "/cms-admin/permissions",
+          "name": "Permissions",
+          "i18n": "Permissions",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "dashboard-analytics"
+        },
+        {
+          "url": "/cms-admin/role-permissions",
+          "name": "Map Role with Permissions",
+          "i18n": "Map Role with Permissions",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "dashboard-analytics"
+        },
+        {
+          "url": "/cms-admin/staff-workingtime",
+          "name": "Staff Working Hours",
+          "i18n": "Staff Working Hours",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "dashboard-analytics"
+        }
+      ]
+    },
+    {
+      "url": "cms-admin/customer-listing",
+      "name": "Customer Listing",
+      "icon": "fal fa-user-shield",
+      "tagcustom": "badge badge-light-danger badge-pill badge-round float-right mr-2",
+      "submenu": [
+        {
+          "url": "/cms-admin/customer-listing/user",
+          "name": "User",
+          "i18n": "User",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "dashboard-ecommerce"
+        },
+        {
+          "url": "/cms-admin/customer-listing/medicalmate",
+          "name": "Medical Mate",
+          "i18n": "Medical Mate",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "dashboard-analytics"
+        },
+        {
+          "url": "/cms-admin/customer-listing/doctor",
+          "name": "Doctor",
+          "i18n": "Doctor",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "dashboard-analytics"
+        },
+        {
+          "url": "/cms-admin/customer-listing/vendor",
+          "name": "Vendor",
+          "i18n": "Vendor",
+          "icon": "bx bx-right-arrow-alt",
+          "slug": "dashboard-analytics"
+        }
+      ]
+    },
+    {
+      "url": "cms-admin/bookings",
+      "name": "Bookings",
+      "icon": "fal fa-file-contract"
+    },
+    {
+      "url": "cms-admin/prescription",
+      "name": "Prescription",
+      "icon": "fal fa-file-prescription"
+    },
+    {
+      "url": "cms-admin/suggetions",
+      "name": "Suggetions",
+      "icon": "fal fa-comments-alt"
+    },
+    {
+      "url": "cms-admin/alltype-user/doctor",
+      "name": "All type Users",
+      "icon": "fal fa-comments-alt"
+    },
+    {
+      "url": "cms-admin/alltype-ads",
+      "name": "All Ads",
+      "icon": "fal fa-comments-alt"
+    },
+    {
+      "url": "cms-admin/referal-management",
+      "name": "Referal History",
+      "icon": "fal fa-tree-alt"
+    },
+    
+    {
+      "url": "cms-admin/coupon-list",
+      "name": "Coupon Listing",
+      "icon": "fal fa-tree-alt"
+    },
+    {
+      "url": "/cms-admin/bonus-list",
+      "name": "Bonus Listing",
+      "icon": "fal fa-tree-alt"
+    },
+    {
+      "url": "/cms-admin/commision-management",
+      "name": "Commision Listing",
+      "icon": "fal fa-tree-alt"
+    },
+    {
+      "url": "cms-admin/question",
+      "name": "Doctor Listing",
+      "icon": "fal fa-user-shield",
+      "tagcustom": "badge badge-light-danger badge-pill badge-round float-right mr-2",
+      "submenu": [
+        {
+          "url": "cms-admin/question-answar",
+          "name": "Question Answar",
+          "icon": "fal fa-tree-alt"
+        }
+      ]
+    }
+    
+  ]
+}

@@ -1,0 +1,16 @@
+[{
+  "label": "Due to high volume of order cancellations",
+  "value": "Due to high volume of order cancellations"
+},
+{
+  "label": "Due to fake allegation to service providers",
+  "value": "Due to fake allegation to service providers"
+},
+{
+  "label": "Due to miss authentication issues",
+  "value": "Due to miss authentication issues"
+},
+{
+  "label": "Due to misuse of services",
+  "value": "Due to misuse of services"
+}]

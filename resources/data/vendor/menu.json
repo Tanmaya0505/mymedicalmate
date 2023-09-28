@@ -1,0 +1,30 @@
+{
+  "menu": [
+    {
+      "url": "vendor/dashboard",
+      "name": "My Dashboard",
+      "icon": "nc-chart-pie-35"
+    },
+    {
+      "url": "vendor/notifications",
+      "name": "My Notifications",
+      "icon": "nc-bell-55"
+    },
+    {
+      "url": "vendor/my-profile",
+      "name": "My Profile",
+      "icon": "nc-circle-09",
+      "frontend": true
+    },
+    {
+      "url": "vendor/prescription",
+      "name": "Prescription",
+      "icon": "nc-single-copy-04"
+    },
+    {
+      "url": "vendor/coupon",
+      "name": "Coupon",
+      "icon": "nc-single-copy-04"
+    }
+  ]
+}

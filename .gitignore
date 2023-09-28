@@ -1,0 +1,11 @@
+.env
+.htaccess
+/storage/*.key
+/public/assistant
+/public/doctor
+/public/user
+/public/vendor
+/public/prescription
+/public/doctor_identity_information
+/public/identity_information
+/public/user_identity_information

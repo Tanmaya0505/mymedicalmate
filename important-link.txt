@@ -1,0 +1,16 @@
+https://www.creative-tim.com/product/material-dashboard-react?tracking=first-time#
+https://github.com/creativetimofficial/material-dashboard-react?ref=creativetim
+https://demos.creative-tim.com/material-dashboard-react/#/admin/dashboard
+https://demos.creative-tim.com/material-dashboard-react/?_ga=2.170811107.2116788410.1615406551-138479892.1615406551#/documentation/tutorial
+
+
+Username:admin@infoanalyse.com
+Password:EF18OpUJfZ
+POP/IMAP Server:mail.infoanalyse.com
+SMTP Server:mail.infoanalyse.com
+port: 587
+
+Menu Icons - https://livicons.com/icons-original.php
+Date and time picker - https://gijgo.com/datepicker/events/select
+Front-end design - https://doccure-html.dreamguystech.com/template/doctor-dashboard.html
+CMS Document - https://pixinvent.com/demo/frest-clean-bootstrap-admin-dashboard-template/documentation/

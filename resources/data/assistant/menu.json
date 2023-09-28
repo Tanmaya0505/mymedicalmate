@@ -1,0 +1,51 @@
+{
+  "menu": [
+    {
+      "url": "assistant/dashboard",
+      "name": "My Dashboard",
+      "icon": "nc-chart-pie-35"
+    },
+    {
+      "url": "assistant/notifications",
+      "name": "My Notifications",
+      "icon": "nc-bell-55"
+    },
+    {
+      "url": "assistant/my-profile",
+      "name": "My Profile",
+      "icon": "nc-circle-09",
+      "frontend": true
+    },
+    {
+      "url": "assistant/bookings",
+      "name": "My Bookings",
+      "icon": "nc-paper-2"
+    },
+    {
+      "url": "assistant/booking-request",
+      "name": "Bookings Request",
+      "icon": "nc-paper-2"
+    },
+    {
+      "url": "assistant/commision",
+      "name": "My Commision",
+      "icon": "nc-paper-2"
+    },
+    {
+      "url": "assistant/serial-payment",
+      "name": "Serial Payment",
+      "icon": "nc-paper-2"
+    },
+    {
+      "url": "assistant/fullbook-payment",
+      "name": "Full Book Payment",
+      "icon": "nc-paper-2"
+    },
+    {
+      "url": "assistant/coupon",
+      "name": "coupon",
+      "icon": "nc-paper-2"
+    }
+
+  ]
+}

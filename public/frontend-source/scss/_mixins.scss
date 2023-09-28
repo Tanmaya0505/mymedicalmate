@@ -1,0 +1,54 @@
+@mixin selection {
+    color: #fff;
+    background: $color-primary;
+}
+@mixin square($w, $h: $w) {
+    width: $w;
+    height: $h;
+}
+@mixin position($p: absolute, $t: 0, $r: 0, $b:0, $l:0) {
+    position: $p;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $l;
+}
+@mixin filter($val) {
+    -ms-filter: $val;
+    filter: $val;
+}
+@mixin transform($val) {
+    -webkit-transform: $val;
+    -moz-transform: $val;
+    -ms-transform: $val;
+    -o-transform: $val;
+    transform: $val;
+}
+@mixin transition($val, $prop: all, $ease: ease-in-out) {
+    -webkit-transition: $prop $val $ease;
+    -moz-transition: $prop $val $ease;
+    -ms-transition: $prop $val $ease;
+    -o-transition: $prop $val $ease;
+    transition: $prop $val $ease;
+}
+@mixin transform-origin($val) {
+    -webkit-transform-origin: $val;
+    -moz-transform-origin: $val;
+    -ms-transform-origin: $val;
+    -o-transform-origin: $val;
+    transform-origin: $val;
+}
+@for $var from 1 through 10 {
+    .mb#{$var * 10} {
+        margin-bottom: $var * 10px;
+    }
+    .mt#{$var * 10} {
+        margin-top: $var * 10px;
+    }
+    .pb#{$var * 10} {
+        padding-bottom: $var * 10px;
+    }
+    .pt#{$var * 10} {
+        padding-top: $var * 10px;
+    }
+}

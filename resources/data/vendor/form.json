@@ -1,0 +1,1358 @@
+[
+    {
+        "sequence": 0,
+        "node_type": "fieldset",
+        "node_label": "First Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "First Name",
+        "node_required": "First Name required",
+        "node_code": "first_name",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "first_el",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "text",
+        "node_label": "First Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "First Name",
+        "node_required": "First Name required",
+        "node_code": "first_name",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Last Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Last Name",
+        "node_required": "Last Name required",
+        "node_code": "last_name",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Email",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Email",
+        "node_required": "Email required",
+        "node_code": "email",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "number",
+        "node_label": "Phone Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Phone Number",
+        "node_required": "Phone Number required",
+        "node_code": "phone",
+        "node_class": "form-control required steponehide",
+        "node_maxlength":10,
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "number",
+        "node_label": "Whats App Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Whats App Number",
+        "node_code": "whatsapp",
+        "node_class": "form-control steponehide",
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 2,
+        "node_type": "select",
+        "node_label": "Gender",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "Gender required required",
+        "node_code": "gender",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Gender",
+                "sequence": 0
+            },
+            {
+                "option_value": "Male",
+                "option_label": "Male",
+                "sequence": 1
+            },
+            {
+                "option_value": "Female",
+                "option_label": "Female",
+                "sequence": 2
+            },
+            {
+                "option_value": "Others",
+                "option_label": "Others",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 1,
+        "node_type": "select",
+        "node_label": "Are you owner/manager of this?",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "Required",
+        "node_code": "are_you_owner",
+        "node_class": "form-control steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Are you owner/manager of this?",
+                "sequence": 0
+            },
+            {
+                "option_value": "I am Owner",
+                "option_label": "I am Owner",
+                "sequence": 1
+            },
+            {
+                "option_value": "I am Manager",
+                "option_label": "I am Manager",
+                "sequence": 2
+            }
+        ]
+    },
+    {
+        "sequence": 0,
+        "node_type": "text",
+        "node_label": "Enter your full name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Enter your name",
+        "node_required": "Name is required",
+        "node_code": "owner_manager_name",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "text",
+        "node_label": "Name of medicine store",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Name of medicine store",
+        "node_required": "Name of medicine store",
+        "node_code": "name_of_store",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "select",
+        "node_label": "Categories of medicine",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "Categories required",
+        "node_code": "medicine_categories",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Categories of medicine",
+                "sequence": 0
+            },
+            {
+                "option_value": "General",
+                "option_label": "General",
+                "sequence": 1
+            },
+            {
+                "option_value": "Ayurveda",
+                "option_label": "Ayurveda",
+                "sequence": 2
+            },
+            {
+                "option_value": "Generic",
+                "option_label": "Generic",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 9,
+        "node_type": "text",
+        "node_label": "Opening Time",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Opening Time",
+        "node_required": "Opening required",
+        "node_code": "from_time",
+        "node_class": "form-control required steponehide",
+        "node_id":"from_time",
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Closing Time",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Closing Time",
+        "node_required": "Closing Time required",
+        "node_code": "to_time",
+        "node_class": "form-control required steponehide",
+        "node_id":"to_time",
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "select",
+        "node_label": "Total Staff in your shop ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "Total Staff required",
+        "node_code": "total_staff",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Total Staff",
+                "sequence": 0
+            },
+            {
+                "option_value": "05",
+                "option_label": "05",
+                "sequence": 1
+            },
+            {
+                "option_value": "10",
+                "option_label": "10",
+                "sequence": 2
+            },
+            {
+                "option_value": "15",
+                "option_label": "15",
+                "sequence": 3
+            },
+            {
+                "option_value": "20",
+                "option_label": "20",
+                "sequence": 4
+            },
+            {
+                "option_value": "25",
+                "option_label": "25",
+                "sequence": 5
+            },
+            {
+                "option_value": "30",
+                "option_label": "30",
+                "sequence": 6
+            },
+            {
+                "option_value": "35",
+                "option_label": "35",
+                "sequence": 7
+            },
+            {
+                "option_value": "40",
+                "option_label": "40",
+                "sequence": 8
+            }
+        ]
+    },
+    {
+        "sequence": 1,
+        "node_type": "select",
+        "node_label": "Select discount offer to customer",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "Customer discount required",
+        "node_code": "discount",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select discount",
+                "sequence": 0
+            },
+            {
+                "option_value": "05",
+                "option_label": "05%",
+                "sequence": 1
+            },
+            {
+                "option_value": "10",
+                "option_label": "10%",
+                "sequence": 2
+            },
+            {
+                "option_value": "15",
+                "option_label": "15%",
+                "sequence": 3
+            },
+            {
+                "option_value": "20",
+                "option_label": "20%",
+                "sequence": 4
+            },
+            {
+                "option_value": "25",
+                "option_label": "25%",
+                "sequence": 5
+            },
+            {
+                "option_value": "30",
+                "option_label": "30%",
+                "sequence": 6
+            },
+            {
+                "option_value": "35",
+                "option_label": "35%",
+                "sequence": 7
+            },
+            {
+                "option_value": "40",
+                "option_label": "40%",
+                "sequence": 8
+            }
+        ]
+    },
+    {
+        "sequence": 2,
+        "node_type": "select",
+        "node_label": "State",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "State required",
+        "node_code": "state",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select State",
+                "sequence": 0
+            },
+            {
+                "option_value": "Odisha",
+                "option_label": "Odisha",
+                "sequence": 1
+            },
+            {
+                "option_value": "Chennai",
+                "option_label": "Chennai",
+                "sequence": 2
+            },
+            {
+                "option_value": "Delhi",
+                "option_label": "Delhi",
+                "sequence": 3
+            },
+            {
+                "option_value": "Hyderabad",
+                "option_label": "Hyderabad",
+                "sequence": 4
+            },
+            {
+                "option_value": "Kolkata",
+                "option_label": "Kolkata",
+                "sequence": 5
+            }
+        ]
+    },
+    {
+        "sequence": 3,
+        "node_type": "select",
+        "node_label": "Dist",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "Dist required",
+        "node_code": "dist",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Dist",
+                "sequence": 0
+            },
+            {
+                "option_value": "Angul",
+                "option_label": "Angul",
+                "sequence": 1
+            },
+            {
+                "option_value": "Balangir",
+                "option_label": "Balangir",
+                "sequence": 2
+            },
+            {
+                "option_value": "Balasore",
+                "option_label": "Balasore",
+                "sequence": 3
+            },
+            {
+                "option_value": "Bargarh",
+                "option_label": "Bargarh",
+                "sequence":4 
+            },
+            {
+                "option_value": "Bhadrak",
+                "option_label": "Bhadrak",
+                "sequence":5 
+            },
+            {
+                "option_value": "Boudh",
+                "option_label": "Boudh",
+                "sequence":6 
+            },
+            {
+                "option_value": "Cuttack",
+                "option_label": "Cuttack",
+                "sequence":7 
+            },
+            {
+                "option_value": "Deogarh",
+                "option_label": "Deogarh",
+                "sequence":8 
+            },
+            {
+                "option_value": "Dhenkanal",
+                "option_label": "Dhenkanal",
+                "sequence":9 
+            },
+            {
+                "option_value": "Gajapati",
+                "option_label": "Gajapati",
+                "sequence":10 
+            },
+            {
+                "option_value": "Ganjam",
+                "option_label": "Ganjam",
+                "sequence":11 
+            },
+            {
+                "option_value": "Jagatsinghapur",
+                "option_label": "Jagatsinghapur",
+                "sequence":12 
+            },
+            {
+                "option_value": "Jajpur",
+                "option_label": "Jajpur",
+                "sequence":13 
+            },
+            {
+                "option_value": "Jharsuguda",
+                "option_label": "Jharsuguda",
+                "sequence":14 
+            },
+            {
+                "option_value": "Kalahandi",
+                "option_label": "Kalahandi",
+                "sequence":15 
+            },
+            {
+                "option_value": "Kandhamal",
+                "option_label": "Kandhamal",
+                "sequence":16 
+            },
+            {
+                "option_value": "Kendrapara",
+                "option_label": "Kendrapara",
+                "sequence":17 
+            },
+            {
+                "option_value": "Kendujhar",
+                "option_label": "Kendujhar",
+                "sequence":18 
+            },
+            {
+                "option_value": "Khordha",
+                "option_label": "Khordha",
+                "sequence":19 
+            },
+            {
+                "option_value": "Koraput",
+                "option_label": "Koraput",
+                "sequence":20 
+            },
+            {
+                "option_value": "Malkangiri",
+                "option_label": "Malkangiri",
+                "sequence":21 
+            },
+            {
+                "option_value": "Mayurbhanj",
+                "option_label": "Mayurbhanj",
+                "sequence":22 
+            },
+            {
+                "option_value": "Nabarangpur",
+                "option_label": "Nabarangpur",
+                "sequence":23 
+            },
+            {
+                "option_value": "Nayagarh",
+                "option_label": "Nayagarh",
+                "sequence":24 
+            },
+            {
+                "option_value": "Nuapada",
+                "option_label": "Nuapada",
+                "sequence":25 
+            },
+            {
+                "option_value": "Puri",
+                "option_label": "Puri",
+                "sequence":26
+            },
+            {
+                "option_value": "Rayagada",
+                "option_label": "Rayagada",
+                "sequence":27 
+            },
+            {
+                "option_value": "Sambalpur",
+                "option_label": "Sambalpur",
+                "sequence":28
+            },
+            {
+                "option_value": "Sonepur",
+                "option_label": "Sonepur",
+                "sequence":29 
+            },
+            {
+                "option_value": "Sundargarh",
+                "option_label": "Sundargarh",
+                "sequence":30 
+            }
+        ]
+    },
+    {
+        "sequence": 4,
+        "node_type": "number",
+        "node_label": "Pincode",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Pincode",
+        "node_required": "Pincode required",
+        "node_code": "pincode",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_maxlength":6,
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 5,
+        "node_type": "textarea",
+        "node_label": "Location of medicine store",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Enter your store full address",
+        "node_required": "Enter your store full address",
+        "node_code": "store_address",
+        "node_class": "form-control steponehide",
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-8",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 20,
+        "node_type": "submit",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "next-step",
+        "node_class": "btn btn-primary  mt-4 next-step ",
+        "node_step": "1",
+        "node_comment": {
+            "label_1": "col-md-12 text-center",
+            "label_2": "form-group"
+        },
+        "node_value": "SUBMIT & NEXT",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "/fieldset",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "fieldset",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "second_el",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 15,
+        "node_type": "h4",
+        "node_heading": "Fill the Selling & Documentation Details!",
+        "node_label": " ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-12 finish",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Willing to home delivery",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Willing to home delivery",
+        "node_required": "Willing to home delivery required",
+        "node_code": "is_home_delivery",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id": "is_home_delivery",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select option",
+                "sequence": 0
+            },
+            {
+                "option_value": "Yes",
+                "option_label": "Yes",
+                "sequence": 1
+            },
+            {
+                "option_value": "No",
+                "option_label": "No",
+                "sequence": 2
+            }
+            
+        ]
+    },
+
+    {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Select minimum order value",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Select minimum order value",
+        "node_required": "Select minimum order value required",
+        "node_code": "minimum_order",
+        "node_class": "form-control required home_delivery_req steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6 home_delivery",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select option",
+                "sequence": 0
+            },
+            {
+                "option_value": "200",
+                "option_label": "200",
+                "sequence": 1
+            },
+            {
+                "option_value": "300",
+                "option_label": "300",
+                "sequence": 2
+            },
+            {
+                "option_value": "400",
+                "option_label": "400",
+                "sequence": 3
+            },
+             {
+                "option_value": "500",
+                "option_label": "500",
+                "sequence": 3
+            }
+        ]
+    },
+    
+    {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Select minimum order value for home delivery ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Select minimum order value for home delivery",
+        "node_required": "Select minimum order value required",
+        "node_code": "minimum_order_homedelivery",
+        "node_class": "form-control required home_delivery_req steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6 home_delivery",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select option",
+                "sequence": 0
+            },
+            {
+                "option_value": "300",
+                "option_label": "300",
+                "sequence": 1
+            },
+            {
+                "option_value": "400",
+                "option_label": "400",
+                "sequence": 2
+            },
+            {
+                "option_value": "500",
+                "option_label": "500",
+                "sequence": 3
+            },
+             {
+                "option_value": "600",
+                "option_label": "600",
+                "sequence": 3
+            },
+            {
+                "option_value": "700",
+                "option_label": "700",
+                "sequence": 4
+            }
+        ]
+    },
+    {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Select the list of pin codes",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Select the list of pin codes",
+        "node_required": "Select the list of pin codes required",
+        "node_code": "list_of_pincodes",
+        "node_class": "form-control all_pincodes  required steptwohide",
+        "node_step": "2",
+        "node_isarray":true,
+        "node_selectable": "multiple",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6 home_delivery",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select option",
+                "sequence": 0
+            },
+            {
+                "option_value": "751024",
+                "option_label": "751024",
+                "sequence": 1
+            },
+            {
+                "option_value": "751124",
+                "option_label": "751124",
+                "sequence": 2
+            }
+            
+        ]
+    },
+    {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Willing to dispatch on COD? ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Willing to dispatch on COD? ",
+        "node_required": "Willing to dispatch on COD required",
+        "node_code": "is_dispatch_cod",
+        "node_class": "form-control is_dispatch_cod home_delivery_req required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6 home_delivery",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select option",
+                "sequence": 0
+            },
+            {
+                "option_value": "Yes",
+                "option_label": "Yes",
+                "sequence": 1
+            },
+            {
+                "option_value": "No",
+                "option_label": "No",
+                "sequence": 2
+            }
+            
+        ]
+    },
+    {
+        "sequence": 14,
+        "node_type": "checkbox",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_div_class": "",
+        "node_placeholder": null,
+        "node_code": "per_percel_charge",
+        "node_class": "per_percel_charge home_delivery_req steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6 home_delivery  per_percel_charge",
+            "label_2": "form-group"
+        },
+        "node_value": 20,
+        "options": [
+            {
+                "option_value": "20",
+                "option_id": "per_percel_charge",
+                "option_label": "&nbsp;&nbsp;&nbsp;   If yes Rs 20 per parcel",
+                "sequence": 20
+            }
+        ]
+    },
+    {
+        "sequence": 14,
+        "node_type": "checkbox",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_div_class": "",
+        "node_placeholder": null,
+        "node_code": "platform_charge",
+        "node_class": "platform_charge steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6 ",
+            "label_2": "form-group"
+        },
+        "node_value": 0,
+        "options": [
+            {
+                "option_value": "1",
+                "option_label": "&nbsp;&nbsp;&nbsp;   Platform charge & commission",
+                "sequence": 0
+            }
+        ]
+    },
+    {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Willing to donate Trust (Avoid Tax)",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Willing to donate Trust ",
+        "node_required": "Willing to donate Trust required",
+        "node_code": "is_want_to_donate",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select option",
+                "sequence": 0
+            },
+            {
+                "option_value": "Yes",
+                "option_label": "Yes",
+                "sequence": 1
+            },
+            {
+                "option_value": "No",
+                "option_label": "No",
+                "sequence": 2
+            }
+            
+        ]
+    },
+     {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Payment resive Information",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Payment resive Information",
+        "node_required": "Payment resive Information required",
+        "node_code": "payment_information",
+        "node_class": "form-control payment_info required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "Account Transfer",
+                "option_label": "Account Transfer",
+                "sequence": 2
+            }
+        ]
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "UPI ID",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "UPI ID",
+        "node_code": "upi_id",
+        "node_class": "form-control steptwohide",
+        "node_id":"upi_id",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-12 d-none upi_block",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Account Holder Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Account Holder Name",
+        "node_code": "account_holder_name",
+        "node_class": "form-control steptwohide",
+        "node_id":"account_holder_name",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6  acc_trans_block1",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "number",
+        "node_label": "Account Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Account Number",
+        "node_code": "account_number",
+        "node_class": "form-control steptwohide",
+        "node_id":"account_number",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6  acc_trans_block1",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "IFSC Code",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "IFSC Code",
+        "node_code": "ifsc_code",
+        "node_class": "form-control steptwohide",
+        "node_id":"ifsc_code",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6  acc_trans_block1",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Branch Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Branch Name",
+        "node_code": "branch_name",
+        "node_class": "form-control steptwohide",
+        "node_id":"branch_name",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6  acc_trans_block1",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 15,
+        "node_type": "h4",
+        "node_heading": "Medicine Store Owner KYC ",
+        "node_label": " ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 13,
+        "node_type": "file",
+        "node_label": "Adhere card photo",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "Adhere card photo required",
+        "node_code": "adhere_photo",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 13,
+        "node_type": "file",
+        "node_label": "Pan card photo",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "Pan card photo required",
+        "node_code": "pancard_photo",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 15,
+        "node_type": "h4",
+        "node_heading": "Medicine Store  KYC ",
+        "node_label": " ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 13,
+        "node_type": "file",
+        "node_label": "GST",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "GST photo required",
+        "node_code": "gst_photo",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 13,
+        "node_type": "file",
+        "node_label": "PAN",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "Pan card photo required",
+        "node_code": "pancard_store_photo",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 13,
+        "node_type": "file",
+        "node_label": "Rent Agreement",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "rent_agreement_photo",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 14,
+        "node_type": "checkbox",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_div_class": "",
+        "node_placeholder": null,
+        "node_code": "declaration",
+        "node_required": "Declaration required",
+        "node_class": "declaration required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": 0,
+        "options": [
+            {
+                "option_value": "declaration",
+                "option_label": "I Agree to Term & Condition",
+                "sequence": 0
+            }
+        ]
+    },
+
+    {
+        "sequence": 20,
+        "node_type": "button",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "otp_btn",
+        "node_class": "btn btn-primary previous-step ",
+        "node_comment": {
+            "label_1": "col-md-6 text-center",
+            "label_2": "form-group"
+        },
+        "node_value": "BACK & EDIT",
+        "options": null
+    },
+    
+    {
+        "sequence": 20,
+        "node_type": "submit",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "otp_btn",
+        "node_class": "btn btn-primary  next-step",
+        "node_step":"2",
+        "node_comment": {
+            "label_1": "col-md-6 text-center",
+            "label_2": "form-group"
+        },
+        "node_value": "SUBMIT & NEXT",
+        "options": null
+    },
+    
+    {
+        "sequence": 0,
+        "node_type": "/fieldset",
+        "node_label": "",
+        "node_label_class": "",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "",
+        "node_comment": {
+            "label_1": "",
+            "label_2": ""
+        },
+        "node_value": "",
+        "options": null
+    }
+
+   
+    
+]
+

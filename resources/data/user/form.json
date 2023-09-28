@@ -1,0 +1,168 @@
+[
+    {
+        "sequence": 0,
+        "node_type": "text",
+        "node_label": "First Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "First Name",
+        "node_required": "First Name required",
+        "node_code": "first_name",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Last Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Last Name",
+        "node_required": "Last Name required",
+        "node_code": "last_name",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Email",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Email",
+        "node_required": "Email required",
+        "node_code": "email",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "number",
+        "node_label": "Phone Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Phone Number",
+        "node_required": "Phone required",
+        "node_code": "phone",
+        "node_class": "form-control",
+        "node_maxlength":10,
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "select",
+        "node_label": "Gender",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Gender",
+        "node_required": "Gender required",
+        "node_code": "gender",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Gender",
+                "sequence": 0
+            },
+            {
+                "option_value": "Male",
+                "option_label": "Male",
+                "sequence": 1
+            },
+            {
+                "option_value": "Female",
+                "option_label": "Female",
+                "sequence": 2
+            },
+            {
+                "option_value": "Others",
+                "option_label": "Others",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Date Of Birth",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "DD/MM/YYYY",
+        "node_required": "Date Of Birth required",
+        "node_code": "dob",
+        "node_class": "form-control",
+        "node_id":"dob",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 5,
+        "node_type": "textarea",
+        "node_label": "Present Address",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Present Address",
+        "node_code": "present_address",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 5,
+        "node_type": "textarea",
+        "node_label": "Permanent Address",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Permanent Address",
+        "node_code": "permanent_address",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 4,
+        "node_type": "number",
+        "node_label": "Pincode",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Pincode",
+        "node_required": "Pincode required",
+        "node_code": "pincode",
+        "node_class": "form-control",
+        "node_maxlength":6,
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    }
+]

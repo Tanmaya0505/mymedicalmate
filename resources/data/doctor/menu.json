@@ -1,0 +1,20 @@
+{
+  "menu": [
+    {
+      "url": "doctor/dashboard",
+      "name": "My Dashboard",
+      "icon": "nc-chart-pie-35"
+    },
+    {
+      "url": "doctor/notifications",
+      "name": "My Notifications",
+      "icon": "nc-bell-55"
+    },
+    {
+      "url": "doctor/my-profile",
+      "name": "My Profile",
+      "icon": "nc-circle-09",
+      "frontend": true
+    }
+  ]
+}

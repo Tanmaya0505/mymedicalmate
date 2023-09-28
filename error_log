@@ -1,0 +1,994 @@
+[06-Aug-2022 05:47:43 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 05:47:43 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 05:47:43 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 05:47:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 05:47:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 05:47:48 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 07:30:49 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 07:30:49 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 07:30:49 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 08:30:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 08:30:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 08:30:48 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 08:42:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 08:42:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 08:42:20 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 08:57:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 08:57:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 08:57:24 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 09:09:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 09:09:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 09:09:13 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 15:28:28 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 15:28:29 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 15:28:29 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 17:53:59 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 17:53:59 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 17:53:59 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 18:40:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 18:40:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 18:40:07 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 19:41:17 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 19:41:17 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 19:41:17 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 19:51:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 19:51:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 19:51:10 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 22:52:32 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 22:52:32 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 22:52:32 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 23:47:44 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 23:47:44 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[06-Aug-2022 23:47:44 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 00:06:31 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 00:06:31 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 00:06:31 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 00:06:33 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 00:06:33 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 00:06:33 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:37:14 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:37:14 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:37:14 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:37:14 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:37:14 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:37:14 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:54:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:54:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:54:24 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:54:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:54:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 01:54:30 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 04:11:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 04:11:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 04:11:13 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 04:43:00 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 04:43:00 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 04:43:00 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 05:06:00 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 05:06:00 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 05:06:00 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 05:23:56 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 05:23:56 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 05:23:56 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 07:55:38 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 07:55:38 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 07:55:38 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 10:05:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 10:05:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 10:05:19 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 11:55:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 11:55:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 11:55:13 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 18:32:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 18:32:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 18:32:13 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 19:40:50 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 19:40:50 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 19:40:50 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 21:04:39 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 21:04:39 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 21:04:39 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 23:01:17 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 23:01:18 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[07-Aug-2022 23:01:18 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 10:01:02 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 10:01:03 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 10:01:03 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 13:40:58 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 13:40:59 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 13:40:59 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 13:41:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 13:41:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 13:41:01 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 18:13:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 18:13:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 18:13:48 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 19:14:58 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 19:14:58 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[08-Aug-2022 19:14:58 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 01:42:58 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 01:42:58 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 01:42:58 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 05:33:12 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 05:33:12 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 05:33:12 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 07:47:32 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 07:47:32 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 07:47:32 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 07:52:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 07:52:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 07:52:09 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 08:15:18 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 08:15:18 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 08:15:18 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 11:51:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 11:51:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 11:51:10 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 11:51:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 11:51:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 11:51:10 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 12:12:12 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 12:12:12 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 12:12:12 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 12:40:40 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 12:40:40 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 12:40:40 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 17:54:18 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 17:54:18 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 17:54:18 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 18:56:44 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 18:56:44 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 18:56:44 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 19:21:27 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 19:21:27 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 19:21:27 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 21:55:45 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 21:55:46 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 21:55:46 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 23:56:38 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 23:56:38 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 23:56:38 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 23:56:38 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 23:56:38 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[09-Aug-2022 23:56:38 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 01:19:16 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 01:19:16 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 01:19:16 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 01:19:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 01:19:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 01:19:30 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 03:12:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 03:12:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 03:12:48 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 07:58:46 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 07:58:47 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 07:58:47 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:19 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:19 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:20 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:42 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:42 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:18:42 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:58:25 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:58:25 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 10:58:25 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 11:45:06 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 11:45:06 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 11:45:06 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:13 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:19 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:26 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:26 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:26 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:33 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:33 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 13:08:33 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 16:24:35 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 16:24:35 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 16:24:35 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 16:36:49 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 16:36:49 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 16:36:49 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 16:48:03 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 16:48:03 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 16:48:03 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 17:57:27 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 17:57:27 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 17:57:27 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 19:02:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 19:02:19 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 19:02:19 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 19:34:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 19:34:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 19:34:24 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 19:43:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 19:43:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 19:43:30 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:47:54 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:47:54 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:47:54 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:01 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:14 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:14 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:14 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:20 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:28 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:28 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:28 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:42 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:42 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:42 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:49 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:49 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:49 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:58 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:58 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 20:48:58 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:31 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:31 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:31 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:32 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:32 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:32 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:53 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:53 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:53 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:58 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:58 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 21:57:58 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:07 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:07 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:08 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:08 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:08 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:08 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:08 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:08 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:08 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:08 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:08 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:09 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:10 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:10 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:10 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:11 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:11 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:11 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:11 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:11 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:03:11 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:40:00 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:40:00 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[10-Aug-2022 23:40:00 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 00:25:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 00:25:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 00:25:07 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 01:52:15 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 01:52:15 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 01:52:15 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 01:52:16 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 01:52:16 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 01:52:16 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 07:23:46 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 07:23:46 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 07:23:46 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:11 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:12 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:12 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:28 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:28 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:28 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:29 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:29 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:29 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:43 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:43 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 10:27:43 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 13:43:42 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 13:43:42 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 13:43:42 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 17:48:03 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 17:48:03 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 17:48:03 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 19:31:26 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 19:31:26 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[11-Aug-2022 19:31:26 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:10:52 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:10:52 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:10:52 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:10:53 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:10:53 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:10:53 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:22:33 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:22:33 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:22:33 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:23:12 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:23:12 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:23:12 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:23:22 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:23:22 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 01:23:22 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:37:28 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:37:28 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:37:28 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:38:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:38:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:38:01 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:39:11 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:39:11 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:39:11 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:39:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:39:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:39:48 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:40:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:40:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:40:24 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:41:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:41:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:41:01 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:41:38 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:41:38 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 12:41:38 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 13:24:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 13:24:10 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[12-Aug-2022 13:24:10 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 09:39:35 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 09:39:36 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 09:39:36 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 10:27:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 10:27:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 10:27:30 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 10:36:45 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 10:36:45 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 10:36:45 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 10:47:51 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 10:47:51 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 10:47:51 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:13:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:13:30 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:13:30 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:13:40 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:13:40 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:13:40 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:14:12 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:14:12 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:14:12 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:14:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:14:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:14:20 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:14:47 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:14:47 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:14:47 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:17:36 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:17:36 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 11:17:36 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:40:42 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:40:42 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:40:42 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:41:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:41:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:41:13 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:42:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:42:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:42:24 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:43:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:43:01 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:43:01 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:43:27 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:43:27 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:43:27 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:43:37 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:43:37 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:43:37 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:44:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:44:13 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:44:13 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:44:50 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:44:50 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 12:44:50 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:20 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:20 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:22 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:22 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:22 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:09:24 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:18:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:18:24 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:18:24 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:18:59 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:18:59 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:18:59 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:20:11 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:20:11 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:20:11 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:20:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:20:48 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 13:20:48 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 14:58:57 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 14:58:57 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 14:58:57 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 17:35:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 17:35:20 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 17:35:20 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 18:20:37 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 18:20:37 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 18:20:37 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 18:22:15 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 18:22:15 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 18:22:15 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 18:38:00 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 18:38:00 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 18:38:00 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 19:10:21 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 19:10:21 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 19:10:21 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 19:27:14 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 19:27:14 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[04-Sep-2022 19:27:14 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[05-Sep-2022 01:20:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[05-Sep-2022 01:20:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[05-Sep-2022 01:20:07 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../../app/Helpers/helpers.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 71
+[19-Apr-2023 10:46:28 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/mvzvnxjr/mymedicalmate.com/app/Helpers/common-helper.php on line 242
+[19-Apr-2023 10:46:33 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/mvzvnxjr/mymedicalmate.com/app/Helpers/common-helper.php on line 242
+[19-Apr-2023 10:46:45 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/mvzvnxjr/mymedicalmate.com/app/Helpers/common-helper.php on line 242
+[28-Jun-2023 08:05:22 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:05:23 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:05:27 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:05:29 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:05:31 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:05:32 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:05:32 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:05:33 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:06:15 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:06:17 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 08:06:18 UTC] PHP Fatal error:  Uncaught Error: Class 'ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php:7
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require()
+#1 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#2 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php on line 7
+[28-Jun-2023 09:12:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:12:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:12:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:12:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:13:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:17:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:17:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:17:09 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:17:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:17:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:17:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(7): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(24): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:37:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(25): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:37:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(25): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:38:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(25): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:38:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(25): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:39:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(25): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:41:19 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(25): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:41:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:35
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 35
+[28-Jun-2023 09:47:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:47:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:47:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:48:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:48:21 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:48:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:48:55 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:49:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:25 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:48 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:50:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:51:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:52:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInit62da5f96d4469e52a49bad9c68a54716' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php:36
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#1 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#2 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#3 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 36
+[28-Jun-2023 09:53:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInita056b6602dacfd85311f24f2f2d6100f' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_static.php:6139
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php(36): Composer\Autoload\ClassLoader::Composer\Autoload\{closure}()
+#1 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#2 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#3 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#4 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_static.php on line 6139
+[28-Jun-2023 09:53:53 UTC] PHP Fatal error:  Uncaught Error: Class 'Composer\Autoload\ComposerStaticInita056b6602dacfd85311f24f2f2d6100f' not found in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_static.php:6139
+Stack trace:
+#0 /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php(36): Composer\Autoload\ClassLoader::Composer\Autoload\{closure}()
+#1 /home/mvzvnxjr/mymedicalmate.com/vendor/autoload.php(8): ComposerAutoloaderInit62da5f96d4469e52a49bad9c68a54716::getLoader()
+#2 /home/mvzvnxjr/mymedicalmate.com/public/index.php(28): require('/home/mvzvnxjr/...')
+#3 /home/mvzvnxjr/mymedicalmate.com/server.php(21): require_once('/home/mvzvnxjr/...')
+#4 {main}
+  thrown in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_static.php on line 6139
+[28-Jun-2023 09:55:06 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 72
+[28-Jun-2023 09:55:06 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 72
+[28-Jun-2023 09:55:06 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 72
+[28-Jun-2023 09:55:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 72
+[28-Jun-2023 09:55:07 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 72
+[28-Jun-2023 09:55:07 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 72
+[28-Jun-2023 09:55:23 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 72
+[28-Jun-2023 09:55:23 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 72
+[28-Jun-2023 09:55:23 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 72
+[28-Jun-2023 09:59:46 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 73
+[28-Jun-2023 09:59:46 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 73
+[28-Jun-2023 09:59:46 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 73
+[28-Jun-2023 10:00:44 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 73
+[28-Jun-2023 10:00:44 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 73
+[28-Jun-2023 10:00:44 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 73
+[28-Jun-2023 10:10:27 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 73
+[28-Jun-2023 10:10:27 UTC] PHP Warning:  require(/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php): failed to open stream: No such file or directory in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 73
+[28-Jun-2023 10:10:27 UTC] PHP Fatal error:  require(): Failed opening required '/home/mvzvnxjr/mymedicalmate.com/vendor/composer/../rmccue/requests/library/Deprecated.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mvzvnxjr/mymedicalmate.com/vendor/composer/autoload_real.php on line 73

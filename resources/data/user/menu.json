@@ -1,0 +1,51 @@
+{
+  "menu": [
+    {
+      "url": "user/dashboard",
+      "name": "My Dashboard",
+      "icon": "nc-chart-pie-35"
+    },
+    {
+      "url": "user/notifications",
+      "name": "My Notifications",
+      "icon": "nc-bell-55"
+    },
+    {
+      "url": "user/my-profile",
+      "name": "My Profile",
+      "icon": "nc-circle-09",
+      "frontend": true
+    },
+    {
+      "url": "user/bookings",
+      "name": "My Bookings",
+      "icon": "nc-paper-2"
+    },
+    {
+      "url": "user/prescription",
+      "name": "My Prescription",
+      "icon": "nc-single-copy-04"
+    },
+    {
+      "url": "user/coin-transfer",
+      "name": "My Coins",
+      "icon": "nc-single-copy-04"
+    },
+    {
+      "url": "user/mycoupons",
+      "name": "My Coupons",
+      "icon": "nc-single-copy-04"
+    },
+    {
+      "url": "user/myreferals",
+      "name": "My Referals",
+      "icon": "nc-single-copy-04"
+    },
+    {
+      "url": "user/add-ads",
+      "name": "Create Add",
+      "icon": "nc-single-copy-04",
+      "frontend": true
+    }
+  ]
+}

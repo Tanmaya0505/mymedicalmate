@@ -1,0 +1,1770 @@
+[
+    {
+        "sequence": 0,
+        "node_type": "fieldset",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "",
+        "node_comment": {
+            "label_1": "first_el",
+            "label_2": ""
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "text",
+        "node_label": "First Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "First Name",
+        "node_required": "First Name required",
+        "node_code": "first_name",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Last Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Last Name",
+        "node_required": "Last Name required",
+        "node_code": "last_name",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Email",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Email",
+        "node_required": "Email required",
+        "node_code": "email",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "number",
+        "node_label": "Phone Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Phone Number",
+        "node_required": "Phone required",
+        "node_code": "phone",
+        "node_class": "form-control required steponehide",
+        "node_maxlength":10,
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "number",
+        "node_label": "Whats App Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Whats App Number",
+        "node_code": "whatsapp",
+        "node_class": "form-control steponehide",
+        "node_maxlength":10,
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 2,
+        "node_type": "select",
+        "node_label": "Gender",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "Gender required",
+        "node_code": "gender",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Gender",
+                "sequence": 0
+            },
+            {
+                "option_value": "Male",
+                "option_label": "Male",
+                "sequence": 1
+            },
+            {
+                "option_value": "Female",
+                "option_label": "Female",
+                "sequence": 2
+            },
+            {
+                "option_value": "Others",
+                "option_label": "Others",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Date Of Birth",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "DD/MM/YYYY",
+        "node_required": "Date Of Birth required",
+        "node_code": "dob",
+        "node_class": "form-control required steponehide",
+        "node_id":"dob",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "text",
+        "node_label": "Highest Qualification",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Highest Qualification",
+        "node_required": "Highest Qualification required",
+        "node_code": "highest_qualification",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 1,
+        "node_type": "select",
+        "node_label": "Current Occupation",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Current Occupation",
+        "node_required": "Current Occupation required",
+        "node_code": "current_occupation",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Current Occupation",
+                "sequence": 0
+            },
+            {
+                "option_value": "Student",
+                "option_label": "Student",
+                "sequence": 1
+            },
+            {
+                "option_value": "Job holder",
+                "option_label": "Job holder",
+                "sequence": 2
+            },
+            {
+                "option_value": "Employee",
+                "option_label": "Employee",
+                "sequence": 3
+            },
+            {
+                "option_value": "Self Employee",
+                "option_label": "Self Employee",
+                "sequence": 4
+            },
+            {
+                "option_value": "Other",
+                "option_label": "Other",
+                "sequence": 5
+            }
+        ]
+    },
+    {
+        "sequence": 2,
+        "node_type": "select",
+        "node_label": "State",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "State required",
+        "node_code": "state",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select State",
+                "sequence": 0
+            },
+            {
+                "option_value": "Odisha",
+                "option_label": "Odisha",
+                "sequence": 1
+            },
+            {
+                "option_value": "Chennai",
+                "option_label": "Chennai",
+                "sequence": 2
+            },
+            {
+                "option_value": "Delhi",
+                "option_label": "Delhi",
+                "sequence": 3
+            },
+            {
+                "option_value": "Hyderabad",
+                "option_label": "Hyderabad",
+                "sequence": 4
+            },
+            {
+                "option_value": "Kolkata",
+                "option_label": "Kolkata",
+                "sequence": 5
+            }
+        ]
+    },
+    {
+        "sequence": 3,
+        "node_type": "select",
+        "node_label": "Dist",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_required": "Dist required",
+        "node_code": "dist",
+        "node_class": "form-control required steponehide",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Dist",
+                "sequence": 0
+            },
+            {
+                "option_value": "Khordha",
+                "option_label": "Khordha",
+                "sequence": 1
+            },
+            {
+                "option_value": "Cuttack",
+                "option_label": "Cuttack",
+                "sequence": 2
+            },
+            {
+                "option_value": "Puri",
+                "option_label": "Puri",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 4,
+        "node_type": "number",
+        "node_label": "Pincode",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Pincode",
+        "node_required": "Pincode required",
+        "node_code": "pincode",
+        "node_class": "form-control required steponehide",
+        "node_maxlength":6,
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 5,
+        "node_type": "textarea",
+        "node_label": "Present Address",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Present Address",
+        "node_required": "Present Address required",
+        "node_code": "present_address",
+        "node_class": "form-control required steponehide",
+        "node_note": "This address will be displayed on website",
+        "node_step": "1",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 5,
+        "node_type": "textarea",
+        "node_label": "Permanent Address",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Permanent Address",
+        "node_required": "Permanent Address required",
+        "node_code": "permanent_address",
+        "node_class": "form-control required steponehide",
+        "node_note": "Please enter your full address with postal code",
+        "node_step": "1",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 20,
+        "node_type": "submit",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "next-step",
+        "node_class": "btn btn-primary  mt-4 next-step ",
+        "node_step": "1",
+        "node_comment": {
+            "label_1": "col-md-12 text-center",
+            "label_2": "form-group"
+        },
+        "node_value": "SUBMIT & NEXT",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "/fieldset",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "fieldset",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "second_el",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 15,
+        "node_type": "h4",
+        "node_heading": "Fill the Service Details!",
+        "node_label": " ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 11,
+        "node_type": "select",
+        "node_label": "Service Area",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Service Area",
+        "node_required": "Service Area required",
+        "node_code": "service_area",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Service Area",
+                "sequence": 0
+            },
+            {
+                "option_value": "Cuttack",
+                "option_label": "Cuttack",
+                "sequence": 1
+            },
+            {
+                "option_value": "Bhubaneswar",
+                "option_label": "Bhubaneswar",
+                "sequence": 2
+            },
+            {
+                "option_value": "Balasore",
+                "option_label": "Balasore",
+                "sequence": 3
+            },
+            {
+                "option_value": "Sambalpur",
+                "option_label": "Sambalpur",
+                "sequence": 4
+            },
+            {
+                "option_value": "Rourkela",
+                "option_label": "Rourkela",
+                "sequence": 5
+            },
+            {
+                "option_value": "Berhampur",
+                "option_label": "Berhampur",
+                "sequence": 6
+            },
+            {
+                "option_value": "Baripada",
+                "option_label": "Baripada",
+                "sequence": 7
+            },
+            {
+                "option_value": "Mayurbhanj",
+                "option_label": "Mayurbhanj",
+                "sequence": 8
+            },
+            {
+                "option_value": "Sundargarh",
+                "option_label": "Sundargarh",
+                "sequence": 9
+            },
+            {
+                "option_value": "Angul",
+                "option_label": "Angul",
+                "sequence": 10
+            }
+        ]
+    },
+    {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Select Service area pin codes",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Select the list of pin codes",
+        "node_required": "Select the list of pin codes required",
+        "node_code": "list_of_pincodes",
+        "node_class": "form-control   required steptwohide",
+        "node_step": "2",
+        "node_isarray":true,
+        "node_selectable": "multiple",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-4 ",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select option",
+                "sequence": 0
+            },
+            {
+                "option_value": "751024",
+                "option_label": "751024",
+                "sequence": 1
+            },
+            {
+                "option_value": "751124",
+                "option_label": "751124",
+                "sequence": 2
+            }
+            
+        ]
+    },
+    {
+        "sequence": 11,
+        "node_type": "select",
+        "node_label": "Service Type",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Service Type",
+        "node_required": "Service Type required",
+        "node_code": "service_type",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Service Type",
+                "sequence": 0
+            },
+            {
+                "option_value": "Medical Mate Service",
+                "option_label": "Medical Mate Service",
+                "sequence": 1
+            },
+            {
+                "option_value": "Diet Plan Service",
+                "option_label": "Diet Plan Service",
+                "sequence": 2
+            },
+            {
+                "option_value": "Sample Collection & Test service",
+                "option_label": "Sample Collection & Test service",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 11,
+        "node_type": "select",
+        "node_label": "Choose the Service for",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Choose the Service for",
+        "node_required": "Choose the Service for required",
+        "node_code": "service_provided_type",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Choose the Service for",
+                "sequence": 0
+            },
+            {
+                "option_value": "Day",
+                "option_label": "Day",
+                "sequence": 1
+            },
+            {
+                "option_value": "Night",
+                "option_label": "Night",
+                "sequence": 2
+            },
+            {
+                "option_value": "Day & Night",
+                "option_label": "Day & Night",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 11,
+        "node_type": "text",
+        "node_label": "Day Charges",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Day Charges",
+        "node_required": "Day Charges required",
+        "node_code": "day_charges",
+        "node_class": "form-control required steptwohide",
+        "node_min" :"100",
+        "node_max" :"500",
+        "node_is_editable": "1",
+        "node_step": "2",
+        "node_comment": {
+            "label_1": "col-md-3",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Day Charges",
+                "sequence": 0
+            },
+            {
+                "option_value": "300",
+                "option_label": "300",
+                "sequence": 1
+            },
+            {
+                "option_value": "400",
+                "option_label": "400",
+                "sequence": 2
+            }
+        ]
+    },
+    {
+        "sequence": 11,
+        "node_type": "text",
+        "node_label": "Night Charges",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Night Charges",
+        "node_required": "Night Charges required",
+        "node_code": "night_charges",
+        "node_class": "form-control required steptwohide",
+        "node_min" :"100",
+        "node_max" :"500",
+        "node_is_editable": "1",
+        "node_step": "2",
+        "node_comment": {
+            "label_1": "col-md-3",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Night Charges",
+                "sequence": 0
+            },
+            {
+                "option_value": "300",
+                "option_label": "300",
+                "sequence": 1
+            },
+            {
+                "option_value": "400",
+                "option_label": "400",
+                "sequence": 2
+            },
+            {
+                "option_value": "500",
+                "option_label": "500",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 11,
+        "node_type": "text",
+        "node_label": "Hourly Charges",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Hourly Charges",
+        "node_required": "Hourly Charges required",
+        "node_code": "hourly_charges",
+        "node_class": "form-control required steptwohide",
+        "node_min" :"100",
+        "node_max" :"500",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-2",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Night Charges",
+                "sequence": 0
+            },
+            {
+                "option_value": "300",
+                "option_label": "300",
+                "sequence": 1
+            },
+            {
+                "option_value": "400",
+                "option_label": "400",
+                "sequence": 2
+            },
+            {
+                "option_value": "500",
+                "option_label": "500",
+                "sequence": 3
+            }
+        ]
+    },
+    {
+        "sequence": 8,
+        "node_type": "checkbox",
+        "node_label": "Available",
+        "node_label_class": "bmd-label-floating",
+        "node_div_class": "available_days steptwohide",
+        "node_placeholder": null,
+        "node_required": "Available required",
+        "node_code": "available",
+        "node_isarray":true,
+        "node_class": "available required ",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": [],
+        "options": [
+            {
+                "option_value": "All",
+                "option_label": "All",
+                "sequence": 0
+            },
+            {
+                "option_value": "Monday",
+                "option_label": "Mon",
+                "sequence": 1
+            },
+            {
+                "option_value": "Tuesday",
+                "option_label": "Tue",
+                "sequence": 2
+            },
+            {
+                "option_value": "Wednesday",
+                "option_label": "Wed",
+                "sequence": 3
+            },
+            {
+                "option_value": "Thursday",
+                "option_label": "Thu",
+                "sequence": 4
+            },
+            {
+                "option_value": "Friday",
+                "option_label": "Fri",
+                "sequence": 5
+            },
+            {
+                "option_value": "Saturday",
+                "option_label": "Sat",
+                "sequence": 6
+            },
+            {
+                "option_value": "Sunday",
+                "option_label": "Sun",
+                "sequence": 7
+            }
+        ]
+    },
+    {
+        "sequence": 8,
+        "node_type": "checkbox",
+        "node_label": "Have your bike?",
+        "node_label_class": "bmd-label-floating",
+        "node_div_class": "is_bike_available steptwohide",
+        "node_placeholder": null,
+        "node_code": "is_bike",
+        "node_class": "is_bike ",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": 0,
+        "options": [
+            {
+                "option_value": "1",
+                "option_label": "Have your bike?",
+                "sequence": 0
+            }
+        ]
+    },
+    {
+        "sequence": 7,
+        "node_type": "text",
+        "node_label": "Per KM Charges",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Per KM Charges",
+        "node_code": "per_km_harges",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_readonly": true,
+        "node_comment": {
+            "label_1": "col-md-2 d-none bike_block",
+            "label_2": "form-group",
+            "label_3": "col-md-2  bike_block"
+        },
+        "node_value": "5",
+        "options": null
+    },
+    {
+        "sequence": 7,
+        "node_type": "text",
+        "node_label": "Enter DL Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Enter DL Number",
+        "node_code": "dl_number",
+        "node_required": "DL Number required",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id": "dl_number",
+        "node_readonly": false,
+        "node_comment": {
+            "label_1": "col-md-3 d-none bike_block",
+            "label_2": "form-group",
+            "label_3": "col-md-3  bike_block"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 7,
+        "node_type": "text",
+        "node_label": "Enter Vehicle Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Enter Vehicle Number",
+        "node_required": "Vehicle Number required",
+        "node_code": "vehicle_number",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id": "vehicle_number",
+        "node_comment": {
+            "label_1": "col-md-3 d-none bike_block",
+            "label_2": "form-group",
+            "label_3": "col-md-3  bike_block"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Select KM Range",
+        "node_label_class": "bmd-label-floating",
+        "node_code": "km_range",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-4 d-none bike_block",
+            "label_2": "form-group",
+            "label_3": "col-md-4  bike_block"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "10-20 KM",
+                "option_label": "10-20 KM",
+                "sequence": 0
+            },
+            {
+                "option_value": "20-30 KM",
+                "option_label": "20-30 KM",
+                "sequence": 1
+            },
+            {
+                "option_value": "30-40 KM",
+                "option_label": "30-40 KM",
+                "sequence": 3
+            },
+            {
+                "option_value": "40-50 KM",
+                "option_label": "40-50 KM",
+                "sequence": 2
+            }
+        ]
+    },
+    {
+        "sequence": 9,
+        "node_type": "text",
+        "node_label": "Service From Time",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "From Time",
+        "node_required": "From Time required",
+        "node_code": "from_time",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id":"from_time",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Service To Time",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "To Time",
+        "node_required": "To Time required",
+        "node_code": "to_time",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id":"to_time",
+        "node_comment": {
+            "label_1": "col-md-4",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Payment recive Information",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Payment resive Information",
+        "node_required": "Payment resive Information required",
+        "node_code": "payment_information",
+        "node_class": "form-control payment_info required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "0",
+                "option_label": "Select option",
+                "sequence": 0
+            },
+            {
+                "option_value": "Check",
+                "option_label": "Check",
+                "sequence": 1
+            },
+            {
+                "option_value": "UPI Transfer",
+                "option_label": "UPI Transfer",
+                "sequence": 3
+            },
+            {
+                "option_value": "Account Transfer",
+                "option_label": "Account Transfer",
+                "sequence": 2
+            }
+        ]
+    },
+     {
+        "sequence": 12,
+        "node_type": "select",
+        "node_label": "Donate to Trust in each service",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Donate to Trust in each service",
+        "node_required": "Donate to Trust in each service required",
+        "node_code": "donate_trust",
+        "node_class": "form-control donate_trust required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "0",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select option",
+                "sequence": 0
+            },
+            {
+                "option_value": "5",
+                "option_label": "5",
+                "sequence": 1
+            },
+            {
+                "option_value": "6",
+                "option_label": "6",
+                "sequence": 2
+            },
+            {
+                "option_value": "7",
+                "option_label": "7",
+                "sequence": 2
+            },
+            {
+                "option_value": "8",
+                "option_label": "8",
+                "sequence": 2
+            },
+            {
+                "option_value": "9",
+                "option_label": "9",
+                "sequence": 2
+            },
+            {
+                "option_value": "10",
+                "option_label": "10",
+                "sequence": 2
+            },
+            {
+                "option_value": "11",
+                "option_label": "11",
+                "sequence": 2
+            },
+            {
+                "option_value": "12",
+                "option_label": "12",
+                "sequence": 2
+            },
+            {
+                "option_value": "13",
+                "option_label": "13",
+                "sequence": 2
+            },
+            {
+                "option_value": "14",
+                "option_label": "14",
+                "sequence": 2
+            },
+            {
+                "option_value": "15",
+                "option_label": "15",
+                "sequence": 2
+            },
+            {
+                "option_value": "16",
+                "option_label": "16",
+                "sequence": 2
+            },
+            {
+                "option_value": "17",
+                "option_label": "17",
+                "sequence": 2
+            },
+            {
+                "option_value": "18",
+                "option_label": "18",
+                "sequence": 2
+            },
+            {
+                "option_value": "19",
+                "option_label": "19",
+                "sequence": 2
+            },
+            {
+                "option_value": "20",
+                "option_label": "20",
+                "sequence": 2
+            },
+            {
+                "option_value": "21",
+                "option_label": "21",
+                "sequence": 2
+            },
+            {
+                "option_value": "22",
+                "option_label": "22",
+                "sequence": 2
+            },
+            {
+                "option_value": "23",
+                "option_label": "23",
+                "sequence": 2
+            },
+            {
+                "option_value": "24",
+                "option_label": "24",
+                "sequence": 2
+            },
+            {
+                "option_value": "25",
+                "option_label": "25",
+                "sequence": 2
+            }
+        ]
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "UPI ID",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "UPI ID",
+        "node_code": "upi_id",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id":"upi_id",
+        "node_comment": {
+            "label_1": "col-md-12 d-none upi_block",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Account Holder Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Account Holder Name",
+        "node_code": "account_holder_name",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id":"account_holder_name",
+        "node_comment": {
+            "label_1": "col-md-6  acc_trans_block1",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Account Number",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Account Number",
+        "node_code": "account_number",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id":"account_number",
+        "node_comment": {
+            "label_1": "col-md-6  acc_trans_block1",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "IFSC Code",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "IFSC Code",
+        "node_code": "ifsc_code",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id":"ifsc_code",
+        "node_comment": {
+            "label_1": "col-md-6  acc_trans_block1",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 10,
+        "node_type": "text",
+        "node_label": "Branch Name",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "Branch Name",
+        "node_code": "branch_name",
+        "node_class": "form-control steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_id":"branch_name",
+        "node_comment": {
+            "label_1": "col-md-6  acc_trans_block1",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    
+    {
+        "sequence": 13,
+        "node_type": "file",
+        "node_label": "Profile Photo",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "Photo required",
+        "node_code": "photo",
+        "node_class": "form-control required steptwohide",
+        "node_step": "2",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 13,
+        "node_type": "file",
+        "node_label": "DL Photo",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "DL Photo required",
+        "node_code": "identity_information",
+        "node_class": "form-control  steptwohide",
+        "node_step": "2",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6 d-none bike_block",
+            "label_2": "form-group",
+            "label_3": "col-md-6  bike_block"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 20,
+        "node_type": "button",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "next-step",
+        "node_class": "btn btn-primary  mt-4 previous-step ",
+        "node_comment": {
+            "label_1": "col-md-6 text-center",
+            "label_2": "form-group"
+        },
+        "node_value": "BACK & EDIT",
+        "options": null
+    },
+    {
+        "sequence": 20,
+        "node_type": "submit",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "next-step",
+        "node_class": "btn btn-primary  mt-4 next-step ",
+        "node_step": "2",
+        "node_comment": {
+            "label_1": "col-md-6 text-center",
+            "label_2": "form-group"
+        },
+        "node_value": "SUBMIT & NEXT",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "/fieldset",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "fieldset",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "third_el",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 15,
+        "node_type": "h3",
+        "node_heading": "Fill the references & Nominee details ",
+        "node_label": " ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 15,
+        "node_type": "listing",
+        "node_heading": "",
+        "node_label": " ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 15,
+        "node_type": "button",
+        "node_heading": "",
+        "node_label": "Add Referance",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "btn btn-primary addreferance float-right",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "Add Referance",
+        "options": null
+    },
+    
+    {
+        "sequence": 15,
+        "node_type": "h4",
+        "node_heading": "How you rate yourself?",
+        "node_label": " ",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "First Name",
+        "node_required": "First Name required stepthreehide",
+        "node_code": "first_name",
+        "node_class": "form-control",
+        "node_step": "3",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    },
+    {
+        "sequence": 20,
+        "node_type": "select",
+        "node_label": "Patience (Between 1-10",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "rating_patience",
+        "node_class": "form-control stepthreehide",
+        "node_step": "3",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": [
+            {
+                "option_value": "1",
+                "option_label": "1",
+                "sequence": 0
+            },
+            {
+                "option_value": "2",
+                "option_label": "2",
+                "sequence": 1
+            },
+            {
+                "option_value": "3",
+                "option_label": "3",
+                "sequence": 2
+            },
+            {
+                "option_value": "4",
+                "option_label": "4",
+                "sequence": 3
+            },
+            {
+                "option_value": "5",
+                "option_label": "5",
+                "sequence": 4
+            },
+            {
+                "option_value": "6",
+                "option_label": "6",
+                "sequence": 5
+            }
+            ,
+            {
+                "option_value": "7",
+                "option_label": "7",
+                "sequence": 6
+            }
+            ,
+            {
+                "option_value": "8",
+                "option_label": "8",
+                "sequence": 7
+            }
+            ,
+            {
+                "option_value": "9",
+                "option_label": "9",
+                "sequence": 8
+            }
+            ,
+            {
+                "option_value": "10",
+                "option_label": "10",
+                "sequence": 9
+            }
+        ]
+    },
+    {
+        "sequence": 20,
+        "node_type": "select",
+        "node_label": "Behaviour (between 01-10)",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "rating_behaviour",
+        "node_class": "form-control stepthreehide",
+        "node_step": "3",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": [
+            {
+                "option_value": "1",
+                "option_label": "1",
+                "sequence": 0
+            },
+            {
+                "option_value": "2",
+                "option_label": "2",
+                "sequence": 1
+            },
+            {
+                "option_value": "3",
+                "option_label": "3",
+                "sequence": 2
+            },
+            {
+                "option_value": "4",
+                "option_label": "4",
+                "sequence": 3
+            },
+            {
+                "option_value": "5",
+                "option_label": "5",
+                "sequence": 4
+            },
+            {
+                "option_value": "6",
+                "option_label": "6",
+                "sequence": 5
+            }
+            ,
+            {
+                "option_value": "7",
+                "option_label": "7",
+                "sequence": 6
+            }
+            ,
+            {
+                "option_value": "8",
+                "option_label": "8",
+                "sequence": 7
+            }
+            ,
+            {
+                "option_value": "9",
+                "option_label": "9",
+                "sequence": 8
+            }
+            ,
+            {
+                "option_value": "10",
+                "option_label": "10",
+                "sequence": 9
+            }
+        ]
+    },
+    {
+        "sequence": 20,
+        "node_type": "select",
+        "node_label": "Honesty (Between 1-10)",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "rating_honesty",
+        "node_class": "form-control stepthreehide",
+        "node_step": "3",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": [
+            {
+                "option_value": "1",
+                "option_label": "1",
+                "sequence": 0
+            },
+            {
+                "option_value": "2",
+                "option_label": "2",
+                "sequence": 1
+            },
+            {
+                "option_value": "3",
+                "option_label": "3",
+                "sequence": 2
+            },
+            {
+                "option_value": "4",
+                "option_label": "4",
+                "sequence": 3
+            },
+            {
+                "option_value": "5",
+                "option_label": "5",
+                "sequence": 4
+            },
+            {
+                "option_value": "6",
+                "option_label": "6",
+                "sequence": 5
+            }
+            ,
+            {
+                "option_value": "7",
+                "option_label": "7",
+                "sequence": 6
+            }
+            ,
+            {
+                "option_value": "8",
+                "option_label": "8",
+                "sequence": 7
+            }
+            ,
+            {
+                "option_value": "9",
+                "option_label": "9",
+                "sequence": 8
+            }
+            ,
+            {
+                "option_value": "10",
+                "option_label": "10",
+                "sequence": 9
+            }
+        ]
+    },
+    {
+        "sequence": 20,
+        "node_type": "select",
+        "node_label": "Integrity (Between 1-10)",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "rating_integrity",
+        "node_class": "form-control stepthreehide",
+        "node_step": "3",
+        "node_is_editable": "1",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": [
+            {
+                "option_value": "1",
+                "option_label": "1",
+                "sequence": 0
+            },
+            {
+                "option_value": "2",
+                "option_label": "2",
+                "sequence": 1
+            },
+            {
+                "option_value": "3",
+                "option_label": "3",
+                "sequence": 2
+            },
+            {
+                "option_value": "4",
+                "option_label": "4",
+                "sequence": 3
+            },
+            {
+                "option_value": "5",
+                "option_label": "5",
+                "sequence": 4
+            },
+            {
+                "option_value": "6",
+                "option_label": "6",
+                "sequence": 5
+            }
+            ,
+            {
+                "option_value": "7",
+                "option_label": "7",
+                "sequence": 6
+            }
+            ,
+            {
+                "option_value": "8",
+                "option_label": "8",
+                "sequence": 7
+            }
+            ,
+            {
+                "option_value": "9",
+                "option_label": "9",
+                "sequence": 8
+            }
+            ,
+            {
+                "option_value": "10",
+                "option_label": "10",
+                "sequence": 9
+            }
+        ]
+    },
+    {
+        "sequence": 14,
+        "node_type": "checkbox",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_div_class": "",
+        "node_placeholder": null,
+        "node_code": "declaration",
+        "node_required": "Declaration required",
+        "node_class": "declaration required stepthreehide",
+        "node_step": "3",
+        "node_is_editable": "0",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": 0,
+        "options": [
+            {
+                "option_value": "declaration",
+                "option_label": "<b>Declaration :</b> I hereby declare that the information given by me in this form is true, complete and correct to the best of my knowledge and belief. I understand that in the event of any information being found false or incorrect at any stage,my candidature/appointment is liable to be cancelled/terminated.",
+                "sequence": 0
+            }
+        ]
+    },
+    {
+        "sequence": 20,
+        "node_type": "button",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "next-step",
+        "node_class": "btn btn-primary  mt-4 previous-step ",
+        "node_comment": {
+            "label_1": "col-md-6 text-center",
+            "label_2": "form-group"
+        },
+        "node_value": "BACK & EDIT",
+        "options": null
+    },
+    {
+        "sequence": 20,
+        "node_type": "submit",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "next-step",
+        "node_class": "btn btn-primary  mt-4  next-step",
+        "node_step": "3",
+        "node_comment": {
+            "label_1": "col-md-6 text-center",
+            "label_2": "form-group"
+        },
+        "node_value": "SUBMIT & NEXT",
+        "options": null
+    },
+    {
+        "sequence": 0,
+        "node_type": "/fieldset",
+        "node_label": "",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": "",
+        "node_required": "",
+        "node_code": "",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-6",
+            "label_2": "form-group"
+        },
+        "node_value": "",
+        "options": null
+    }
+]

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; display: block;" width="68px" height="68px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+<g><circle cx="76.974" cy="70.698" fill="#2892c9" r="4">
+  <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.7857142857142856s" begin="0s"></animateTransform>
+</circle><circle cx="70.698" cy="76.974" fill="#2892c9" r="4">
+  <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.7857142857142856s" begin="-0.062s"></animateTransform>
+</circle><circle cx="63.011" cy="81.412" fill="#2892c9" r="4">
+  <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.7857142857142856s" begin="-0.125s"></animateTransform>
+</circle><circle cx="54.438" cy="83.709" fill="#2892c9" r="4">
+  <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.7857142857142856s" begin="-0.187s"></animateTransform>
+</circle><circle cx="45.562" cy="83.709" fill="#2892c9" r="4">
+  <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.7857142857142856s" begin="-0.25s"></animateTransform>
+</circle><circle cx="36.989" cy="81.412" fill="#2892c9" r="4">
+  <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.7857142857142856s" begin="-0.312s"></animateTransform>
+</circle><circle cx="29.302" cy="76.974" fill="#2892c9" r="4">
+  <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.7857142857142856s" begin="-0.375s"></animateTransform>
+</circle><circle cx="23.026" cy="70.698" fill="#2892c9" r="4">
+  <animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;360 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.7857142857142856s" begin="-0.437s"></animateTransform>
+</circle><animateTransform attributeName="transform" type="rotate" calcMode="spline" values="0 50 50;0 50 50" times="0;1" keySplines="0.5 0 0.5 1" repeatCount="indefinite" dur="1.7857142857142856s"></animateTransform></g>
+</svg>

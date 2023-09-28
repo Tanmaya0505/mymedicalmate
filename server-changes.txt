@@ -1,0 +1,47 @@
+Change the hostname - public\custom\account-settings.js (var hostname = $(location).attr('origin')+'/medicalmate/cms-admin/';)
+Change the hostname - public\custom\assistant-booking.js (var hostname = $(location).attr('origin')+'/medicalmate/cms-admin/';)
+Change the hostname - public\frontend-source\js\booking-validate.js (var hostname = $(location).attr('origin')+'/medicalmate/';)
+Change the hostname - public\frontend-source\myaccount\assets\js\assistant-validate.js (var hostname = $(location).attr('origin')+'/medicalmate/'+prefix+'/';)
+Change the hostname - public\frontend-source\myaccount\assets\js\user-validate.js (var hostname = $(location).attr('origin')+'/medicalmate/'+prefix+'/';)
+Uncomment the .htaccess file line no - 8,9,12,13
+==========================================================
+Setup the cronjob
+1. Auto Forward booking => http://localhost/medihelp/auto-forward-request
+1. Auto Cancel booking => http://localhost/medihelp/auto-cancel-request
+
+SERVER CRONJOB FOR (delight)
+curl -i http://mymedicalmate.com/auto-forward-request
+curl -i http://mymedicalmate.com/auto-cancel-request
+SERVER CRONJOB FOR (delight)
+curl --silent "mymedicalmate.com/auto-forward-request"> /dev/null 2>&1
+curl --silent "mymedicalmate.com/auto-cancel-request"> /dev/null 2>&1
+
+.cpnael.yml
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mvzvnxjr/mymedicalmate.com/
+    - /bin/cp * $DEPLOYPATH
+
+.gitignore
+/node_modules
+/public/hot
+/public/storage
+/public/assets
+/public/css
+/public/data
+/public/fonts
+/public/images
+/public/js
+/public/vendors
+/storage/*.key
+/vendor
+/frest-shell-scripts
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+!/vendor/
+

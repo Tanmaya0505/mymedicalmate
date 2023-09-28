@@ -1,0 +1,102 @@
+{
+  "configs": [
+    {
+      "node_type": "text",
+      "node_label": "User Route",
+      "node_label_class": "bmd-label-floating",
+      "node_placeholder": "User Route",
+      "node_code": "route",
+      "node_class": "form-control",
+      "node_comment": {
+        "label_1": "col-md-12",
+        "label_2": "form-group"
+      },
+      "node_value": "user",
+      "options": null,
+      "required":true
+    },
+    {
+        "sequence": 2,
+        "node_type": "select",
+        "node_label": "Toastr Msg Position",
+        "node_label_class": "bmd-label-floating",
+        "node_placeholder": null,
+        "node_code": "toastr_msg_position",
+        "node_class": "form-control",
+        "node_comment": {
+            "label_1": "col-md-12",
+            "label_2": "form-group"
+        },
+        "node_value": "4",
+        "options": [
+            {
+                "option_value": "",
+                "option_label": "Select Toastr Msg Position"
+            },
+            {
+                "option_value": 1,
+                "option_label": "Top left"
+            },
+            {
+                "option_value": 2,
+                "option_label": "Top center"
+            },
+            {
+                "option_value": 3,
+                "option_label": "Top right"
+            },
+            {
+                "option_value": 4,
+                "option_label": "Top full"
+            },
+            {
+                "option_value": 5,
+                "option_label": "Bottom left"
+            },
+            {
+                "option_value": 6,
+                "option_label": "Bottom center"
+            },
+            {
+                "option_value": 7,
+                "option_label": "Bottom right"
+            },
+            {
+                "option_value": 8,
+                "option_label": "Bottom full"
+            }
+        ],
+        "required":true
+    },
+    {
+      "node_type": "text",
+      "node_label": "Profile Img Size",
+      "node_label_class": "bmd-label-floating",
+      "node_placeholder": "Profile Img Size",
+      "node_code": "profile_img_size",
+      "node_class": "form-control",
+      "node_comment": {
+        "label_1": "col-md-12",
+        "label_2": "form-group"
+      },
+      "node_value": "266*266",
+      "options": null,
+      "required":true
+    },
+    {
+      "node_type": "text",
+      "node_label": "Assistant Not Available",
+      "node_label_class": "bmd-label-floating",
+      "node_placeholder": "Assistant Not Available",
+      "node_code": "assistant_not_available",
+      "node_class": "form-control",
+      "node_comment": {
+        "label_1": "col-md-12",
+        "label_2": "form-group"
+      },
+      "node_value": "Assistant not available. Please select another date",
+      "options": null,
+      "required":true
+    }
+  ]
+}
