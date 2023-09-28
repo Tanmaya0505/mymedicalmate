@@ -410,7 +410,7 @@ class AlltypeuserController extends Controller {
 
 
                 ]);
-                //dd($request->university_date);
+                //dd($request->full_name);
                 $dr='Dr.';
                 if(!$customerdetail){
                 $customerdetail = new CustomerDetail();

@@ -260,7 +260,7 @@
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="input_wrap">
-                                                                            @if(Auth::user()->id==1 && !empty($datalog->full_name))
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->full_name) && $datalog->full_name !=$data->full_name)
                                                                             <input type="text" name="full_name" onkeydown="return /[a-z, ]/i.test(event.key)" id="full_name" value="{{old('full_name',$datalog->full_name ?? '')}}"   style="padding-left: 40px;color:red;padding-bottom: 10px;">
                                                                             @else
                                                                             <input type="text" name="full_name" onkeydown="return /[a-z, ]/i.test(event.key)"  id="full_name" value="{{old('full_name',$data->full_name ?? '')}}"   style="padding-left: 40px;padding-bottom: 10px;">
@@ -274,7 +274,7 @@
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="select_wrap select">
-                                                                        @if(Auth::user()->id==1 && !empty($datalog->full_name))
+                                                                        @if(Auth::user()->id==1 && !empty($datalog->gender) && $datalog->gender !=$data->gender)
                                                                         <select name="gender" id="gender"   style="padding-left: 40px;color:red; padding-bottom: 10px;">
                                                                                 <option value="" disabled="" selected=""></option>
                                                                                 <option value="Male" {{ old('gender',@$datalog->gender) == "Male" ? 'selected' : '' }}>Male</option>
@@ -299,7 +299,7 @@
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="input_wrap">
-                                                                            @if(Auth::user()->id==1 && !empty($datalog->full_name))
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->mobile) && $datalog->mobile !=$data->mobile)
                                                                             <input type="text" name="mobile_no" id="dmobile_no" oninput="this.value=this.value.replace(/[^0-9]/g,'');"  maxlength="10" value="{{old('mobile_no',$datalog->mobile ?? '')}}"  style="padding-left: 40px;color:red;padding-bottom: 10px;">
                                                                             @else
                                                                             <input type="text" name="mobile_no" id="dmobile_no" oninput="this.value=this.value.replace(/[^0-9]/g,'');"  maxlength="10" value="{{old('mobile_no',$data->mobile ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
@@ -313,7 +313,11 @@
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="input_wrap">
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->email) && $datalog->email !=$data->email)
+                                                                            <input type="email" name="email_id" id="doctor_email"  value="{{old('email_id',$datalog->email ?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                            @else
                                                                             <input type="email" name="email_id" id="doctor_email"  value="{{old('email_id',$data->email ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            @endif
                                                                             <label class="floating-label">Email ID ?</label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg7.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                             @if ($errors->has('email_id')) <span class="error" style="color:red">{{ $errors->first('email_id') }}</span> @endif
@@ -324,7 +328,11 @@
                                                                 <div class="row" style="margin-left: 0px">
                                                                     <div class="form-group" id="location">
                                                                         <div class="input_wrap">
-                                                                            <input type="text" name="doctorqualification"  id="doctorqualification" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" value="{{old('doctorqualification',$data->doctorqualification ?? '')}}" class="@error('doctorqualification') is-invalid @enderror" data-validation-required-message="Enter doctor Qualiftation"  style="padding-left: 40px; padding-bottom: 10px;">
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->doctorqualification) && $datalog->doctorqualification !=$data->doctorqualification)
+                                                                            <input type="text" name="doctorqualification"  id="doctorqualification" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" value="{{old('doctorqualification',$datalog->doctorqualification ?? '')}}"  style="padding-left: 40px;color:red; padding-bottom: 10px;">
+                                                                            @else
+                                                                            <input type="text" name="doctorqualification"  id="doctorqualification" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" value="{{old('doctorqualification',$data->doctorqualification ?? '')}}"  style="padding-left: 40px; padding-bottom: 10px;">
+                                                                            @endif  
                                                                             <i class="fa fa-plus fa9-plus add-qualification" id="add_qualifications"></i>
                                                                             <label class="floating-label">Doctor Qualification ?</label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg27.png')}}" alt="" class="booking-agent1-img fixed-image">
@@ -333,10 +341,18 @@
                                                                     </div>
                                                                     <div class="form-group" id="locations" style="margin-left: 10px;">
                                                                         <div class="select_wrap select">
-                                                                        <input type="text" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" name="univercity" id="univercity" maxlength="50" value="{{old('univercity',$data->univercity ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->univercity) && $datalog->univercity !=$data->univercity)
+                                                                            <input type="text" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" name="univercity" id="univercity" maxlength="50" value="{{old('univercity',$datalog->univercity ?? '')}}"  style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            @else
+                                                                            <input type="text" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" name="univercity" id="univercity" maxlength="50" value="{{old('univercity',$data->univercity ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            @endif
                                                                             <label class="floating-label">university ?</label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg15.png')}}" alt="" class="booking-agent1-img">
-                                                                            <input type="text" oninput="this.value=this.value.replace(/[^0-9]/, '');" maxlength="4"  @if($data->university_date ?? '') value="{{old('university_date',$data->university_date ?? '')}}" @else value="{{old('university_date')}}" @endif id="university_date" name='university_date' />
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->university_date) && $datalog->university_date !=$data->university_date)
+                                                                            <input type="text" id="university_date" name="university_date" oninput="this.value=this.value.replace(/[^0-9]/, '');" maxlength="4"  @if($data->university_date ?? '') value="{{old('university_date',$datalog->university_date ?? '')}}" @else value="{{old('university_date')}}" @endif style="color:red;">
+                                                                            @else
+                                                                            <input type="text" id="university_date" name="university_date" oninput="this.value=this.value.replace(/[^0-9]/, '');" maxlength="4"  @if($data->university_date ?? '') value="{{old('university_date',$data->university_date ?? '')}}" @else value="{{old('university_date')}}" @endif  />
+                                                                            @endif
                                                                             @if ($errors->has('univercity')) <span class="error" style="color:red">{{ $errors->first('univercity') }}</span> @endif
                                                                             @if ($errors->has('university_date')) <span class="error" style="color:red">{{ $errors->first('university_date') }}</span> @endif
                                                                         </div>
@@ -352,11 +368,19 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <div class="select_wrap">
-                                                                                        <select name="slefemp_emplaye" id="slefemp_emplaye" style="padding-left: 40px;padding-bottom: 10px;">
-                                                                                            <option value="" disabled="" selected=""></option>
-                                                                                            <option value="Self-Employed" {{ old('slefemp_emplaye',@$data->slefemp_emplaye) == "Self-Employed" ? 'selected' : '' }}>Self-Employed</option>
-                                                                                            <option value="Employed" {{ old('slefemp_emplaye',@$data->slefemp_emplaye) == "Employed" ? 'selected' : '' }}>Employed</option>
-                                                                                        </select>
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->slefemp_emplaye) && $datalog->slefemp_emplaye !=$data->slefemp_emplaye)
+                                                                                            <select name="slefemp_emplaye" id="slefemp_emplaye" style="padding-left: 40px; color:red;padding-bottom: 10px;">
+                                                                                                <option value="" disabled="" selected=""></option>
+                                                                                                <option value="Self-Employed" {{ old('slefemp_emplaye',@$datalog->slefemp_emplaye) == "Self-Employed" ? 'selected' : '' }}>Self-Employed</option>
+                                                                                                <option value="Employed" {{ old('slefemp_emplaye',@$datalog->slefemp_emplaye) == "Employed" ? 'selected' : '' }}>Employed</option>
+                                                                                            </select>
+                                                                                        @else
+                                                                                            <select name="slefemp_emplaye" id="slefemp_emplaye" style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                                <option value="" disabled="" selected=""></option>
+                                                                                                <option value="Self-Employed" {{ old('slefemp_emplaye',@$data->slefemp_emplaye) == "Self-Employed" ? 'selected' : '' }}>Self-Employed</option>
+                                                                                                <option value="Employed" {{ old('slefemp_emplaye',@$data->slefemp_emplaye) == "Employed" ? 'selected' : '' }}>Employed</option>
+                                                                                            </select>
+                                                                                        @endif
                                                                                         <label class="floating-label">Select Employed/Self-Employed?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg8.png')}}" alt="" class="booking-agent1-img">
                                                                                         @if ($errors->has('slefemp_emplaye')) <span class="error" style="color:red">{{ $errors->first('slefemp_emplaye') }}</span> @endif
@@ -366,7 +390,11 @@
                                                                             <div class="col-md-4 remove-on-add">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->designation) && $datalog->designation !=$data->designation)
+                                                                                        <input type="text" name="designation" id="designation" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" value="{{old('designation',$datalog->designation ?? '')}}"  style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
                                                                                         <input type="text" name="designation" id="designation" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" value="{{old('designation',$data->designation ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">Designation ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/h-desig.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('designation')) <span class="error" style="color:red">{{ $errors->first('designation') }}</span> @endif
@@ -376,7 +404,11 @@
                                                                             <div class="col-md-4 remove-on-add">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->department) && $datalog->department !=$data->department)
+                                                                                        <input type="text" name="department" id="department" oninput="this.value=this.value.replace(/[^a-z, ]/,'');" value="{{old('department',$datalog->department ?? '')}}"  style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
                                                                                         <input type="text" name="department" id="department" oninput="this.value=this.value.replace(/[^a-z, ]/,'');" value="{{old('department',$data->department ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">Department ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg15.png')}}" alt="" class="booking-agent1-img">
                                                                                         @if ($errors->has('department')) <span class="error" style="color:red">{{ $errors->first('department') }}</span> @endif
@@ -386,7 +418,11 @@
                                                                             <div class="col-md-4 remove-on-add">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
-                                                                                        <input type="text" name="totalexprience" id="totalexprience" onKeyUp="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}" maxlength="2" max="60" oninput="this.value=this.value.replace(/[^\d]/, '');" value="{{old('totalexprience',$data->total_experience ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->total_experience) && $datalog->total_experience !=$data->total_experience)
+                                                                                        <input type="text" name="totalexprience" id="totalexprience" onKeyUp="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}" maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/, '');" value="{{old('totalexprience',$datalog->total_experience ?? '')}}"  style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
+                                                                                        <input type="text" name="totalexprience" id="totalexprience" onKeyUp="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}" maxlength="2"  oninput="this.value=this.value.replace(/[^0-9]/, '');" value="{{old('totalexprience',$data->total_experience ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">Total Experience ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg23.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('totalexprience')) <span class="error" style="color:red">{{ $errors->first('totalexprience') }}</span> @endif
@@ -396,7 +432,11 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
-                                                                                        <input type="text" name="orgnization_name" id="orgnization_name" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('orgnization_name',$data->orgnization_name ?? '')}}" style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->orgnization_name) && $datalog->orgnization_name !=$data->orgnization_name)
+                                                                                        <input type="text" name="orgnization_name" id="orgnization_name" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('orgnization_name',$datalog->orgnization_name ?? '')}}" style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
+                                                                                        <input type="text" name="orgnization_name" id="orgnization_name" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('orgnization_name',$data->orgnization_name ?? '')}}" style="padding-left:40px;padding-bottom: 10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">Organization Name ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg11.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('orgnization_name')) <span class="error" style="color:red">{{ $errors->first('orgnization_name') }}</span> @endif
@@ -406,7 +446,11 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
-                                                                                        <input type="text" name="orgnization_location" id="orgnization_location" oninput="this.value=this.value.replace(/[^a-z0-9, ]/,'');"  value="{{old('orgnization_location',$data->location ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->location) && $datalog->location !=$data->location)
+                                                                                        <input type="text" name="orgnization_location" id="orgnization_location" oninput="this.value=this.value.replace(/[^a-z0-9, ]/,'');"  value="{{old('orgnization_location',$datalog->location ?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
+                                                                                        <input type="text" name="orgnization_location" id="orgnization_location" oninput="this.value=this.value.replace(/[^a-z0-9, ]/,'');"  value="{{old('orgnization_location',$data->location ?? '')}}"  style="padding-left:40px;padding-bottom:10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">Organization Location ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg14.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('orgnization_location')) <span class="error" style="color:red">{{ $errors->first('orgnization_location') }}</span> @endif
@@ -417,7 +461,11 @@
                                                                                 <div class="form-group">
 
                                                                                     <div class="input_wrap">
-                                                                                        <input type="text" name="state_city" id="state_city" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('state_city',$data->state_city ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->state_city) && $datalog->state_city !=$data->state_city)
+                                                                                        <input type="text" name="state_city" id="state_city" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('state_city',$datalog->state_city ?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
+                                                                                        <input type="text" name="state_city" id="state_city" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('state_city',$data->state_city ?? '')}}"  style="padding-left:40px;padding-bottom: 10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">In Which State/City ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg14.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('state_city')) <span class="error" style="color:red">{{ $errors->first('state_city') }}</span> @endif
@@ -427,7 +475,11 @@
                                                                             <div class="col-md-4">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
-                                                                                        <input type="text" name="landmark_pincode" oninput="this.value=this.value.replace(/[^a-z0-9, ]/gi,'');"  id="landmark_pincode"  value="{{old('landmark_pincode',$data->landmark_pincode ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->landmark_pincode) && $datalog->landmark_pincode !=$data->landmark_pincode)
+                                                                                        <input type="text" name="landmark_pincode" oninput="this.value=this.value.replace(/[^a-z0-9, ]/gi,'');"  id="landmark_pincode"  value="{{old('landmark_pincode',$datalog->landmark_pincode ?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
+                                                                                        <input type="text" name="landmark_pincode" oninput="this.value=this.value.replace(/[^a-z0-9, ]/gi,'');"  id="landmark_pincode"  value="{{old('landmark_pincode',$data->landmark_pincode ?? '')}}"  style="padding-left:40px;padding-bottom: 10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">Landmark with pincode ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg14.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('landmark_pincode')) <span class="error" style="color:red">{{ $errors->first('landmark_pincode') }}</span> @endif
@@ -438,18 +490,24 @@
                                                                                 <div class="checkbox-dropdown"><img src="{{asset('csm-admin/all_type_doctor/img/reg4.png')}}" alt="" class="booking-agent1-img fixed-image" style="margin-top: -2px; margin-left: -2px">
                                                                                     Availability Of Days
                                                                                     <ul class="checkbox-dropdown-list">
-                                                                                        @php $result = explode(",",$data->avl_days ?? ''); @endphp
+                                                                                        @php $result = explode(",",$data->avl_days ?? ''); $resultlog = explode(",",$datalog->avl_days ?? ''); @endphp
                                                                                         <li>
                                                                                             <label>
                                                                                                 <input type="checkbox" class="check-box-11" id="checkAll" value="" name="checkAll">All Day</label>
                                                                                         </li>
                                                                                         <li>
-                                                                                            <label>
-                                                                                                <input type="checkbox" class="check-box-11"  value="SUNDAY" {{ old('avl_days.0', in_array("SUNDAY",$result))== "SUNDAY" ? 'checked' : '' }} name="avl_days[]">Sunday</label>
+                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $result !=$resultlog)
+                                                                                            <label style="color: red;"><input type="checkbox" class="check-box-11"  value="SUNDAY" {{ old('avl_days.0', in_array("SUNDAY",$resultlog))== "SUNDAY" ? 'checked' : '' }} name="avl_days[]">Sunday</label>
+                                                                                            @else
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="SUNDAY" {{ old('avl_days.0', in_array("SUNDAY",$result))== "SUNDAY" ? 'checked' : '' }} name="avl_days[]">Sunday</label>
+                                                                                            @endif   
                                                                                         </li>
                                                                                         <li>
-                                                                                            <label>
-                                                                                                <input type="checkbox" class="check-box-11"  value="MONDAY" {{ old('avl_days.1', in_array("MONDAY",$result))== "MONDAY" ? 'checked' : '' }} name="avl_days[]">Monday</label>
+                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $result !=$resultlog)
+                                                                                            <label style="color: red;"><input type="checkbox" class="check-box-11"  value="MONDAY" {{ old('avl_days.1', in_array("MONDAY",$resultlog))== "MONDAY" ? 'checked' : '' }} name="avl_days[]">Monday</label>
+                                                                                            @else
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="MONDAY" {{ old('avl_days.1', in_array("MONDAY",$result))== "MONDAY" ? 'checked' : '' }} name="avl_days[]">Monday</label>
+                                                                                            @endif
                                                                                         </li>
                                                                                         <li>
                                                                                             <label>
@@ -1501,7 +1559,6 @@
         if (!$('input:checkbox').is('checked')) {
             $('input:checkbox').prop('checked', true);
         } else {
-            alert(2222222);
             $('input:checkbox').prop('checked', false);
         }
     });
