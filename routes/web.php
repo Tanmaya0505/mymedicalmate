@@ -363,8 +363,8 @@ Route::group(['prefix' => 'cms-admin'],function() {
         Route::any('alltype-user/{type}','AlltypeuserController@alltypeusers');
         Route::get('alltype-user/{type}/add','AlltypeuserController@addalltypeusers');
         Route::post('postalltype-user/{type}','AlltypeuserController@postalltypeusers');
-        Route::post('/alltype-user/doctorVeryfiyOtp','AlltypeuserController@doctorVeryfiyOtp');
-        Route::post('/alltype-user/ViewDoctor','AlltypeuserController@ViewDoctor');
+        Route::post('/alltype-user/{type}/doctorVeryfiyOtp','AlltypeuserController@doctorVeryfiyOtp');
+        Route::post('/alltype-user/{type}/ViewDoctor','AlltypeuserController@ViewDoctor');
         Route::post('/alltype-user/alltypeuserlog/{type}','AlltypeuserController@alltypeuserlog');
 
         Route::get('alltype-ads','AlltypeuserController@alltypeads');

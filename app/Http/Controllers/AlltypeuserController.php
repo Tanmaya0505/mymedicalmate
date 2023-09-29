@@ -112,7 +112,7 @@ class AlltypeuserController extends Controller {
         
         return back();
     }
-    public function doctorVeryfiyOtp(Request $request){
+    public function doctorVeryfiyOtp(Request $request,$type){
        // $json=json_decode($request->input('submit-data'));
         //dd($json->email);
         //dd($request->email);
@@ -140,7 +140,8 @@ class AlltypeuserController extends Controller {
         //End email function
         
         //if($email) {
-            return response()->json(['code' => 200,'response' => "SUCCESS",'otp' => $otp, 'message' => "Verification code sent to ".$request->input('email')]);
+            return response()->json(['code' => 200,'response' => "SUCCESS",'otp' => $otp, 'message' => "Verification code sent to ".$request->input('email')])
+            ->header('Access-Control-Allow-Origin', '*')->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
         //}else{
             //return response()->json(['code' => 204,'response' => "ERROR", 'message' => "Oops!! Verification code not sent"]);
         //}

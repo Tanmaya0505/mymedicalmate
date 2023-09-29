@@ -336,7 +336,7 @@
                                                                             <i class="fa fa-plus fa9-plus add-qualification" id="add_qualifications"></i>
                                                                             <label class="floating-label">Doctor Qualification ?</label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg27.png')}}" alt="" class="booking-agent1-img fixed-image">
-                                                                            @if ($errors->has('doctorqualification')) <span class="error" style="color:red">{{ $errors->first('doctorqualification') }}</span> @endif  university_date
+                                                                            @if ($errors->has('doctorqualification')) <span class="error" style="color:red">{{ $errors->first('doctorqualification') }}</span> @endif
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group" id="locations" style="margin-left: 10px;">
@@ -405,9 +405,9 @@
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
                                                                                         @if(Auth::user()->id==1 && !empty($datalog->department) && $datalog->department !=$data->department)
-                                                                                        <input type="text" name="department" id="department" oninput="this.value=this.value.replace(/[^a-z, ]/,'');" value="{{old('department',$datalog->department ?? '')}}"  style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                                        <input type="text" name="department" id="department" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('department',$datalog->department ?? '')}}"  style="padding-left: 40px;color:red;padding-bottom: 10px;">
                                                                                         @else
-                                                                                        <input type="text" name="department" id="department" oninput="this.value=this.value.replace(/[^a-z, ]/,'');" value="{{old('department',$data->department ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        <input type="text" name="department" id="department" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('department',$data->department ?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
                                                                                         @endif
                                                                                         <label class="floating-label">Department ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg15.png')}}" alt="" class="booking-agent1-img">
@@ -447,9 +447,9 @@
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
                                                                                         @if(Auth::user()->id==1 && !empty($datalog->location) && $datalog->location !=$data->location)
-                                                                                        <input type="text" name="orgnization_location" id="orgnization_location" oninput="this.value=this.value.replace(/[^a-z0-9, ]/,'');"  value="{{old('orgnization_location',$datalog->location ?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                        <input type="text" name="orgnization_location" id="orgnization_location" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');"  value="{{old('orgnization_location',$datalog->location ?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
                                                                                         @else
-                                                                                        <input type="text" name="orgnization_location" id="orgnization_location" oninput="this.value=this.value.replace(/[^a-z0-9, ]/,'');"  value="{{old('orgnization_location',$data->location ?? '')}}"  style="padding-left:40px;padding-bottom:10px;">
+                                                                                        <input type="text" name="orgnization_location" id="orgnization_location" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');"  value="{{old('orgnization_location',$data->location ?? '')}}"  style="padding-left:40px;padding-bottom:10px;">
                                                                                         @endif
                                                                                         <label class="floating-label">Organization Location ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg14.png')}}" alt="" class="booking-agent1-img fixed-image">
@@ -547,7 +547,7 @@
                                                                             <div class="col-md-4 ht-30">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap"> 
-                                                                                        <input type="time" name="to_time" id="to_time" @if($data->to_time ?? '') value="{{date('H:i',strtotime($data->to_time ?? ''))}}" @else value="{{old('to_time')}}" @endif style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        <input type="time" name="to_time" min=""  id="to_time" @if($data->to_time ?? '') value="{{date('H:i',strtotime($data->to_time ?? ''))}}" @else value="{{old('to_time')}}" @endif style="padding-left: 40px;padding-bottom: 10px;">
                                                                                         <label class="floating-label">To Time(Opt.) ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg2.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('to_time')) <span class="error" style="color:red">{{ $errors->first('to_time') }}</span> @endif
@@ -1555,19 +1555,15 @@
 </script>
 <script>
     $("#checkAll").change(function() {
-
-        if (!$('input:checkbox').is('checked')) {
+        var ischecked= $(this).is(':checked');
+        if (ischecked) {
             $('input:checkbox').prop('checked', true);
         } else {
             $('input:checkbox').prop('checked', false);
         }
     });
-    // $('#checkAll').click(function() {
-    //     if($('input:checkbox').is('checked')){
-    //         $('input:checkbox').prop('checked', false);
-    //     }
-    // });
     
+ 
 </script>
 <script>
     $('#add_qualifications').hide(); 
@@ -1666,6 +1662,11 @@
             document.getElementById('twentyPercent').value = percent;
         }
         
+    }
+
+    document.getElementById("from_time").onchange = function () {
+        var input = document.getElementById("to_time");
+        input.setAttribute("min", this.value);
     }
 
     $(document).ready(function(){

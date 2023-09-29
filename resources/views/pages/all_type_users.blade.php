@@ -195,9 +195,10 @@
                                                                                 </tr>
                                                                             </thead>
                                                                             <tbody>
+                                                                                @php $n = 1; @endphp
                                                                                 @forelse($data as $key=>$value)
                                                                                 <tr class="odd">
-                                                                                    <td class="sorting_1">{{ $value->id}}</td>
+                                                                                    <td class="sorting_1">{{ $n++}}</td>
                                                                                     <td title="{{  $value->full_name }}">
                                                                                         {{ $value->full_name}}
                                                                                     </td>
@@ -209,7 +210,7 @@
                                                                                         <button class="btn btn-doc-veri">Verified&nbsp;<i class="fa fa-check-circle-o"></i></button><br>
                                                                                     </td>
                                                                                     <td>
-                                                                                        <form action="{{url('cms-admin/alltype-user/doctorVeryfiyOtp')}}" enctype="multipart/form-data" method="POST" id="docotpform">
+                                                                                        <form action="{{url('cms-admin/alltype-user/doctor/doctorVeryfiyOtp')}}" enctype="multipart/form-data" method="POST" id="docotpform">
                                                                                         @csrf
                                                                                         <input hidden value="{{$value->full_name}}"  type="text"  name="name" id="name" />
                                                                                         <input hidden  value="{{$value->mobile}}" type="text" name="mobile" id="mobile" />
@@ -714,10 +715,12 @@ $(document).ready(function() {
         let email = form.find("input[name=email]").val();
         let mobile = form.find("input[name=mobile]").val();
         let _token   = $('meta[name="csrf-token"]').attr('content');
-        
+        let urldecode ="{{url('cms-admin/alltype-user/doctor/doctorVeryfiyOtp')}}";
+        var url = form.attr("action");
+        alert();
         $.ajax({
             type:"POST",
-            url:"{{url('cms-admin/alltype-user/doctorVeryfiyOtp')}}",
+            url:url,
            // data:{name: full_name, mobile: doctor_mobile, email: doctor_email},
            // data   : $('form[id=docotpform]').serialize(),
            //data: data,
@@ -728,10 +731,10 @@ $(document).ready(function() {
             _token: _token,
              },
              formElement:form,
-            success: function(data){
-                console.log(data);
+            success: function(respone){
+                console.log(respone);
                 $("#myModal").modal('show');
-                //alert("Form Submited Successfully"); verifyCode
+                alert("Form Submited Successfully"); 
             }
         });
     });
@@ -752,7 +755,7 @@ $(document).ready(function(){
 
         $.ajax({
             type:"POST",
-            url:"{{ url('/cms-admin/alltype-user/ViewDoctor/') }}",
+            url:"{{ url('/cms-admin/alltype-user/doctor/ViewDoctor/') }}",
             //data:form.serialize(),
             data:{
             otp:otp,   
