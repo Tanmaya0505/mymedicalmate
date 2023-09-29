@@ -37,8 +37,8 @@
     padding-left: 8px;
     box-shadow: none;
     padding-top: 0px;
-    margin-top: -47px;
-    margin-left: 111px;
+    margin-top: -67px;
+    margin-left: 157px;
     z-index: 2;
     position: absolute;
 }
@@ -349,9 +349,19 @@
                                                                             <label class="floating-label">university ?</label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg15.png')}}" alt="" class="booking-agent1-img">
                                                                             @if(Auth::user()->id==1 && !empty($datalog->university_date) && $datalog->university_date !=$data->university_date)
-                                                                            <input type="text" id="university_date" name="university_date" oninput="this.value=this.value.replace(/[^0-9]/, '');" maxlength="4"  @if($data->university_date ?? '') value="{{old('university_date',$datalog->university_date ?? '')}}" @else value="{{old('university_date')}}" @endif style="color:red;">
+                                                                            <select class="form-control" id="university_date" name="university_date" style="color:red;">
+                                                                                <option>--years--</option>
+                                                                                @for($year = (int)date('Y'); 1900 <= $year; $year--)
+                                                                                <option value="{{$year}}"  {{ old('university_date',@$datalog->university_date) == $year ? 'selected' : '' }}>{{old('university_date',$year)}}</option>
+                                                                                @endfor
+                                                                            </select>
                                                                             @else
-                                                                            <input type="text" id="university_date" name="university_date" oninput="this.value=this.value.replace(/[^0-9]/, '');" maxlength="4"  @if($data->university_date ?? '') value="{{old('university_date',$data->university_date ?? '')}}" @else value="{{old('university_date')}}" @endif  />
+                                                                            <select class="form-control" id="university_date" name="university_date">
+                                                                                <option>--years--</option>
+                                                                                @for($year = (int)date('Y'); 1900 <= $year; $year--)
+                                                                                <option value="{{$year}}" {{ old('university_date',@$data->university_date) == $year ? 'selected' : '' }}>{{old('university_date',$year)}}</option>
+                                                                                @endfor
+                                                                            </select>   
                                                                             @endif
                                                                             @if ($errors->has('univercity')) <span class="error" style="color:red">{{ $errors->first('univercity') }}</span> @endif
                                                                             @if ($errors->has('university_date')) <span class="error" style="color:red">{{ $errors->first('university_date') }}</span> @endif
@@ -1549,7 +1559,7 @@
         attachAvailabilityHandlers($("#newWorking"));
 
         function openDay(sectionCount) {
-            // Implement your openDay logic here
+            // Implement your openDay logic here  avl_days
         }
     });
 </script>
@@ -1562,8 +1572,21 @@
             $('input:checkbox').prop('checked', false);
         }
     });
-    
- 
+    $("input[name='avl_days[]']").change(function(){
+        var isunchecked= $(this).prop('checked', false);
+        if(isunchecked){
+            $("#checkAll").prop('checked', false);
+        }
+
+    });
+</script>
+<script type="text/javascript">
+    let startYear = 1800;
+    let endYear = new Date().getFullYear();
+    for (i = endYear; i > startYear; i--)
+    {
+        $('#yearpicker').append($('<option />').val(i).html(i));
+    }
 </script>
 <script>
     $('#add_qualifications').hide(); 
