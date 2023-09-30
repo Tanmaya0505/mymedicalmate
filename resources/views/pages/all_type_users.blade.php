@@ -207,7 +207,14 @@
                                                                                     <td>{{ $value->total_experience }}</td>
                                                                                     <td>{{ $value->location }}</td>
                                                                                     <td>
+                                                                                        @if(@$value->status==1)
                                                                                         <button class="btn btn-doc-veri">Verified&nbsp;<i class="fa fa-check-circle-o"></i></button><br>
+                                                                                        @elseif(@$value->status==0)
+                                                                                        <a href=""> <button class="btn btn-doc-veri-no">Unverified&nbsp;<i class="fa fa-times-circle"></i></button></a>
+                                                                                        @elseif(@$value->status==2)
+                                                                                        <a href=""> <button class="btn btn-doc-veri-pen">Pending&nbsp;<i class="fa fa-ellipsis-h"></i></button>
+                                                                                        </a>
+                                                                                        @endif
                                                                                     </td>
                                                                                     <td>
                                                                                         <form action="{{url('cms-admin/alltype-user/doctor/doctorVeryfiyOtp')}}" enctype="multipart/form-data" method="POST" id="docotpform">
