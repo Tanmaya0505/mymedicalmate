@@ -224,7 +224,14 @@
                                                                                         <input hidden  type="text"  value="{{$value->email}}" name="email" id="email" />
                                                                                         <button  type="button" class="btn btn-doc-view open-AddBookOtp" id="submit-data" data-id="{{$value->id}}" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa fa-eye"></i>&nbsp; </button>
                                                                                          </form>
-                                                                                        <a class="btn btn-doc-edit" href="{{ url('/cms-admin/alltype-user/doctor/edit/'.$value->id) }}" role="button"><i class="fas fa-edit"></i>&nbsp;</a>
+                                                                                         <form action="{{url('cms-admin/alltype-user/doctor/doctorVeryfiyOtp')}}" method="POST" id="docotpformedit">
+                                                                                         @csrf
+                                                                                            <input hidden value="{{$value->full_name}}"  type="text"  name="name" id="name" />
+                                                                                            <input hidden  value="{{$value->mobile}}" type="text" name="mobile" id="mobile" />
+                                                                                            <input hidden  type="text"  value="{{$value->email}}" name="email" id="email" />            
+                                                                                            <button type="button" class="btn btn-doc-edit open-editOtp" id="editsubmit_data" data-id="{{$value->id}}" data-bs-toggle="modal" data-bs-target="#myModal-2"><i class="fas fa-edit"></i>&nbsp;</button>
+                                                                                         </form>
+                                                                                         <!-- <a class="btn btn-doc-edit" href="{{ url('/cms-admin/alltype-user/doctor/edit/'.$value->id) }}" data-bs-target="#myModaledit" role="button"><i class="fas fa-edit"></i>&nbsp;</a> -->
                                                                                         <!-- <button class="btn btn-doc-veri-dlt" data-bs-toggle="modal" data-bs-target="#myModaldlt"><i class="fa fa-trash"></i>&nbsp;</button> -->
                                                                                         <a class="btn btn-doc-veri-dlt" href="{{ url('/cms-admin/alltype-user/doctor/delete/'.$value->id) }}" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash"></i></a>
                                                                                     </td>
@@ -288,12 +295,12 @@
                                         </div>
                                         <!--Modal start of view button-->
                                         <!-- The Modal -->
-                                        <div class="modal" id="myModal">
+                                        <div class="modal" id="myModal" role="dialog">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                                     <!-- Modal body -->
-                                                    <form action="{{ url('/cms-admin/alltype-user/ViewDoctor') }}" id="formsubmitopt" method="POST" >
+                                                    <form action="{{ url('/cms-admin/alltype-user/doctor/ViewDoctor/') }}" id="formsubmitopt" method="POST" >
                                                        @csrf
                                                         <div class="modal-body">
                                                             <p class="admin-modal-text1">Your OTP has been sent to register email address admin@mymedicalmate.com</p>
@@ -320,29 +327,27 @@
                                         <!--Modal end of view button-->
                                         <!--Modal start of edit button-->
                                         <!-- The Modal -->
-                                        <div class="modal" id="myModaledit">
+                                        <div class="modal" id="myModal-2">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                                     <!-- Modal body -->
+                                                    <form action="{{ url('/cms-admin/alltype-user/doctor/EditDoctor/') }}" method="POST" id="formsubmedititopt" >
+                                                    @csrf
                                                     <div class="modal-body">
                                                         <p class="admin-modal-text1">Your OTP has been sent to register email address admin@mymedicalmate.com</p>
 
                                                         <p class="admin-modal-text1">Please Enter the five digit of OTP in below box</p>
                                                         <div class="verification-code">
-
-                                                            <div class="verification-code--inputs">
-                                                                <input type="text" maxlength="1" />
-                                                                <input type="text" maxlength="1" />
-                                                                <input type="text" maxlength="1" />
-                                                                <input type="text" maxlength="1" />
-                                                                <input type="text" maxlength="1" />
+                                                            <div class="from-group">
+                                                                <input type="text" class="form-controller" name="otp" />
 
                                                             </div>
-                                                            <input type="hidden" id="verificationCode"  />
                                                         </div>
-                                                        <center><a href="" class="btn btn-success">Submit</a></center>
+                                                        <input type="hidden" id="verificationeditCode" name="editverifyCode" value=""/>
+                                                        <center><button type="button" id="submiteditopt" class="btn btn-success">Submit</button></center>
                                                     </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -704,20 +709,6 @@ $(document).ready(function() {
         e.preventDefault();
        // var form = $("#docotpform");
         let form = $(this).closest('#docotpform');
-
-        // var inputs = $('#docotpform');
-        // if (input.length === 0) {
-        //     //show input error on the form
-        // }
-        // var data = {}
-        // inputs.each(function (i, input) {
-        //     var elem = $(input);
-
-        //     data['name' + i] = elem.find('[id="name' + i +'"]').val();
-        //     data['email' + i] = elem.find('[id="email' + i +'"]').val();
-        //     data['mobile' + i] = elem.find('[id="mobile' + i +'"]').val();
-        // });
-        //alert(form.attr("form[id=docotpform]"))
         let name = form.find("input[name=name]").val();
         let email = form.find("input[name=email]").val();
         let mobile = form.find("input[name=mobile]").val();
@@ -745,14 +736,42 @@ $(document).ready(function() {
             }
         });
     });
+
+    $(document).on('click','#editsubmit_data',function(e){
+        e.preventDefault();
+       // var form = $("#docotpform");
+        let form = $(this).closest('#docotpformedit');
+        let name = form.find("input[name=name]").val();
+        let email = form.find("input[name=email]").val();
+        let mobile = form.find("input[name=mobile]").val();
+        let _token   = $('meta[name="csrf-token"]').attr('content');
+        let urldecode ="{{url('cms-admin/alltype-user/doctor/doctorVeryfiyOtp')}}";
+        var url = form.attr("action");
+        $.ajax({
+            type:"POST",
+            url:url,
+           // data:{name: full_name, mobile: doctor_mobile, email: doctor_email},
+           // data   : $('form[id=docotpform]').serialize(),
+           //data: data,
+           data:{
+            name:name,
+            email:email,
+            mobile :mobile,
+            _token: _token,
+             },
+             formElement:form,
+            success: function(respone){
+                console.log(respone);
+                $("#myModaledit").modal('show');
+                alert("Form Submited Successfully"); 
+            }
+        });
+
+    });
 });
 $(document).ready(function(){
     $(document).on('click','#submitopt',function(e){
         e.preventDefault();
-        //var form = $(this).closest('#formsubmitopt'); {{ url('/cms-admin/alltype-user/ViewDoctor/') }}
-        // var form = $("#formsubmitopt");
-        // var url=form.attr('action');
-        // var merhord = form.attr('method');
         var form = $(this).closest('#formsubmitopt');
         //var url=form.attr('action');
         //var method = form.attr('method');
@@ -785,14 +804,57 @@ $(document).ready(function(){
         });
 
     });
+    $(document).on('click','#submiteditopt',function(e){
+        e.preventDefault();
+        var form = $(this).closest('#formsubmedititopt');
+        //var url=form.attr('action');
+        //var method = form.attr('method');
+        let verifyId = form.find("input[id=verificationeditCode]").val();
+        let otp = form.find("input[name=otp]").val();
+        let _token   = $('meta[name="csrf-token"]').attr('content');
+        alert(verifyId);
+
+        $.ajax({
+            type:"POST",
+            url:"{{ url('/cms-admin/alltype-user/doctor/EditDoctor/') }}",
+            //data:form.serialize(),
+            data:{
+            otp:otp,   
+            verifyId :verifyId,
+            _token: _token,
+             },
+             formElement:form,
+            success: function(data){
+                //alert(data);
+                if(data.code == 204){
+                    //$("#subscribe_result").html(result.error); 
+                    alert("please enter correct OTP"); 
+                }
+                else{
+                    window.location = "{{ url('/cms-admin/alltype-user/doctor/edit/') }}/"+verifyId;
+                    //location.window.href = "redirect user to the thank you page";
+                }
+
+            }
+        });
+
+    });
 });
 $(document).ready(function () {
     $(".open-AddBookOtp").click(function () {
-       // let user_id   =  $('#verificationCode').val($(this).data('id'));
+       // let user_id   =  $('#verificationCode').val($(this).data('id')); 
         var user_id = $(this).data('id');
 		$(".modal-body #verificationCode").val( user_id );
          //alert(user_id);
         $('#myModal').modal('show');
+    });
+
+    $(".open-editOtp").click(function () {
+       // let user_id   =  $('#verificationCode').val($(this).data('id'));
+        var user_id = $(this).data('id');
+		$(".modal-body #verificationeditCode").val( user_id );
+         //alert(user_id);
+        $('#myModal-2').modal('show');
     });
 });  
 </script>  
