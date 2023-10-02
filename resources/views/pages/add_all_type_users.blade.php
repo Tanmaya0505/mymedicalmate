@@ -42,6 +42,15 @@
     z-index: 2;
     position: absolute;
 }
+.view{
+    float: left;
+    border: none;
+    background-color: #154E83;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
     
 </style>
 @endsection
@@ -500,44 +509,59 @@
                                                                                 <div class="checkbox-dropdown"><img src="{{asset('csm-admin/all_type_doctor/img/reg4.png')}}" alt="" class="booking-agent1-img fixed-image" style="margin-top: -2px; margin-left: -2px">
                                                                                     Availability Of Days
                                                                                     <ul class="checkbox-dropdown-list">
-                                                                                        @php $result = explode(",",$data->avl_days ?? ''); $resultlog = explode(",",$datalog->avl_days ?? ''); @endphp
+                                                                                        @php $result = explode(",",$data->avl_days ?? ''); $resultlog = explode(",",$datalog->avl_days ?? ''); $arrydif=array_diff($result, $resultlog) === array_diff($resultlog, $result); @endphp
                                                                                         <li>
                                                                                             <label>
                                                                                                 <input type="checkbox" class="check-box-11" id="checkAll" value="" name="checkAll">All Day</label>
                                                                                         </li>
                                                                                         <li>
-                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $result !=$resultlog)
+                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $arrydif !=1)
                                                                                             <label style="color: red;"><input type="checkbox" class="check-box-11"  value="SUNDAY" {{ old('avl_days.0', in_array("SUNDAY",$resultlog))== "SUNDAY" ? 'checked' : '' }} name="avl_days[]">Sunday</label>
                                                                                             @else
                                                                                             <label><input type="checkbox" class="check-box-11"  value="SUNDAY" {{ old('avl_days.0', in_array("SUNDAY",$result))== "SUNDAY" ? 'checked' : '' }} name="avl_days[]">Sunday</label>
                                                                                             @endif   
                                                                                         </li>
                                                                                         <li>
-                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $result !=$resultlog)
+                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $arrydif !=1)
                                                                                             <label style="color: red;"><input type="checkbox" class="check-box-11"  value="MONDAY" {{ old('avl_days.1', in_array("MONDAY",$resultlog))== "MONDAY" ? 'checked' : '' }} name="avl_days[]">Monday</label>
                                                                                             @else
                                                                                             <label><input type="checkbox" class="check-box-11"  value="MONDAY" {{ old('avl_days.1', in_array("MONDAY",$result))== "MONDAY" ? 'checked' : '' }} name="avl_days[]">Monday</label>
                                                                                             @endif
                                                                                         </li>
                                                                                         <li>
-                                                                                            <label>
-                                                                                                <input type="checkbox" class="check-box-11"  value="TUESDAY" {{ old('avl_days.2', in_array("TUESDAY",$result))== "TUESDAY" ? 'checked' : '' }} name="avl_days[]">Tuesday</label>
+                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $arrydif !=1)
+                                                                                            <label style="color: red;"><input type="checkbox" class="check-box-11"  value="TUESDAY" {{ old('avl_days.2', in_array("TUESDAY",$resultlog))== "TUESDAY" ? 'checked' : '' }} name="avl_days[]">Tuesday</label>
+                                                                                            @else
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="TUESDAY" {{ old('avl_days.2', in_array("TUESDAY",$result))== "TUESDAY" ? 'checked' : '' }} name="avl_days[]">Tuesday</label>
+                                                                                            @endif  
                                                                                         </li>
                                                                                         <li>
-                                                                                            <label>
-                                                                                                <input type="checkbox" class="check-box-11"  value="WEDNESDAY" {{ old('avl_days.3', in_array("WEDNESDAY",$result))== "WEDNESDAY" ? 'checked' : '' }} name="avl_days[]">Wednesday</label>
+                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $arrydif !=1)
+                                                                                            <label style="color: red;"><input type="checkbox" class="check-box-11"  value="WEDNESDAY" {{ old('avl_days.3', in_array("WEDNESDAY",$resultlog))== "WEDNESDAY" ? 'checked' : '' }} name="avl_days[]">Wednesday</label>
+                                                                                            @else
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="WEDNESDAY" {{ old('avl_days.3', in_array("WEDNESDAY",$result))== "WEDNESDAY" ? 'checked' : '' }} name="avl_days[]">Wednesday</label>
+                                                                                            @endif 
                                                                                         </li>
                                                                                         <li>
-                                                                                            <label>
-                                                                                                <input type="checkbox" class="check-box-11" value="THURSDAY" {{ old('avl_days.4', in_array("THURSDAY",$result))== "THURSDAY" ? 'checked' : '' }} name="avl_days[]">Thursday</label>
+                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $arrydif !=1)
+                                                                                            <label style="color: red;"><input type="checkbox" class="check-box-11" value="THURSDAY" {{ old('avl_days.4', in_array("THURSDAY",$resultlog))== "THURSDAY" ? 'checked' : '' }} name="avl_days[]">Thursday</label>
+                                                                                            @else
+                                                                                            <label><input type="checkbox" class="check-box-11" value="THURSDAY" {{ old('avl_days.4', in_array("THURSDAY",$result))== "THURSDAY" ? 'checked' : '' }} name="avl_days[]">Thursday</label>
+                                                                                            @endif
                                                                                         </li>
                                                                                         <li>
-                                                                                            <label>
-                                                                                                <input type="checkbox" class="check-box-11"  value="FRIDAY" {{ old('avl_days.5', in_array("FRIDAY",$result))== "FRIDAY" ? 'checked' : '' }} name="avl_days[]">Friday</label>
+                                                                                            @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $arrydif !=1)
+                                                                                            <label style="color: red;"><input type="checkbox" class="check-box-11"  value="FRIDAY" {{ old('avl_days.5', in_array("FRIDAY",$resultlog))== "FRIDAY" ? 'checked' : '' }} name="avl_days[]">Friday</label>
+                                                                                            @else
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="FRIDAY" {{ old('avl_days.5', in_array("FRIDAY",$result))== "FRIDAY" ? 'checked' : '' }} name="avl_days[]">Friday</label>
+                                                                                            @endif
                                                                                         </li>
                                                                                         <li>
-                                                                                            <label>
-                                                                                                <input type="checkbox" class="check-box-11"  value="SATERDAY" {{ old('avl_days.6', in_array("SATERDAY",$result))== "SATERDAY" ? 'checked' : '' }} name="avl_days[]">Saturday</label>
+                                                                                             @if(Auth::user()->id==1 && !empty($datalog->avl_days) && $arrydif !=1)
+                                                                                             <label style="color: red;"><input type="checkbox" class="check-box-11"  value="SATERDAY" {{ old('avl_days.6', in_array("SATERDAY",$resultlog))== "SATERDAY" ? 'checked' : '' }} name="avl_days[]">Saturday</label>
+                                                                                             @else
+                                                                                             <label><input type="checkbox" class="check-box-11"  value="SATERDAY" {{ old('avl_days.6', in_array("SATERDAY",$result))== "SATERDAY" ? 'checked' : '' }} name="avl_days[]">Saturday</label>
+                                                                                             @endif
                                                                                         </li>
                                                                                     </ul>
                                                                                     @if ($errors->has('avl_days')) <span class="error" style="color:red">{{ $errors->first('avl_days') }}</span> @endif
@@ -546,7 +570,11 @@
                                                                             <div class="col-md-4 ht-30">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
-                                                                                        <input type="time" name="from_time" id="from_time" @if($data->from_time ?? '') value="{{date('H:i',strtotime($data->from_time ?? ''))}}" @else value="{{old('from_time')}}" @endif  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                         @if(Auth::user()->id==1 && !empty($datalog->from_time) && $datalog->from_time !=$data->from_time)
+                                                                                         <input type="time" name="from_time" id="from_time" @if($datalog->from_time ?? '') value="{{date('H:i',strtotime($datalog->from_time ?? ''))}}" @else value="{{old('from_time')}}" @endif  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                         @else
+                                                                                         <input type="time" name="from_time" id="from_time" @if($data->from_time ?? '') value="{{date('H:i',strtotime($data->from_time ?? ''))}}" @else value="{{old('from_time')}}" @endif  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                         @endif
                                                                                         <label class="floating-label">From Time(Opt.) ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg2.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('from_time')) <span class="error" style="color:red">{{ $errors->first('from_time') }}</span> @endif
@@ -557,7 +585,11 @@
                                                                             <div class="col-md-4 ht-30">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap"> 
-                                                                                        <input type="time" name="to_time" min=""  id="to_time" @if($data->to_time ?? '') value="{{date('H:i',strtotime($data->to_time ?? ''))}}" @else value="{{old('to_time')}}" @endif style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->from_time) && $datalog->from_time !=$data->from_time)
+                                                                                        <input type="time" name="to_time" min=""  id="to_time" @if($datalog->to_time ?? '') value="{{date('H:i',strtotime($datalog->to_time ?? ''))}}" @else value="{{old('to_time')}}" @endif style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
+                                                                                        <input type="time" name="to_time" min=""  id="to_time" @if($data->to_time ?? '') value="{{date('H:i',strtotime($data->to_time ?? ''))}}" @else value="{{old('to_time')}}" @endif style="padding-left:40px;padding-bottom: 10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">To Time(Opt.) ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg2.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('to_time')) <span class="error" style="color:red">{{ $errors->first('to_time') }}</span> @endif
@@ -567,7 +599,11 @@
                                                                             <div class="col-md-4 ">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->consul_fee_from) && $datalog->consul_fee_from !=$data->consul_fee_from)
+                                                                                        <input type="number" name="consul_fee_from" id="ninetyPercent" onInput="checkValue('ninetyPercent')" oninput="this.value=this.value.replace(/[^0-9]/gi,'');" value="{{old('consul_fee_from',$datalog->consul_fee_from?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
                                                                                         <input type="number" name="consul_fee_from" id="ninetyPercent" onInput="checkValue('ninetyPercent')" oninput="this.value=this.value.replace(/[^0-9]/gi,'');" value="{{old('consul_fee_from',$data->consul_fee_from?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">Consult Fee From ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg21.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('consul_fee_from')) <span class="error" style="color:red">{{ $errors->first('consul_fee_from') }}</span> @endif
@@ -577,7 +613,11 @@
                                                                             <div class="col-md-4 ">
                                                                                 <div class="form-group">
                                                                                     <div class="input_wrap">
-                                                                                        <input type="text" name="consul_fee_to" id="twentyPercent"  oninput="this.value=this.value.replace(/[^0-9]/gi,'');" value="{{old('consul_fee_to',$data->consul_fee_to?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                        @if(Auth::user()->id==1 && !empty($datalog->consul_fee_to) && $datalog->consul_fee_to !=$data->consul_fee_to)
+                                                                                        <input type="text" name="consul_fee_to" id="twentyPercent"  oninput="this.value=this.value.replace(/[^0-9]/gi,'');" value="{{old('consul_fee_to',$datalog->consul_fee_to?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                        @else
+                                                                                        <input type="text" name="consul_fee_to" id="twentyPercent"  oninput="this.value=this.value.replace(/[^0-9]/gi,'');" value="{{old('consul_fee_to',$data->consul_fee_to?? '')}}"  style="padding-left:40px;padding-bottom: 10px;">
+                                                                                        @endif
                                                                                         <label class="floating-label">Consult Fee To ?</label>
                                                                                         <img src="{{asset('csm-admin/all_type_doctor/img/reg21.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                         @if ($errors->has('consul_fee_to')) <span class="error" style="color:red">{{ $errors->first('consul_fee_to') }}</span> @endif
@@ -591,7 +631,11 @@
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="input_wrap">
-                                                                            <input type="text" name="website_url" id="website_url" value="{{old('website_url',$data->website_url?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->website_url) && $datalog->website_url !=$data->website_url)
+                                                                            <input type="text" name="website_url" id="website_url" value="{{old('website_url',$datalog->website_url?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                            @else
+                                                                            <input type="text" name="website_url" id="website_url" value="{{old('website_url',$data->website_url?? '')}}"  style="padding-left:40px;padding-bottom: 10px;">
+                                                                            @endif
                                                                             <label class="floating-label">Website URL ?</label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg10.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                             @if ($errors->has('website_url')) <span class="error" style="color:red">{{ $errors->first('website_url') }}</span> @endif
@@ -613,7 +657,11 @@
                                                                         <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <div class="input_wrap">
-                                                                                    <input type="text" name="facebook_url" id="facebook_url" value="{{old('facebook_url',$data->social_media_link?? '')}}" style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                    @if(Auth::user()->id==1 && !empty($datalog->social_media_link) && $datalog->social_media_link !=$data->social_media_link)
+                                                                                    <input type="text" name="facebook_url" id="facebook_url" value="{{old('facebook_url',$datalog->social_media_link?? '')}}" style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                    @else
+                                                                                    <input type="text" name="facebook_url" id="facebook_url" value="{{old('facebook_url',$data->social_media_link?? '')}}" style="padding-left:40px;padding-bottom: 10px;">
+                                                                                    @endif
                                                                                     <label class="floating-label">Facebook Profile Link ?</label>
                                                                                     <img src="{{asset('csm-admin/all_type_doctor/img/reg9.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                 </div>
@@ -623,7 +671,11 @@
                                                                         <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <div class="input_wrap">
-                                                                                    <input type="text" name="instagram_url" id="instagram_url" value="{{old('instagram_url',$data->instagram_url?? '')}}" style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                     @if(Auth::user()->id==1 && !empty($datalog->instagram_url) && $datalog->instagram_url !=$data->instagram_url)
+                                                                                     <input type="text" name="instagram_url" id="instagram_url" value="{{old('instagram_url',$datalog->instagram_url?? '')}}" style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                     @else
+                                                                                     <input type="text" name="instagram_url" id="instagram_url" value="{{old('instagram_url',$data->instagram_url?? '')}}" style="padding-left:40px;padding-bottom: 10px;">
+                                                                                     @endif
                                                                                     <label class="floating-label">Instagram Profile Link ?</label>
                                                                                     <img src="{{asset('csm-admin/all_type_doctor/img/reg12.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                 </div>
@@ -633,7 +685,11 @@
                                                                         <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <div class="input_wrap">
-                                                                                    <input type="text" name="youth_profile_url" id="youth_profile_url" value="{{old('youth_profile_url',$data->youth_profile_url?? '')}}" style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                    @if(Auth::user()->id==1 && !empty($datalog->youth_profile_url) && $datalog->youth_profile_url !=$data->youth_profile_url)
+                                                                                    <input type="text" name="youth_profile_url" id="youth_profile_url" value="{{old('youth_profile_url',$datalog->youth_profile_url?? '')}}" style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                    @else
+                                                                                    <input type="text" name="youth_profile_url" id="youth_profile_url" value="{{old('youth_profile_url',$data->youth_profile_url?? '')}}" style="padding-left:40px;padding-bottom: 10px;">
+                                                                                    @endif
                                                                                     <label class="floating-label">Youtube Profile Link ?</label>
                                                                                     <img src="{{asset('csm-admin/all_type_doctor/img/reg25.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                 </div>
@@ -643,7 +699,11 @@
                                                                         <div class="col-md-4">
                                                                             <div class="form-group">
                                                                                 <div class="input_wrap">
-                                                                                    <input type="text" name="twiter_profile_url" id="twiter_profile_url" value="{{old('twiter_profile_url',$data->twiter_profile_url?? '')}}" style="padding-left: 40px;padding-bottom: 10px;">
+                                                                                    @if(Auth::user()->id==1 && !empty($datalog->twiter_profile_url) && $datalog->twiter_profile_url !=$data->twiter_profile_url)
+                                                                                    <input type="text" name="twiter_profile_url" id="twiter_profile_url" value="{{old('twiter_profile_url',$datalog->twiter_profile_url?? '')}}" style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                                    @else
+                                                                                    <input type="text" name="twiter_profile_url" id="twiter_profile_url" value="{{old('twiter_profile_url',$data->twiter_profile_url?? '')}}" style="padding-left:40px;padding-bottom: 10px;">
+                                                                                    @endif
                                                                                     <label class="floating-label">Twitter Profile Link ?</label>
                                                                                     <img src="{{asset('csm-admin/all_type_doctor/img/reg22.png')}}" alt="" class="booking-agent1-img fixed-image">
                                                                                 </div>
@@ -655,10 +715,13 @@
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="input_wrap">
-                                                                            <input type="text" name="achivement_award" id="achivement_award" value="{{old('achivement_award',$data->achievement_award?? '')}}"  style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->achievement_award) && $datalog->achievement_award !=$data->achievement_award)
+                                                                            <input type="text" name="achivement_award" id="achivement_award" value="{{old('achivement_award',$datalog->achievement_award?? '')}}"  style="padding-left:40px;color:red;padding-bottom: 10px;">
+                                                                            @else
+                                                                            <input type="text" name="achivement_award" id="achivement_award" value="{{old('achivement_award',$data->achievement_award?? '')}}"  style="padding-left:40px;padding-bottom: 10px;">
+                                                                            @endif
                                                                             <label class="floating-label">Achievement &amp; Awards ?</label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg20.png')}}" alt="" class="booking-agent1-img fixed-image">
-
                                                                         </div>
                                                                         <div class="input_wrap float-top">
 
@@ -673,7 +736,11 @@
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="input_wrap">
-                                                                            <textarea  type="text"  name="descriptions" id="descriptions"  style="padding-left: 40px;padding-bottom: 10px;">{{old('descriptions',$data->description?? '')}}</textarea>
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->description) && $datalog->description !=$data->description)
+                                                                            <textarea  type="text"  name="descriptions" id="descriptions"  style="padding-left:40px;color:red;padding-bottom: 10px;">{{old('descriptions',$datalog->description?? '')}}</textarea>
+                                                                            @else
+                                                                            <textarea  type="text"  name="descriptions" id="descriptions"  style="padding-left:40px;padding-bottom: 10px;">{{old('descriptions',$data->description?? '')}}</textarea>
+                                                                            @endif
                                                                             <label class="floating-label">Description</label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg19.png')}}" alt="" class="booking-agent1-img fixed-images">
                                                                         </div>
@@ -699,6 +766,7 @@
                                                                     <div class="col-md-12  col-12">
                                                                     @if(Auth::user()->id==1)
                                                                         <center>
+                                                                            <a href="{{ url('/cms-admin/alltype-user/doctor/edit/'.$data->id) }}" class="btn view" >View More</a>
                                                                             <button class="btn btn-success suc-sub" id="alltypeuserlogsubmit" type="submit">Submit Now</button>
                                                                         </center>
                                                                     @elseif(Request::segment(4)=='edit') 
@@ -1572,9 +1640,12 @@
             $('input:checkbox').prop('checked', false);
         }
     });
-    $("input[name='avl_days[]']").change(function(){
-        var isunchecked= $(this).prop('checked', false);
-        if(isunchecked){
+    $("input[name='avl_days[]']").on('change',function(e){
+        //var isunchecked= $(this).prop('checked', false);
+        //var ischecked = $(this).is(':unchecked');
+        if($(this).checked){
+            $(this).prop('checked', true);
+        }else {
             $("#checkAll").prop('checked', false);
         }
 
@@ -1755,10 +1826,10 @@
         });
         $("input[name='avl_days[]']").on('change',function(){
             
-            var avl_dayss = parseInt($(this).val()); 
-            var avl_days= $(this).val();
-            alert(avl_days);
-            save_description('','','','','','','','','','','',avl_days);
+            var avl_days= $(this).val(); 
+            if($(this).is(':checked')){
+                save_description('','','','','','','','','','','',avl_days);
+            } 
 
         });
         $('#landmark_pincode').on('change',function(){
@@ -1788,19 +1859,16 @@
         });
         $('#department').on('change',function(){
             var department= $(this).val(); //slefemp_emplaye
-            alert(department);
             save_description('','','','','','','','','','','','','','','','','',department);
 
         });
         $('#designation').on('change',function(){
             var designation= $(this).val(); 
-            alert(designation);
             save_description('','','','','','','','','','','','','','','','','','',designation);
 
         });
         $('#slefemp_emplaye').on('change',function(){
             var slefemp_emplaye= $(this).val(); 
-            alert(slefemp_emplaye);
             save_description('','','','','','','','','','','','','','','','','','','',slefemp_emplaye);
 
         });
@@ -1816,31 +1884,26 @@
         });
         $('#doctorqualification').on('change',function(){
             var doctorqualification= $(this).val(); 
-            alert(doctorqualification);
             save_description('','','','','','','','','','','','','','','','','','','','','','',doctorqualification);
 
         });
         $('#doctor_email').on('change',function(){
             var doctor_email= $(this).val();
-            alert(doctor_email); //gender
             save_description('','','','','','','','','','','','','','','','','','','','','','','',doctor_email);
 
         });
         $('#dmobile_no').on('change',function(){
             var dmobile_no= $(this).val(); //full_name
-            alert(dmobile_no);
             save_description('','','','','','','','','','','','','','','','','','','','','','','','',dmobile_no);
 
         });
         $('#gender').on('change',function(){
             var gender= $(this).val();
-            alert(gender);
             save_description('','','','','','','','','','','','','','','','','','','','','','','','','',gender);
 
         });
         $('#full_name').on('change',function(){
             var full_name= $(this).val();
-            alert(full_name);
             save_description('','','','','','','','','','','','','','','','','','','','','','','','','','',full_name);
 
         });

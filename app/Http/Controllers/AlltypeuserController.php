@@ -136,9 +136,8 @@ class AlltypeuserController extends Controller {
                     $message->subject($data['subject']);
                     $message->from(Helper::adminInfo()->email, Helper::adminInfo()->name);
                 });
-            }
+        }
         //End email function
-        
         //if($email) {
             return response()->json(['code' => 200,'response' => "SUCCESS",'otp' => $otp, 'message' => "Verification code sent to ".$request->input('email')])
             ->header('Access-Control-Allow-Origin', '*')->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
@@ -203,7 +202,7 @@ class AlltypeuserController extends Controller {
                         if(!$request->avl_days){
                             $result = null; 
                         } else{
-                            //$result = implode(",",$request->avl_days);
+                            $result = implode(",",$request->avl_days);
                             $result = $request->avl_days;
                         }
                         
