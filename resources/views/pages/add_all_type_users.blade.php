@@ -766,7 +766,7 @@
                                                                     <div class="col-md-12  col-12">
                                                                     @if(Auth::user()->id==1)
                                                                         <center>
-                                                                            <a href="{{ url('/cms-admin/alltype-user/adminDoctorview/'.$data->id) }}" class="btn view" >View More</a>
+                                                                            <a href="{{ url('/cms-admin/alltype-user/adminDoctorview/'.$data->id) }}" class="btn view" >View Previous</a>
                                                                             <button class="btn btn-success suc-sub" id="alltypeuserlogsubmit" type="submit">Save Change</button>
                                                                         </center>
                                                                     @elseif(Request::segment(4)=='edit') 

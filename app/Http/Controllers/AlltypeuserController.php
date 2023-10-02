@@ -454,6 +454,9 @@ class AlltypeuserController extends Controller {
                 } else {
                     $full_name = $dr.$request->full_name;
                 }
+                if(!empty(Auth::user()->id==1 && $request->has('data_id'))){
+                    $customerdetail->status=1;
+                }
                 $customerdetail->full_name=$full_name;
                 $customerdetail->gender=$request->gender; 
                 $customerdetail->mobile=$request->mobile_no;
