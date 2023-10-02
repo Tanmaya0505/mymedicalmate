@@ -766,8 +766,8 @@
                                                                     <div class="col-md-12  col-12">
                                                                     @if(Auth::user()->id==1)
                                                                         <center>
-                                                                            <a href="{{ url('/cms-admin/alltype-user/doctor/edit/'.$data->id) }}" class="btn view" >View More</a>
-                                                                            <button class="btn btn-success suc-sub" id="alltypeuserlogsubmit" type="submit">Submit Now</button>
+                                                                            <a href="{{ url('/cms-admin/alltype-user/adminDoctorview/'.$data->id) }}" class="btn view" >View More</a>
+                                                                            <button class="btn btn-success suc-sub" id="alltypeuserlogsubmit" type="submit">Save Change</button>
                                                                         </center>
                                                                     @elseif(Request::segment(4)=='edit') 
                                                                      
@@ -775,6 +775,382 @@
                                                                         <center>
                                                                             <button class="btn btn-success suc-sub" id="alltypeuserlogsubmit" type="submit">Submit Now</button>
                                                                         </center>    
+                                                                    @endif 
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @elseif(Request::segment(3)=='adminDoctorview')
+                                        <div class="row">
+                                            <div class="col-xl">
+                                                <div class="card mb-4">
+                                                    <div class="card-header d-flex justify-content-between align-items-center doc-back">
+                                                        <p class="mb-0">View the Doctor Information</p>
+                                                    </div>
+                                                    <div class="card-body" style="padding-top: 30px;">
+                                                        <form id="add_doctor" method="post" action="#" enctype="multipart/form-data">
+                                                        {{ csrf_field() }}
+                                                            <input type="hidden" name="data_id" value="{{$data->id ?? ''}}">
+                                                            <div class="row mt-20">
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">
+                                                                            <input type="text" name="full_name" onkeydown="return /[a-z, ]/i.test(event.key)"  id="full_name" value="{{old('full_name',$data->full_name ?? '')}}"   style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                            <label class="floating-label">Full Name ?</label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg6.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                        </div>
+                                                                        @if ($errors->has('full_name')) <span class="error" style="color:red">{{ $errors->first('full_name') }}</span> @endif
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="select_wrap select">
+                                                                        <select name="gender" id="gender"   style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                <option value="" disabled="" selected=""></option>
+                                                                                <option value="Male" {{ old('gender',@$data->gender) == "Male" ? 'selected' : '' }}>Male</option>
+                                                                                <option value="Female" {{ old('gender',@$data->gender) == "Female" ? 'selected' : '' }}>Female</option>
+                                                                                <option value="Other" {{ old('gender',@$data->gender) == "Other" ? 'selected' : '' }}>Other</option>
+                                                                            </select>
+                                                                            <label class="floating-label">Gender ?</label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg3.png')}}" alt="" class="booking-agent1-img">
+                                                                            @if ($errors->has('gender')) <span class="error" style="color:red">{{ $errors->first('gender') }}</span> @endif
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">
+                                                                            <input type="text" name="mobile_no" id="dmobile_no" oninput="this.value=this.value.replace(/[^0-9]/g,'');"  maxlength="10" value="{{old('mobile_no',$data->mobile ?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                            <label class="floating-label">Mobile Number ?</label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg18.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                            @if ($errors->has('mobile_no')) <span class="error" style="color:red">{{ $errors->first('mobile_no') }}</span> @endif
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">
+                                                                            <input type="email" name="email_id" id="doctor_email"  value="{{old('email_id',$data->email ?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                            <label class="floating-label">Email ID ?</label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg7.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                            @if ($errors->has('email_id')) <span class="error" style="color:red">{{ $errors->first('email_id') }}</span> @endif
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="row" style="margin-left: 0px">
+                                                                    <div class="form-group" id="location">
+                                                                        <div class="input_wrap">
+                                                                            <input type="text" name="doctorqualification"  id="doctorqualification" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" value="{{old('doctorqualification',$data->doctorqualification ?? '')}}"  style="padding-left:40px;pointer-events:none;padding-bottom: 10px;">
+                                                                            <i class="fa fa-plus fa9-plus add-qualification" id="add_qualifications"></i>
+                                                                            <label class="floating-label">Doctor Qualification ?</label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg27.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                            @if ($errors->has('doctorqualification')) <span class="error" style="color:red">{{ $errors->first('doctorqualification') }}</span> @endif
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group" id="locations" style="margin-left: 10px;">
+                                                                        <div class="select_wrap select">
+                                                                            <input type="text" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" name="univercity" id="univercity" maxlength="50" value="{{old('univercity',$data->univercity ?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                            <label class="floating-label">university ?</label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg15.png')}}" alt="" class="booking-agent1-img">
+                                                                            <select class="form-control" id="university_date" name="university_date" style="pointer-events: none;">
+                                                                                <option>--years--</option>
+                                                                                @for($year = (int)date('Y'); 1900 <= $year; $year--)
+                                                                                <option value="{{$year}}" {{ old('university_date',@$data->university_date) == $year ? 'selected' : '' }}>{{old('university_date',$year)}}</option>
+                                                                                @endfor
+                                                                            </select>   
+                                                                            @if ($errors->has('univercity')) <span class="error" style="color:red">{{ $errors->first('univercity') }}</span> @endif
+                                                                            @if ($errors->has('university_date')) <span class="error" style="color:red">{{ $errors->first('university_date') }}</span> @endif
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    
+                                                                </div>
+
+                                                                <div id="workingContainer">
+                                                                    <div id="newWorking" class=" col-md-12 back-gray">
+                                                                        <div class="row">
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <div class="select_wrap">
+                                                                                            <select name="slefemp_emplaye" id="slefemp_emplaye" style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                                <option value="" disabled="" selected=""></option>
+                                                                                                <option value="Self-Employed" {{ old('slefemp_emplaye',@$data->slefemp_emplaye) == "Self-Employed" ? 'selected' : '' }}>Self-Employed</option>
+                                                                                                <option value="Employed" {{ old('slefemp_emplaye',@$data->slefemp_emplaye) == "Employed" ? 'selected' : '' }}>Employed</option>
+                                                                                            </select>
+                                                                                        <label class="floating-label">Select Employed/Self-Employed?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg8.png')}}" alt="" class="booking-agent1-img">
+                                                                                        @if ($errors->has('slefemp_emplaye')) <span class="error" style="color:red">{{ $errors->first('slefemp_emplaye') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 remove-on-add">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                        <input type="text" name="designation" id="designation" oninput="this.value=this.value.replace(/[^a-z, ]/gi, '');" value="{{old('designation',$data->designation ?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">Designation ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/h-desig.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('designation')) <span class="error" style="color:red">{{ $errors->first('designation') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 remove-on-add">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                        <input type="text" name="department" id="department" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('department',$data->department ?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">Department ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg15.png')}}" alt="" class="booking-agent1-img">
+                                                                                        @if ($errors->has('department')) <span class="error" style="color:red">{{ $errors->first('department') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 remove-on-add">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                        <input type="text" name="totalexprience" id="totalexprience" onKeyUp="if(this.value>60){this.value='60';}else if(this.value<0){this.value='0';}" maxlength="2"  oninput="this.value=this.value.replace(/[^0-9]/, '');" value="{{old('totalexprience',$data->total_experience ?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">Total Experience ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg23.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('totalexprience')) <span class="error" style="color:red">{{ $errors->first('totalexprience') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                        <input type="text" name="orgnization_name" id="orgnization_name" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('orgnization_name',$data->orgnization_name ?? '')}}" style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">Organization Name ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg11.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('orgnization_name')) <span class="error" style="color:red">{{ $errors->first('orgnization_name') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                        <input type="text" name="orgnization_location" id="orgnization_location" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');"  value="{{old('orgnization_location',$data->location ?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom:10px;">
+                                                                                        <label class="floating-label">Organization Location ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg14.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('orgnization_location')) <span class="error" style="color:red">{{ $errors->first('orgnization_location') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                        <input type="text" name="state_city" id="state_city" oninput="this.value=this.value.replace(/[^a-z, ]/gi,'');" value="{{old('state_city',$data->state_city ?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">In Which State/City ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg14.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('state_city')) <span class="error" style="color:red">{{ $errors->first('state_city') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                        <input type="text" name="landmark_pincode" oninput="this.value=this.value.replace(/[^a-z0-9, ]/gi,'');"  id="landmark_pincode"  value="{{old('landmark_pincode',$data->landmark_pincode ?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">Landmark with pincode ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg14.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('landmark_pincode')) <span class="error" style="color:red">{{ $errors->first('landmark_pincode') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4">
+                                                                                <div class="checkbox-dropdown"><img src="{{asset('csm-admin/all_type_doctor/img/reg4.png')}}" alt="" class="booking-agent1-img fixed-image" style="margin-top: -2px;pointer-events: none;margin-left: -2px">
+                                                                                    Availability Of Days
+                                                                                    <ul class="checkbox-dropdown-list">
+                                                                                        @php $result = explode(",",$data->avl_days ?? ''); @endphp
+                                                                                        <li>
+                                                                                            <label>
+                                                                                                <input type="checkbox" class="check-box-11" id="checkAll" value="" name="checkAll">All Day</label>
+                                                                                        </li>
+                                                                                        <li>  
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="SUNDAY" {{ old('avl_days.0', in_array("SUNDAY",$result))== "SUNDAY" ? 'checked' : '' }} name="avl_days[]">Sunday</label> 
+                                                                                        </li>
+                                                                                        <li>   
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="MONDAY" {{ old('avl_days.1', in_array("MONDAY",$result))== "MONDAY" ? 'checked' : '' }} name="avl_days[]">Monday</label>  
+                                                                                        </li>
+                                                                                        <li>  
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="TUESDAY" {{ old('avl_days.2', in_array("TUESDAY",$result))== "TUESDAY" ? 'checked' : '' }} name="avl_days[]">Tuesday</label>
+                                                                                        </li>
+                                                                                        <li>  
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="WEDNESDAY" {{ old('avl_days.3', in_array("WEDNESDAY",$result))== "WEDNESDAY" ? 'checked' : '' }} name="avl_days[]">Wednesday</label>
+                                                                                        </li>
+                                                                                        <li> 
+                                                                                            <label><input type="checkbox" class="check-box-11" value="THURSDAY" {{ old('avl_days.4', in_array("THURSDAY",$result))== "THURSDAY" ? 'checked' : '' }} name="avl_days[]">Thursday</label>  
+                                                                                        </li>
+                                                                                        <li>  
+                                                                                            <label><input type="checkbox" class="check-box-11"  value="FRIDAY" {{ old('avl_days.5', in_array("FRIDAY",$result))== "FRIDAY" ? 'checked' : '' }} name="avl_days[]">Friday</label>
+                                                                                        </li>
+                                                                                        <li>
+                                                                                             <label><input type="checkbox" class="check-box-11"  value="SATERDAY" {{ old('avl_days.6', in_array("SATERDAY",$result))== "SATERDAY" ? 'checked' : '' }} name="avl_days[]">Saturday</label>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    @if ($errors->has('avl_days')) <span class="error" style="color:red">{{ $errors->first('avl_days') }}</span> @endif
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 ht-30">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                         <input type="time" name="from_time" id="from_time" @if($data->from_time ?? '') value="{{date('H:i',strtotime($data->from_time ?? ''))}}" @else value="{{old('from_time')}}" @endif  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">From Time(Opt.) ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg2.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('from_time')) <span class="error" style="color:red">{{ $errors->first('from_time') }}</span> @endif
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 ht-30">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap"> 
+                                                                                        <input type="time" name="to_time" min=""  id="to_time" @if($data->to_time ?? '') value="{{date('H:i',strtotime($data->to_time ?? ''))}}" @else value="{{old('to_time')}}" @endif style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">To Time(Opt.) ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg2.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('to_time')) <span class="error" style="color:red">{{ $errors->first('to_time') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 ">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                        <input type="number"  name="consul_fee_from" id="ninetyPercent" onInput="checkValue('ninetyPercent')" oninput="this.value=this.value.replace(/[^0-9]/gi,'');" value="{{old('consul_fee_from',$data->consul_fee_from?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">Consult Fee From ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg21.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('consul_fee_from')) <span class="error" style="color:red">{{ $errors->first('consul_fee_from') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 ">
+                                                                                <div class="form-group">
+                                                                                    <div class="input_wrap">
+                                                                                        <input type="text" name="consul_fee_to" id="twentyPercent"  oninput="this.value=this.value.replace(/[^0-9]/gi,'');" value="{{old('consul_fee_to',$data->consul_fee_to?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                        <label class="floating-label">Consult Fee To ?</label>
+                                                                                        <img src="{{asset('csm-admin/all_type_doctor/img/reg21.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                        @if ($errors->has('consul_fee_to')) <span class="error" style="color:red">{{ $errors->first('consul_fee_to') }}</span> @endif
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a class="btn-sm" id="addButton">Add More</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">
+                                                                            <input type="text" name="website_url" id="website_url" value="{{old('website_url',$data->website_url?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                            <label class="floating-label">Website URL ?</label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg10.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                            @if ($errors->has('website_url')) <span class="error" style="color:red">{{ $errors->first('website_url') }}</span> @endif
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">
+                                                                            <input type="text" name="" readonly="" onclick="openSocial()" placeholder="Social Media Profile Links(Click Me)" style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                            <i class="fa fa-plus fa7-plus" onclick="openSocial()"></i>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg13.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="newSocial" class="hidden col-md-12">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <div class="input_wrap">
+                                                                                    <input type="text" name="facebook_url" id="facebook_url" value="{{old('facebook_url',$data->social_media_link?? '')}}" style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                    <label class="floating-label">Facebook Profile Link ?</label>
+                                                                                    <img src="{{asset('csm-admin/all_type_doctor/img/reg9.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <div class="input_wrap">
+                                                                                     <input type="text" name="instagram_url" id="instagram_url" value="{{old('instagram_url',$data->instagram_url?? '')}}" style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                    <label class="floating-label">Instagram Profile Link ?</label>
+                                                                                    <img src="{{asset('csm-admin/all_type_doctor/img/reg12.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <div class="input_wrap">
+                                                                                    <input type="text" name="youth_profile_url" id="youth_profile_url" value="{{old('youth_profile_url',$data->youth_profile_url?? '')}}" style="padding-left:40px;pointer-events: none;padding-bottom: 10px;"> 
+                                                                                    <label class="floating-label">Youtube Profile Link ?</label>
+                                                                                    <img src="{{asset('csm-admin/all_type_doctor/img/reg25.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="form-group">
+                                                                                <div class="input_wrap">
+                                                                                    <input type="text" name="twiter_profile_url" id="twiter_profile_url" value="{{old('twiter_profile_url',$data->twiter_profile_url?? '')}}" style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                                    <label class="floating-label">Twitter Profile Link ?</label>
+                                                                                    <img src="{{asset('csm-admin/all_type_doctor/img/reg22.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">
+                                                                            <input type="text" name="achivement_award" id="achivement_award" value="{{old('achivement_award',$data->achievement_award?? '')}}"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">
+                                                                            <label class="floating-label">Achievement &amp; Awards ?</label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg20.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                        </div>
+                                                                        <div class="input_wrap float-top">
+
+                                                                            <input type="file" name="doctorachievement_file"  style="padding-left: 40px;pointer-events: none;padding-bottom: 10px;">
+                                                                            <i class="fa fa-plus fa6-plus add-achievement"></i>
+
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg20.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">
+                                                                            <textarea  type="text"  name="descriptions" id="descriptions"  style="padding-left:40px;pointer-events: none;padding-bottom: 10px;">{{old('descriptions',$data->description?? '')}}</textarea>
+                                                                            <label class="floating-label">Description</label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg19.png')}}" alt="" class="booking-agent1-img fixed-images">
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 ">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap" style="margin-top: -8px;">
+                                                                            <p class="profile-float">Profile Picture ?</p>
+                                                                            <input type="file" name="profile_picture" style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg24.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                            @if ($errors->has('profile_picture')) <span class="error" style="color:red">{{ $errors->first('profile_picture') }}</span> @endif
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 ">
+
+
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12  col-12">
+                                                                    @if(Auth::user()->id==1)
+                                                                        <center>
+                                                                        <a href="{{ url('/cms-admin/alltype-user/doctor/edit/'.$data->id) }}" class="btn btn-success suc-sub" >Return page</a>
+                                                                        </center>
                                                                     @endif 
                                                                     </div>
                                                                 </div>

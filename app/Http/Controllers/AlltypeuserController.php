@@ -166,6 +166,39 @@ class AlltypeuserController extends Controller {
         return view('pages.add_all_type_users', ['config' => $config, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
 
     }
+    public function EditDoctor(Request $request){
+        $id= $request->verifyId;
+        $type='doctor';
+        if($request->otp != Session::get('otp')) {
+            return response()->json(['code' => 204,'response' => "ERROR", 'message' => "Please enter valid PIN"]);
+        }
+
+        $config = CustomerHelper::configData('admin_config');
+        $pageConfigs = ['pageHeader' => true];
+        $breadcrumbs = [
+            ["link" => "/".$config['route']."/", "name" => "Home"], ["name" => "All Type User"]
+        ];
+        
+            $data = CustomerDetail::with('diseasedetails')->where('id',$id)->orderBy('id','desc')->first();
+        
+        
+        return view('pages.add_all_type_users', ['config' => $config, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
+
+    }
+    public function AdminDoctorview(Request $request,$type,$id){
+        //dd(2222222);
+        $id= $id;
+        
+        $config = CustomerHelper::configData('admin_config');
+        $pageConfigs = ['pageHeader' => true];
+        $breadcrumbs = [
+            ["link" => "/".$config['route']."/", "name" => "Home"], ["name" => "All Type User"]
+        ];
+        
+            $data = CustomerDetail::with('diseasedetails')->where('id',$id)->orderBy('id','desc')->first();
+        
+        return view('pages.add_all_type_users', ['config' => $config, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
+    }
     public function alltypeuserlog(Request $request,$type){
         if($request->has('data_id')){
             //dd(Auth::user()->id);
