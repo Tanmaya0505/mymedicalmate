@@ -766,7 +766,12 @@
                                                                     <div class="col-md-12  col-12">
                                                                     @if(Auth::user()->id==1)
                                                                         <center>
+                                                                            @php 
+                                                                            $arrydiff=array_diff_assoc($datalog->toArray(), $data->toArray()) === array_diff_assoc($data->toArray(), $datalog->toArray());
+                                                                            @endphp
+                                                                            @if($arrydiff !=1)
                                                                             <a href="{{ url('/cms-admin/alltype-user/adminDoctorview/'.$data->id) }}" class="btn view" >View Previous</a>
+                                                                            @endif
                                                                             <button class="btn btn-success suc-sub" id="alltypeuserlogsubmit" type="submit">Save Change</button>
                                                                         </center>
                                                                     @elseif(Request::segment(4)=='edit') 
