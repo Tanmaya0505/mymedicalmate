@@ -94,7 +94,7 @@ class AlltypeuserController extends Controller {
             $data = CustomerDetail::with('diseasedetails')->where('id',$id)->orderBy('id','desc')->first();
         
         $datalog = AlltypeUserLog::where('data_id',$id)->orderBy('id','desc')->first();
-        //dd($data);
+        //dd($datalog->toArray());
         return view('pages.add_all_type_users', ['config' => $config, 'datalog'=>$datalog, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
     }
 
@@ -145,7 +145,7 @@ class AlltypeuserController extends Controller {
             //return response()->json(['code' => 204,'response' => "ERROR", 'message' => "Oops!! Verification code not sent"]);
         //}
     }
-    public function ViewDoctor(Request $request){
+    public function DoctorSubmitOtp(Request $request){
 
         $id= $request->verifyId;
         $type='doctor';
@@ -166,29 +166,8 @@ class AlltypeuserController extends Controller {
         return view('pages.add_all_type_users', ['config' => $config, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
 
     }
-    public function EditDoctor(Request $request){
-        $id= $request->verifyId;
-        $type='doctor';
-        if($request->otp != Session::get('otp')) {
-            return response()->json(['code' => 204,'response' => "ERROR", 'message' => "Please enter valid PIN"]);
-        }
-
-        $config = CustomerHelper::configData('admin_config');
-        $pageConfigs = ['pageHeader' => true];
-        $breadcrumbs = [
-            ["link" => "/".$config['route']."/", "name" => "Home"], ["name" => "All Type User"]
-        ];
-        
-            $data = CustomerDetail::with('diseasedetails')->where('id',$id)->orderBy('id','desc')->first();
-        
-        
-        return view('pages.add_all_type_users', ['config' => $config, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
-
-    }
     public function AdminDoctorview(Request $request,$type,$id){
-        //dd(2222222);
         $id= $id;
-        
         $config = CustomerHelper::configData('admin_config');
         $pageConfigs = ['pageHeader' => true];
         $breadcrumbs = [

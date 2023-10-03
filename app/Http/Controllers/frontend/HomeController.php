@@ -9,9 +9,8 @@ use App\Helpers\CustomerHelper;
 use App\Customer;
 use App\Locator;
 use App\CustomerPrescription;
-use Config;
-use Mail;
-use Session;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Mail;
 use Image;
 use App\CustomerDetail;
 use App\AlltypeAd;
@@ -20,6 +19,7 @@ use App\ReferalCodeDetail;
 use App\Http\Controllers\BonusController;
 use App\Rating;
 use App\QuestionAnswar;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends \App\Http\Controllers\Controller
 {
@@ -630,8 +630,6 @@ class HomeController extends \App\Http\Controllers\Controller
         //dd(Session::get('userId'));
         $name=urldecode($name);
         $data = CustomerDetail::where('full_name',$name)->where('account_id',1)->first();
-        //$retinfall=Rating::get();
-        //dd($retinfall[1]->user_id);->avg('rating')
         $rating = Rating::where('userdetail_id',$data->id)->avg('rating');
        // dd($rating);
         $alldoctor= CustomerDetail::limit(6)->get();

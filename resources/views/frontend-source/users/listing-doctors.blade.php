@@ -149,12 +149,25 @@
                             <div class="col-md-12 back-color-card">
                                 <div class="row">
                                     <div class="col-md-6 col-6">
+                                        <?php $rating = App\Rating::where('userdetail_id',$val->id)->avg('rating'); ?>
                                         <p class="list-rating">Rating: <img src="../assets/image/yl-star.png" alt="" class="list-star">
-                                            <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-star">
-                                            <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-star">
-                                            <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-star">
-                                            <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-star">
-                                            <img src="{{ url('/doctor/g-star.png') }}" alt="" class="list-star"> (4.7)
+                                        (<?php echo number_format((float)$rating, 1, '.', ''); ?>)
+                                        @if(!$rating)  @elseif($rating=floatval($rating)) @endif
+                                            @foreach(range(1,5) as $i)
+                                            <a @if(Session::get('userId')) @else href="javascript:confirm('hello world')" data-toggle="modal" data-target="#staticBackdrop" @endif>
+                                                <span class="fa-stack" style="width:1em">
+                                                    <i class="far fa-star fa-stack-1x"></i>
+                                                    @if($rating >0)
+                                                    @if($rating >0.5)
+                                                    <i class="fas fa-star fa-stack-1x" style="color: #ff9b00;"></i>
+                                                    @else
+                                                    <i class="fas fa-star-half fa-stack-1x" style="color: #ff9b00;"></i>
+                                                    @endif
+                                                    @endif
+                                                    @php $rating--; @endphp
+                                                </span>
+                                            </a>
+                                            @endforeach
                                         </p>
                                     </div>
                                     <div class="col-md-6 col-6">

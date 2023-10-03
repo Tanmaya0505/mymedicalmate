@@ -333,7 +333,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-4  col-4 ">
-                                                <p class="pro-text ">Rating: {{floatval($rating)}} </p>
+                                                <p class="pro-text ">Rating: {{number_format((float)$rating, 1, '.', '')}} </p>
                                             </div>
                                         </div>
                                     </div>
