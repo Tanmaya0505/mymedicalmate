@@ -3,7 +3,7 @@
 @section('keywords') Listing Assistant @stop
 @section('description') Listing Assistant @stop
 @section('style')
-<link rel="stylesheet" type="text/css" href="{{asset('frontend-source/css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('frontend-source/doctorlistcss/style.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     @media(max-width: 768px) {
@@ -88,7 +88,8 @@
                 </div>
             </div>
             <div class="assistant-box-container slider">
-                <div class="row">
+                <div class="">
+                    <div class="row row-doclistmob">
                     @if(count($data))
                     @foreach($data as $key=>$val)
                     @php
@@ -99,60 +100,18 @@
                     $photo = url($val->profile_picture);
                     }
                     @endphp
-                    <!-- <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="box-item">
-                            <table>
-                                <tr class="hl-header">
-                                    <td style="width:40%;" class="text-left">
-                                        <span class="verified">Doctor <i class="fas fa-check-circle"></i></span>
-                                    </td>
-                                    <td style="width:70%;" class="text-right" class="pickup">
-
-                                    </td>
-                                </tr>
-                                <tr class="ast-bx-flex">
-                                    <td class="ast-img">
-                                        <div class="item-image">
-                                            <a href="{{ url('/doctor/detail/'.urlencode($val->full_name)) }}">
-                                                <img src="{{ $photo }}" class="img-fluid" alt="">
-                                            </a>
-                                            <span>Exp: {{ @$val->total_experience }} Yrs</span>
+                        <div class="col-xs-12 col-sm-6 col-md-4 title">
+                            <div class="card card-body card-card">
+                                <div class="col-md-12 list-mob-12 back-color-card">
+                                    <div class="row row-doclistmob">
+                                        <div class="col-md-6 col-6">
+                                            <p class="list-rating">Experience: {{ @$val->total_experience }} Years</p>
                                         </div>
-                                    </td>
-                                    <td class="ast-dtl">
-                                        <div class="item-detail">
-                                            <ul>
-                                                <li>Full Name: <Strong>{{ ucwords($val->full_name) }}</Strong></li>
-                                                <li>Department: <Strong>{{ $val->department }}</Strong></li>
-                                                <li>Designation: <Strong>{{ $val->designation }}</Strong></li>
-                                                <li>Location: <Strong>{{ $val->location }}</Strong></li>
-                                                <li>Rating: <Strong>{{ $val->star_ratings }}</Strong></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-left">
-
-                                        <a class="primary-btn" href="#">Share</a>
-
-                                    </td>
-                                    <td class="text-right">
-                                        <a href="{{ url('/doctor/detail/'.urlencode($val->full_name)) }}" class="primary-btn">View Details</a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div> -->
-                    <div class="col-xs-12 col-sm-6 col-md-4 title">
-                        <div class="card card-body card-card">
-                            <div class="col-md-12 back-color-card">
-                                <div class="row">
-                                    <div class="col-md-6 col-6">
+                                        <div class="col-md-6 col-6">
                                         <?php $rating = App\Rating::where('userdetail_id',$val->id)->avg('rating'); ?>
-                                        <p class="list-rating">Rating: <img src="../assets/image/yl-star.png" alt="" class="list-star">
-                                        (<?php echo number_format((float)$rating, 1, '.', ''); ?>)
-                                        @if(!$rating)  @elseif($rating=floatval($rating)) @endif
+                                            <p class="list-rating list-rating-list-doc">Rating:
+                                            (<?php echo number_format((float)$rating, 1, '.', ''); ?>)
+                                            @if(!$rating)  @elseif($rating=floatval($rating)) @endif
                                             @foreach(range(1,5) as $i)
                                             <a @if(Session::get('userId')) @else href="javascript:confirm('hello world')" data-toggle="modal" data-target="#staticBackdrop" @endif>
                                                 <span class="fa-stack" style="width:1em">
@@ -168,61 +127,306 @@
                                                 </span>
                                             </a>
                                             @endforeach
-                                        </p>
-                                    </div>
-                                    <div class="col-md-6 col-6">
-                                        <p class="list-rating">Experience: {{ @$val->total_experience }} Years</p>
+                                             <!-- <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-star">
+                                                <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-star">
+                                                <img src="{{ url('/doctor/g-star.png') }}" alt="" class="list-star">   -->
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="col-md-12 list-mob-12 mtb-44">
+                                    <div class="row row-doclistmob">
+                                        <div class="col-md-1 col-1 mt-18">
+                                            <div class="card card-body list-card">
+                                                <img src="{{ url('/doctor/dtlts-doc1.jpg') }}" alt="" class="list-pro" style="border-radius: 50%;">
+                                                <p class="doc-prime">Prime <img src="{{ url('/doctor/doctor-check.png') }}" alt="" class="list-in-mob-img1"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-10 mrtt-10">
+                                            <div class="card card-body list-icon">
+                                                <p class="list-doc" style="font-size: 15px !important;width: 250px"><img src="{{ url('/doctor/h-docname.png') }}" alt="" class="list-mob-img">&nbsp;{{ucwords($val->full_name)}}
+                                                    <img src="{{ url('/doctor/verify.png') }}" alt="" class="list-veri">
+                                                </p>
+                                                <p class="list-doc" style="font-weight: 600;"><img src="{{ url('/doctor/expertise.png') }}" alt="" class="list-mob-img">&nbsp;{{ucwords($val->department)}}</p>
+                                                <p class="list-doc" style="font-weight: 600;"><img src="{{ url('/doctor/first-aid-kit.png') }}" alt="" class="list-mob-img">&nbsp; MD at
+                                                {{ ucwords($val->department) }}
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12  list-mob-12 mrt-10">
+                                    <div class="row row-doclistmob">
+                                        <div class="col-md-7 col-7">
+                                            <p class="list-in-mob" style="font-weight: 800;"><img src="{{ url('/doctor/h-hoscamp.png') }}" alt="" class="list-mob-img"> Work Location</p>
+                                            <p class="list-doc-list">{{ ucwords($val->location) }}, {{ ($val->landmark_pincode) }}</p>
+                                        </div>
+                                        <div class="col-md-5 col-5">
+                                            <p class="list-in-mob" style="font-weight: 800;margin-left: -12px;"><img src="{{ url('/doctor/rupee.png') }}" alt="" class="list-mob-img" style="width: 12px;margin-left: -38px;"> Private Consult Fee</p>
+                                            <p class="list-doc-list list-doc-rupee" style="margin-left: -48px;"><i class="fa fa-rupee"></i>
+                                            {{ ($val->consul_fee_from) }} - <i class="fa fa-rupee"></i> {{ ($val->consul_fee_to) }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 list-mob-12">
+                                    <a href="{{ url('/doctor/detail/'.urlencode($val->full_name)) }}" class=" bt-dan" name="">View Details <i class="fa fa-arrow-right"></i></a>
+                                </div>
                             </div>
-                            <div class="col-md-12 mtb-44">
-                                <div class="row">
+                        </div>
+                        <!-- <div class="col-xs-12 col-sm-6 col-md-4 title">
+                            <div class="card card-body card-card">
+                                <div class="col-md-12 list-mob-12 back-color-card">
+                                    <div class="row row-doclistmob">
+                                        <div class="col-md-6 col-6">
+                                            <p class="list-rating">Experience: 20 Years</p>
+                                        </div>
+                                        <div class="col-md-6 col-6">
+                                            <p class="list-rating list-rating-list-doc">Rating: <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                                <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                                <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                                <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                                <img src="../assets/image/g-star.png" alt="" class="list-star"> (4.7)
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-12 list-mob-12 mtb-44">
+                                    <div class="row row-doclistmob">
+                                        <div class="col-md-1 col-1 mt-18">
+                                            <div class="card card-body list-card">
+                                                <img src="../assets/image/senario/dtlts-doc1.jpg" alt="" class="list-pro" style="border-radius: 50%;">
+                                                <p class="doc-gold">Gold <img src="../assets/image/senario/doctor-check.png" alt="" class="list-in-mob-img1"></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-10 mrtt-10">
+                                            <div class="card card-body list-icon">
+                                                <p class="list-doc" style="font-size: 15px !important;width: 250px"><img src="../assets/img/h-docname.png" alt="" class="list-mob-img">&nbsp; Dr. Rabindra Kumar
+                                                    Das
+                                                    <img src="../assets/image/senario/blue-tick.png" alt="" class="list-veri">
+                                                </p>
+                                                <p class="list-doc" style="font-weight: 600;"><img src="../assets/image/senario/expertise.png" alt="" class="list-mob-img">&nbsp; Laparoscopic Surgeon</p>
+                                                <p class="list-doc" style="font-weight: 600;"><img src="../assets/image/senario/first-aid-kit.png" alt="" class="list-mob-img">&nbsp; MD at
+                                                    SCB Medical Cuttack
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 list-mob-12 mrt-10">
+                                    <div class="row row-doclistmob">
+                                        <div class="col-md-7 col-7">
+                                            <p class="list-in-mob" style="font-weight: 800;"><img src="../assets/img/h-hoscamp.png" alt="" class="list-mob-img"> Work Location</p>
+                                            <p class="list-doc-list">Badambadi, Cuttack 754001</p>
+
+                                        </div>
+                                        <div class="col-md-5 col-5">
+                                            <p class="list-in-mob" style="font-weight: 800;margin-left: -12px;"><img src="../assets/image/senario/rupee.png" alt="" class="list-mob-img" style="width: 12px;margin-left: -38px;"> Private Consult Fee</p>
+                                            <p class="list-doc-list list-doc-rupee" style="margin-left: -48px;"><i class="fa fa-rupee"></i>
+                                                300 - <i class="fa fa-rupee"></i> 400</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 list-mob-12">
+                                    <a href="doctor-details.html" class=" bt-dan" name="">View Details <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-xs-12 col-sm-6 col-md-4 title">
+                        <div class="card card-body card-card">
+                            <div class="col-md-12 list-mob-12 back-color-card">
+                                <div class="row row-doclistmob">
+                                    <div class="col-md-6 col-6">
+                                        <p class="list-rating">Experience: 20 Years</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        <p class="list-rating list-rating-list-doc">Rating: <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/g-star.png" alt="" class="list-star"> (4.7)
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 list-mob-12 mtb-44">
+                                <div class="row row-doclistmob">
                                     <div class="col-md-1 col-1 mt-18">
                                         <div class="card card-body list-card">
-                                            <img src="{{ url('/doctor/doctor1.png') }}" alt="" class="list-pro">
+                                            <img src="../assets/image/senario/dtlts-doc1.jpg" alt="" class="list-pro" style="border-radius: 50%;">
+                                            <p class="doc-silver">Silver <img src="../assets/image/senario/doctor-check.png" alt="" class="list-in-mob-img1"></p>
                                         </div>
                                     </div>
                                     <div class="col-md-9 col-10 mrtt-10">
                                         <div class="card card-body list-icon">
-                                            <p class="list-doc"><i class="fa fa-stethoscope fa-icon"></i>&nbsp; {{ ucwords($val->full_name) }}
-                                                <img src="{{ url('/doctor/verify.png') }}" alt="" class="list-veri">
+                                            <p class="list-doc" style="font-size: 15px !important;width: 250px"><img src="../assets/img/h-docname.png" alt="" class="list-mob-img">&nbsp; Dr. Rabindra Kumar
+                                                Das
+                                                <img src="../assets/image/senario/blue-tick.png" alt="" class="list-veri">
                                             </p>
-                                            <p class="list-doc"><i class="fa fa-user-md fa-icon"></i>&nbsp; Specialised in {{ ucwords($val->designation) }}</p>
-                                            <p class="list-doc"><i class="fa fa-hospital-o fa-icon"></i>&nbsp;  {{ ucwords($val->department) }}
+                                            <p class="list-doc" style="font-weight: 600;"><img src="../assets/image/senario/expertise.png" alt="" class="list-mob-img">&nbsp; Laparoscopic Surgeon</p>
+                                            <p class="list-doc" style="font-weight: 600;"><img src="../assets/image/senario/first-aid-kit.png" alt="" class="list-mob-img">&nbsp; MD at
+                                                SCB Medical Cuttack
                                             </p>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-md-2 col-2">
-                                <a href="" class="btn btn-danger bt-dan" name="">View Details</a>
-                                </div> -->
-
                                 </div>
                             </div>
-                            <div class="col-md-12 mrt-10">
-                                <div class="row">
+                            <div class="col-md-12 list-mob-12 mrt-10">
+                                <div class="row row-doclistmob">
                                     <div class="col-md-7 col-7">
-                                        <p class="list-doc-list" style="font-weight: 700;"><i class="fa fa-map-marker icon-mark" aria-hidden="true"></i> Work Location</p>
-                                        <p class="list-doc-list">{{ ucwords($val->location) }} {{ ($val->landmark_pincode) }}</p>
+                                        <p class="list-in-mob" style="font-weight: 800;"><img src="../assets/img/h-hoscamp.png" alt="" class="list-mob-img"> Work Location</p>
+                                        <p class="list-doc-list">Badambadi, Cuttack 754001</p>
 
                                     </div>
                                     <div class="col-md-5 col-5">
-                                        <p class="list-doc-list" style="font-weight: 700;"><i class="fa fa-inr icon-mark" aria-hidden="true"></i> Consult Fee</p>
-                                        <p class="list-doc-list list-doc-rupee"><i class="fa fa-rupee"></i>{{ ($val->consul_fee_from) }} - <i class="fa fa-rupee"></i>{{ ($val->consul_fee_to) }}</p>
+                                        <p class="list-in-mob" style="font-weight: 800;margin-left: -12px;"><img src="../assets/image/senario/rupee.png" alt="" class="list-mob-img" style="width: 12px;margin-left: -38px;"> Private Consult Fee</p>
+                                        <p class="list-doc-list list-doc-rupee" style="margin-left: -48px;"><i class="fa fa-rupee"></i>
+                                            300 - <i class="fa fa-rupee"></i> 400</p>
 
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <a href="{{ url('/doctor/detail/'.urlencode($val->full_name)) }}" class=" bt-dan" name="">View Details <i class="fa fa-arrow-right"></i></a>
+                            <div class="col-md-12 list-mob-12">
+                                <a href="doctor-details.html" class=" bt-dan" name="">View Details <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
-                    </div>
-                    @endforeach
+                    </div> -->
+                        <!-- <div class="col-xs-12 col-sm-6 col-md-4 title">
+                        <div class="card card-body card-card">
+                            <div class="col-md-12 list-mob-12 back-color-card">
+                                <div class="row row-doclistmob">
+                                    <div class="col-md-6 col-6">
+                                        <p class="list-rating">Experience: 20 Years</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        <p class="list-rating list-rating-list-doc">Rating: <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/g-star.png" alt="" class="list-star"> (4.7)
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 list-mob-12 mtb-44">
+                                <div class="row row-doclistmob">
+                                    <div class="col-md-1 col-1 mt-18">
+                                        <div class="card card-body list-card">
+                                            <img src="../assets/image/senario/dtlts-doc1.jpg" alt="" class="list-pro" style="border-radius: 50%;">
+                                            <p class="doc-general">General <img src="../assets/image/senario/doctor-check.png" alt="" class="list-in-mob-img1"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-10 mrtt-10">
+                                        <div class="card card-body list-icon">
+                                            <p class="list-doc" style="font-size: 15px !important;width: 250px"><img src="../assets/img/h-docname.png" alt="" class="list-mob-img">&nbsp; Dr. Rabindra Kumar
+                                                Das
+                                                <img src="../assets/image/senario/blue-tick.png" alt="" class="list-veri">
+                                            </p>
+                                            <p class="list-doc" style="font-weight: 600;"><img src="../assets/image/senario/expertise.png" alt="" class="list-mob-img">&nbsp; Laparoscopic Surgeon</p>
+                                            <p class="list-doc" style="font-weight: 600;"><img src="../assets/image/senario/first-aid-kit.png" alt="" class="list-mob-img">&nbsp; MD at
+                                                SCB Medical Cuttack
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 list-mob-12 mrt-10">
+                                <div class="row row-doclistmob">
+                                    <div class="col-md-7 col-7">
+                                        <p class="list-in-mob" style="font-weight: 800;"><img src="../assets/img/h-hoscamp.png" alt="" class="list-mob-img"> Work Location</p>
+                                        <p class="list-doc-list">Badambadi, Cuttack 754001</p>
+
+                                    </div>
+                                    <div class="col-md-5 col-5">
+                                        <p class="list-in-mob" style="font-weight: 800;margin-left: -12px;"><img src="../assets/image/senario/rupee.png" alt="" class="list-mob-img" style="width: 12px;margin-left: -38px;"> Private Consult Fee</p>
+                                        <p class="list-doc-list list-doc-rupee" style="margin-left: -48px;"><i class="fa fa-rupee"></i>
+                                            300 - <i class="fa fa-rupee"></i> 400</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 list-mob-12">
+                                <a href="doctor-details.html" class=" bt-dan" name="">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div> -->
+                        <!-- <div class="col-xs-12 col-sm-6 col-md-4 title">
+                        <div class="card card-body card-card">
+                            <div class="col-md-12 list-mob-12 back-color-card">
+                                <div class="row row-doclistmob">
+                                    <div class="col-md-6 col-6">
+                                        <p class="list-rating">Experience: 20 Years</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        <p class="list-rating list-rating-list-doc">Rating: <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/yl-star.png" alt="" class="list-star">
+                                            <img src="../assets/image/g-star.png" alt="" class="list-star"> (4.7)
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 list-mob-12 mtb-44">
+                                <div class="row row-doclistmob">
+                                    <div class="col-md-1 col-1 mt-18">
+                                        <div class="card card-body list-card">
+                                            <img src="../assets/image/senario/dtlts-doc1.jpg" alt="" class="list-pro" style="border-radius: 50%;">
+                                            <p class="doc-general">General <img src="../assets/image/senario/doctor-check.png" alt="" class="list-in-mob-img1"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-10 mrtt-10">
+                                        <div class="card card-body list-icon">
+                                            <p class="list-doc" style="font-size: 15px !important;width: 250px"><img src="../assets/img/h-docname.png" alt="" class="list-mob-img">&nbsp; Dr. Rabindra Kumar
+                                                Das
+                                                <img src="../assets/image/senario/blue-tick.png" alt="" class="list-veri">
+                                            </p>
+                                            <p class="list-doc" style="font-weight: 600;"><img src="../assets/image/senario/expertise.png" alt="" class="list-mob-img">&nbsp; Laparoscopic Surgeon</p>
+                                            <p class="list-doc" style="font-weight: 600;"><img src="../assets/image/senario/first-aid-kit.png" alt="" class="list-mob-img">&nbsp; MD at
+                                                SCB Medical Cuttack
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 list-mob-12 mrt-10">
+                                <div class="row row-doclistmob">
+                                    <div class="col-md-7 col-7">
+                                        <p class="list-in-mob" style="font-weight: 800;"><img src="../assets/img/h-hoscamp.png" alt="" class="list-mob-img"> Work Location</p>
+                                        <p class="list-doc-list">Badambadi, Cuttack 754001</p>
+
+                                    </div>
+                                    <div class="col-md-5 col-5">
+                                        <p class="list-in-mob" style="font-weight: 800;margin-left: -12px;"><img src="../assets/image/senario/rupee.png" alt="" class="list-mob-img" style="width: 12px;margin-left: -38px;"> Private Consult Fee</p>
+                                        <p class="list-doc-list list-doc-rupee" style="margin-left: -48px;"><i class="fa fa-rupee"></i>
+                                            300 - <i class="fa fa-rupee"></i> 400</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 list-mob-12">
+                                <a href="doctor-details.html" class=" bt-dan" name="">View Details <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div> -->
+                        <!--ten card end-->
+                        @endforeach
                     @else
                     <h1>Sorry, no results found!</h1>
-                    @endif
+                    @endif  
+                    </div>
 
                 </div>
+
                 <div class="row">
                     <div class="col-md-12" style="text-align: center;">
                         <div class="pagination"></div>
@@ -230,7 +434,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </div>
 @endsection
 @push('script')
