@@ -108,25 +108,27 @@
                                             <p class="list-rating">Experience: {{ @$val->total_experience }} Years</p>
                                         </div>
                                         <div class="col-md-6 col-6">
-                                        <?php $rating = App\Rating::where('userdetail_id',$val->id)->avg('rating'); ?>
+                                            <?php 
+                                            $ratings = App\Rating::where('userdetail_id',$val->id)->avg('rating');
+                                            $rating = App\Rating::where('userdetail_id',$val->id)->avg('rating');
+                                            ?>
                                             <p class="list-rating list-rating-list-doc">Rating:
-                                            (<?php echo number_format((float)$rating, 1, '.', ''); ?>)
-                                            @if(!$rating)  @elseif($rating=floatval($rating)) @endif
-                                            @foreach(range(1,5) as $i)
                                             <a @if(Session::get('userId')) @else href="javascript:confirm('hello world')" data-toggle="modal" data-target="#staticBackdrop" @endif>
+                                            @if(!$ratings)  @elseif($ratings=floatval($ratings)) @endif
+                                            @foreach(range(1,5) as $i)
                                                 <span class="fa-stack" style="width:1em">
-                                                    <i class="far fa-star fa-stack-1x"></i>
-                                                    @if($rating >0)
-                                                    @if($rating >0.5)
-                                                    <i class="fas fa-star fa-stack-1x" style="color: #ff9b00;"></i>
+                                                    <i class="far fa-stack-1x"><img src="{{ url('/doctor/g-star.png') }}" alt="" class="list-star"></i>
+                                                    @if($ratings >0)
+                                                    @if($ratings >0.5)
+                                                    <i class="fas  fa-stack-1x"><img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-star"></i>
                                                     @else
                                                     <i class="fas fa-star-half fa-stack-1x" style="color: #ff9b00;"></i>
                                                     @endif
                                                     @endif
-                                                    @php $rating--; @endphp
+                                                    @php $ratings--;  @endphp 
                                                 </span>
-                                            </a>
-                                            @endforeach
+                                                @endforeach
+                                            </a>(<?php  echo number_format((float)$rating, 1, '.', ''); ?>)
                                              <!-- <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-star">
                                                 <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-star">
                                                 <img src="{{ url('/doctor/g-star.png') }}" alt="" class="list-star">   -->

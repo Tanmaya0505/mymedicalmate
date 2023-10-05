@@ -624,7 +624,13 @@ class HomeController extends \App\Http\Controllers\Controller
             $data1->where('total_experience','like','%'.$request->experience.'%');
         }
         $data = $data1->get();
-        return view('frontend-source.users.listing-doctors',compact('data'));
+        $server=$_SERVER['HTTP_USER_AGENT'];
+        $isMob = is_numeric(strpos(strtolower($server), "mobile")); 
+        if($isMob){
+            return view('frontend-source.users.listing-doctors-mobile',compact('data'));
+        }else{
+            return view('frontend-source.users.listing-doctors-copy',compact('data')); 
+        }
     }
     public function DoctorDetail(Request $request,$name){
         //dd(Session::get('userId'));

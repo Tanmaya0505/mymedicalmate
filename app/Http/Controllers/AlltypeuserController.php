@@ -95,13 +95,13 @@ class AlltypeuserController extends Controller {
             $data = CustomerDetail::with('diseasedetails')->where('id',$id)->orderBy('id','desc')->first();
             $data2 = CustomerDetail::where('id',$id)->orderBy('id','desc')->first();
         $datalog = AlltypeUserLog::where('data_id',$id)->orderBy('id','desc')->first();
-       // dd($data2->toArray());
+        //dd($data2->toArray());
         $resultcustomer = array_diff_key($data2->toArray(), array_flip((array) ['status']));
         //dd(array_slice($resultcustomer,2));
         //$datalogs=array_slice($datalog->toArray(),4);
         //$resultcustomers=array_slice($resultcustomer,2);
         //$arrydiff=array_diff_assoc($datalogs, $resultcustomers) === array_diff_assoc($resultcustomers, $datalogs);
-        //dd( $arrydiff);
+        //dd( $resultcustomer);
         return view('pages.add_all_type_users', ['config' => $config,'resultcustomer'=>$resultcustomer, 'datalog'=>$datalog, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
     }
 
@@ -169,8 +169,10 @@ class AlltypeuserController extends Controller {
         
             $data = CustomerDetail::with('diseasedetails')->where('id',$id)->orderBy('id','desc')->first();
             $datalog = AlltypeUserLog::where('data_id',$id)->orderBy('id','desc')->first();
+            $data2 = CustomerDetail::where('id',$id)->orderBy('id','desc')->first();
+            $resultcustomer = array_diff_key($data2->toArray(), array_flip((array) ['status']));
         
-        return view('pages.add_all_type_users', ['config' => $config,'datalog'=>$datalog, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
+        return view('pages.add_all_type_users', ['config' => $config,'resultcustomer'=>$resultcustomer,'datalog'=>$datalog, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
 
     }
     public function AdminDoctorview(Request $request,$type,$id){
