@@ -434,7 +434,7 @@ h6 {
 
 
 .pro-card0 {
-  background-image: url(../image/senario/Hospitall.jpg) !important;
+  background-image: url(/doctor/Hospitall.jpg) !important;
   background-size: cover !important;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -483,7 +483,7 @@ h6 {
 .dtls-text-doc3 {
   color: #fff !important;
   font-size: 15px !important;
-  margin-top: -48px;
+  margin-top: -29px;
   margin-left: -18px;
   text-align: center;
 }
@@ -491,7 +491,7 @@ h6 {
 .dtls-text-doc4 {
   color: #fff !important;
   font-size: 15px !important;
-  margin-top: -48px;
+  margin-top: -30px;
   margin-left: -17px;
   text-align: center;
 }
@@ -1452,7 +1452,7 @@ h6 {
 
 .card-qsas {
   overflow-y: scroll;
-  max-height: 200px;
+  max-height: 168px;
 }
 
 
@@ -1932,6 +1932,7 @@ h6 {
   padding-bottom: 18px !important;
   padding-top: 13px !important;
   margin-left: -1px !important;
+  padding-left: 12px;
 }
 
 .doc-prime {
@@ -2043,7 +2044,7 @@ h6 {
 }
 
 .row-doc-list {
-  margin-right: -40px;
+  margin-right: -24px !important;
 }
 
 .check-list input[type=checkbox] {
@@ -3756,7 +3757,7 @@ h6 {
 }
 
 .pro-background {
-  background-image: url(../image/back3.png);
+  background-image: url(/doctor/back3.png);
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -4275,6 +4276,9 @@ h6 {
 
 .content {
   padding-top: 10px;
+}
+.doctor-mt-top{
+  margin-top: -406px !important;
 }
 
 @media screen and (max-width: 700px) {
