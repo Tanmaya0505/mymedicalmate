@@ -107,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-9 doctor-list-tab-9" style="margin-top: 30px;">
+        <div class="col-md-9 doctor-list-tab-9" style="margin-top: 62px;padding-left:22px">
         @if(count($data))
         @foreach($data as $key=>$val)
         @php
@@ -129,27 +129,29 @@
               </div>
               <div class="col-md-9 col-10">
                 <div class="span-hover">
-                <?php $rating = App\Rating::where('userdetail_id',$val->id)->avg('rating'); ?>
-                  <p class="doc-list-txt1">
-                    <img src="{{ url('/doctor/medical-checkup.png') }}" alt="" class="doc-list-icon1"> {{ucwords($val->full_name)}}
-                     <img src="{{ url('/doctor/blue-tick.png') }}" alt=""
-                      style="width:18px;margin-top: -1px;">
-                    @if(!$rating)  @elseif($rating=floatval($rating)) @endif
-                    @foreach(range(1,5) as $i) 
-                    <span style="float: right;" class="fa-stack" style="width:1em">
-                       <i class="far fa-stack-1x"><img src="{{ url('/doctor/tg.png') }}" alt="" class="list-doc-star-img"></i>
-                      @if($rating >0)
-                      @if($rating >0.5)
-                       <i class="fas fa-stack-1x" style="margin-left: -65px;z-index: 1;"> <img src="{{ url('/doctor/ty.png') }}" style="color: #ff9b00;" alt="" class="list-doc-star-img"></i>
-                      @else
-                       <i><img src="{{ url('/doctor/tg.png') }}" style="color: #ff9b00;" alt="" class="list-doc-star-img"></i>
-                    @endif
-                    @endif
-                    @php $rating--; @endphp
-                    </span>
-                   @endforeach
+                <?php $rating = App\Rating::where('userdetail_id',$val->id)->avg('rating');
+                $ratings = App\Rating::where('userdetail_id',$val->id)->avg('rating'); ?>
+                  <p class="doc-list-txt1" style="float: right;">Rating:
+                  <a @if(Session::get('userId')) @else href="javascript:confirm('hello world')" data-toggle="modal" data-target="#staticBackdrop" @endif>
+                    @if(!$ratings)  @elseif($ratings=floatval($ratings)) @endif
+                    @foreach(range(1,5) as $i)
+                      <span class="fa-stack" style="width:1em">
+                          <i class="far fa-stack-1x"><img src="{{ url('/doctor/g-star.png') }}" alt="" class="list-doc-star-img"></i>
+                          @if($ratings >0)
+                          @if($ratings >0.5)
+                          <i class="fas  fa-stack-1x"><img src="{{ url('/doctor/yl-star.png') }}" alt="" class="list-doc-star-img"></i>
+                          @else
+                          <i class="fas fa-star-half fa-stack-1x" style="color: #ff9b00;"></i>
+                          @endif
+                          @endif
+                          @php $ratings--;  @endphp 
+                      </span>
+                      @endforeach
+                  </a>(<?php  echo number_format((float)$rating, 1, '.', ''); ?>)
                   </p>
-                  <p class="doc-list-txt1"><img src="{{ url('/doctor/education.png') }}" class="doc-list-icon1"
+                  <p class="doc-list-txt1"><img src="{{ url('/doctor/medical-checkup.png') }}" class="doc-list-icon1"
+                      alt=""> {{ucwords($val->full_name)}}</p>
+                      <p class="doc-list-txt1"><img src="{{ url('/doctor/education.png') }}" class="doc-list-icon1"
                       alt=""> {{ucwords($val->doctorqualification)}}</p>
                   <p class="doc-list-txt1"><img src="{{ url('/doctor/first-aid-kit.png') }}"
                       class="doc-list-icon1" alt=""> {{ucwords($val->department)}}</p>

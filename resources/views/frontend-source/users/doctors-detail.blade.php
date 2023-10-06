@@ -4,7 +4,7 @@
 @section('description') Medical Mate Details @stop
 @section('style')
 <link rel="stylesheet" type="text/css" href="{{asset('frontend-source/css/custom.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('frontend-source/css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('frontend-source/doctorlistcss/style.css')}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
     .row {
@@ -246,248 +246,365 @@
         $photo = url($data->profile_picture);
     }
     ?>
-    <div class="main">
-        <!-- <div class="profile-nav col-lg-5 col-xl-4">
-            <div class="panel">
-                <div class="user-heading round">
-                    <div class="d-flex bd-highlight align-items-center">
-                        <div class="info-icon">
-                            <p class=""> {{$data->total_experience}} </p>
+    <div class="row">
+        <!--Section qna start-->
+        <div class="col-md-4 pd-lt-0-doc desktop-doctor-block">
+            <section>
+                <div class="col-md-12" style="padding-left: 0px !important;">
+                    <div class="count" style="background-color: #DEEBF7;">
+                        <div id="countdown9" style="padding-top: 0px !important;margin-left: -16px;">
+                            <ul>
+                                <li class="li2"><span id="days9"></span>Days</li>
+                                <li class="li2"><span id="hours9"></span>Hours</li>
+                                <li class="li2"><span id="minutes9"></span>Minutes</li>
+                                <li class="li2"><span id="seconds9"></span>Seconds</li>
+                            </ul>
                         </div>
-                        <div class="profile-image">
-                            <a href="#">
-                                <img src="{{ $photo }}" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="info-icon">
-                            <p>Ratings: {{ $data->star_ratings }} </p>
-                        </div>
-                    </div>
-
-                    <div class="user-details">
-                        <b>Full Name:</b> {{ ucwords($data->full_name) }}<br>
-                        <b>Designation:</b> {{ $data->designation }}<br>
-                        <b>Department:</b> {{ $data->department }}<br>
-                        <b>Location:</b> {{ $data->location }}<br>
-                    </div>
-                </div>
-                <div class="text-center mt20">
-  
-
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-7 col-xl-8">
-            <div class="profile-info">
-                <h4 class="mb20">Doctor Details</h4>
-                <ul class="list-group detail-profile-list">
-                    <li class="list-group-item">
-                        <i class="fal fa-eye"></i>
-                        <span><strong>{{ $data->mobile}}</strong></span>
-                    </li>
-
-                    <li class="list-group-item">
-                        <i class="fal fa-eye"></i>
-                        <span><strong>{{ $data->email}}</strong></span>
-                    </li>
-
-                    <li class="list-group-item">
-                        <span><strong>{{ $data->website_url}}</strong></span>
-                    </li>
-
-                    <li class="list-group-item">
-                        <span><strong>{{ $data->social_media_link}}</strong></span>
-                    </li>
-
-                    <li class="list-group-item">
-                        <span><strong>{{ $data->description}}</strong></span>
-                    </li>
-
-                    <li class="list-group-item">
-                        <i class="fal fa-eye"></i>
-                        <a target="_blank" href="{{url('achievement/doctor/'.urlencode($data->full_name))}}"><span><strong>Achievement & Award</strong></span></a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div class="clearfix"></div>
-            </div>
-        </div> -->
-        <!-- ======= Hero Section ======= -->
-        <section id="hero" style="height: 350px;">
-            <div class="container-fluid cont-fld">
-                <div class="col-md-12">
-                    <div class="row">
-
-                        <div class="col-sm-6 col-xs-12  wow slideInLeft">
-                            <div class="card card-body pro-card pro-card1" id="grad1">
-                                <div class="row">
-                                    <div class="col-md-12 pro-d-flex">
-                                        <div class="row">
-                                            <div class="col-md-4  col-4">
-                                                <p class="pro-text pro-text1">{{ $data->total_experience}} Years Exp</p>
-                                            </div>
-                                            <div class="col-md-4 col-4">
-                                                <div class="card card-body pro-pro pro-pro1">
-                                                    <img src="{{ url('/doctor/doctor1.png') }}" alt="" class="pro-doc">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4  col-4 ">
-                                                <p class="pro-text ">Rating: {{number_format((float)$rating, 1, '.', '')}} </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-12">
-                                        <p class="pro-contenn">
-                                            <img src="{{ url('/doctor/name.png') }}" alt="" class="pro-image">
-                                            <span class="profile-name mrglft-10"> Full Name :</span><span class="mglft-10"> {{ $data->full_name}}
-                                            </span> <img src="{{ url('/doctor/verify.png') }}" alt="" class="pro-veri">
-                                        </p>
-                                        <p class="pro-conten">
-                                            <img src="{{ url('/doctor/gender.png') }}" alt="" class="pro-image">
-                                            <span class="profile-name mrglft-10"> Gender : </span><span class="mglft-10"> {{ $data->gender}}</span> <img src="../assets/image/back.png" alt="" class="back-hidden">
-                                        </p>
-                                        <p class="pro-conten ln-cn" style="line-height: 20px !important;">
-                                            <img src="{{ url('/doctor/desig.png') }}" alt="" class="pro-image">
-                                            <span class="profile-name mrglft-10"> Designation :</span><span class="mglft-10"> {{ $data->designation}}
-                                                {{ $data->orgnization_name}}</span>
-                                        </p>
-                                        <p class="pro-conten">
-                                            <img src="{{ url('/doctor/depart.png') }}" alt="" class="pro-image">
-                                            <span class="profile-name mrglft-10">Departments :</span><span class="mglft-10"> {{ $data->department}}</span>
-                                        </p>
-                                    </div>
-                                </div>
+                        <p class="get-doc-dtls">Get Up to 25% Cashback on Medicine Order</p>
+                        <div class="variantss">
+                            <div class='filen file--upload'>
+                                <label for='input-file'>
+                                    Upload Prescription
+                                </label>
+                                <input id='input-file' type='file' />
                             </div>
-                        </div>
-                        <div class="col-md-6 mob-non wow slideInRight" style="background-image: linear-gradient(to right, #1e4364 , #1b5e9c);height: 135px; border-radius: 5px;">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p>
-                                        <!-- <img src="../assets/image/doctor-background.jpg" alt="" class="header-doct"> -->
-                                    <div class="text-block">
-                                        <div id="timer">00 00 00 00</div>
-                                        <div class="timer-label">
-                                            &nbsp;&nbsp;&nbsp;&nbsp;Day&nbsp;&nbsp;&nbsp;&nbsp;Hr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Min&nbsp;&nbsp;&nbsp;Sec
-                                        </div>
-                                        <div class="upload-btn-wrapper">
-                                            <button class="btn-uppload">Upload Prescription</button>
-                                            <input type="file" name="myfile" />
-                                        </div>
-
-                                    </div>
-
-                                    </p>
-
-                                </div>
-                            </div>
-                            <div class="row mob-non">
-                                <div class="container">
-                                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                                        <!-- The slideshow/carousel -->
-                                        <div class="carousel-inner ">
-                                            <div class="carousel-item carousel-items active">
-                                                <img src="{{ url('/doctor/diabetes-2.png') }}" alt="Slide 1" class="d-block w-100 caro-1">
-                                            </div>
-                                            <div class="carousel-item carousel-items">
-                                                <img src="{{ url('/doctor/diabetes-3.png') }}" alt="Slide 2" class="d-block w-100 caro-1">
-                                            </div>
-                                            <div class="carousel-item carousel-items">
-                                                <img src="{{ url('/doctor/diabetes-2.png') }}" alt="Slide 3" class="d-block w-100 caro-1">
-                                            </div>
-                                        </div>
-
-                                        <!-- Left and right controls/icons -->
-                                        <a class="carousel-control-prev" href="#demo" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon"></span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#demo" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon"></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Hero -->
-        <!--Start Time section-->
-        <section id="time">
-            <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="card card-body card-locc col-12 ">
-
-                            <!--desktop view start-->
-                            <div class="col-md-12 desk-blck">
-                                <div class="row">
-                                    <div class="col-md-6 wow slideInRight">
-                                        <p class="location-text ">
-                                            <img src="{{ url('/doctor/location.png') }}" alt="" class="pro-ctime"> Consult Location
-                                        </p>
-                                        <p class="form-control control-data">{{ $data->location}}, {{ $data->landmark_pincode}}</p>
-                                        <p class="location-text">
-                                            <img src="{{ url('/doctor/calender.png') }}" alt="" class="pro-ctime"> Consult Days
-                                        </p>
-                                        <p class="form-control control-data">{{ $data->avl_days}}</p>
-                                    </div>
-                                    <div class="col-md-6 wow slideInLeft">
-                                        <p class="location-text">
-                                            <img src="{{ url('/doctor/ctime.png') }}" alt="" class="pro-ctime"> Consult Time
-                                        </p>
-                                        <p class="form-control control-data">{{ $data->from_time}} - {{ $data->to_time}}</p>
-                                        <p class="location-text">
-                                            <img src="{{ url('/doctor/rupee.png') }}" alt="" class="pro-ctime"> Consult Fee
-                                        </p>
-                                        <p class="form-control control-data">
-                                            <i class="fa fa-rupee"></i> {{ $data->consul_fee_from}} - <i class="fa fa-rupee"></i> {{ $data->consul_fee_to}}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--desktop view end-->
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--End time section-->
-        <!--Section award start-->
-        <section id="award">
-            <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="card card-body pro-qual pro-background col-12 ">
+            </section>
+            <!--Section Similar doctor start-->
+            <section id="similar-doc">
+                <div class="container-fluid container-fluid-doc1 cont-doc-fld">
+                    <div class="col-md-12">
+                        <div class="row">
                             <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <center>
-                                            <img src="{{ url('/doctor/a-trophy.gif') }}" alt="" class="pro-trophy">
-                                        </center>
-                                    </div>
-                                    <div class="col-md-6 col-12 wow slideInLeft">
+                                <p class="qs-ass">Similar doctor's profile</p>
+                            </div>
+                            @foreach($alldoctor as $key=>$val)
+                            @php $acb=explode(',',$val->star_ratings);  @endphp
+                            <?php $rating = App\Rating::where('userdetail_id',$val->id)->avg('rating'); ?>
+                            <div class="col-xs-12 col-sm-6 col-md-12  wi-100 wii-100 wi-dtls-pd coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+                                    <p class="similar-text similar-dtls-doc"><b>{{$val->full_name}}</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text">MD in Cardiology at {{$val->orgnization_name}}</p>
+                                    <p class="similar-text">Overall {{$val->total_experience}} Years of Experience in {{$val->department}}</p>
+                                    <p class="similar-text">Public Rating: (<?php  echo number_format((float)$rating, 1, '.', ''); ?>)</p>
 
-                                        <div class="form-control loc-card-achieve">
-                                            <p class="loc-text" onclick="toggleSection()" style="color: #154e83 !important;font-weight: 600">
-                                                <img src="{{ url('/doctor/qualif.png') }}" alt="" class="award-image">
-                                                Qualification
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            @endforeach
+                            <!-- <div class="col-xs-12 col-sm-6 col-md-12 wi-100 coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div> -->
+
+                            <div class="col-md-12">
+                                <a href="" class="btn btn-dlts-view" style="float: right;">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="qna" class="desk-open desk-scroll">
+                <div class="container-fluid container-fluid-doc1 cont-doc-fld">
+                    <div class="col-md-12">
+
+                        <div class="row">
+                            <div class="col-md-12 card card-body card-qs card-qsas">
+                                <div class="row">
+
+                                    <h1 class="question1 qs-ass qs-doc-ans"> View Question & Answer<span class="faq-tt"></span>
+                                    </h1>
+                                    <div class="topic" style="display: none;">
+                                        <div class="open">
+                                            <h2 class="question">What is the consult fee?</h2><span class="faq-t"></span>
+                                        </div>
+                                        <p class="answer">Rs 300 - Rs 400</p>
+                                    </div>
+                                    <div class="topic" style="display: none;">
+                                        <div class="open">
+                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
+                                        </div>
+                                        <p class="answer">10 am to 3 pm</p>
+                                    </div>
+                                    <div class="topic" style="display: none;">
+                                        <div class="open">
+                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
+                                        </div>
+                                        <p class="answer">10 am to 3 pm</p>
+                                    </div>
+                                    <div class="topic" style="display: none;">
+                                        <div class="open">
+                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
+                                        </div>
+                                        <p class="answer">10 am to 3 pm</p>
+                                    </div>
+                                    <div class="topic" style="display: none;">
+                                        <div class="open">
+                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
+                                        </div>
+                                        <p class="answer">10 am to 3 pm</p>
+                                    </div>
+
+                                    <div class="col-md-12 card card-body p-card wwd-100 wow slideInUp">
+                                        <div class="">
+                                            <form action="">
+                                                <input type="text" name="" class="form-control p-control-card" id="myInput" onclick="openSubmitButton1()" placeholder="Add Your Question ?">
+                                                <div class="file-upload-doc" id="uploaded" style="display: none;">
+                                                    <label for="upload" class="file-upload__label-doc"><i class="fa fa-upload"></i>
+                                                        Upload</label>
+                                                    <input id="upload" class="file-upload__input-doc" type="file" name="file-upload">
+                                                </div>
+                                                <input type="submit" id="submitButton1" name="" class="btn btn-primary pri-share" value="Submit" style="display: none;">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-8 pd-rt-0-doc">
+            <section id="hero-doc hero-dtls">
+                <div class="container-fluid container-fluid-doc1 cont-fld cont-fld-doc1">
+                    <div class="col-md-12 mob-pd-wd-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12 ">
+                                <div class="card card-body pro-card pro-card0" style="height: 300px;padding: 0px;">
+                                    <div style="background-color: #0009;height: 300px;"></div>
+                                    <div class="row">
+                                        <div class="col-md-1 "></div>
+                                        <div class="col-md-3 col-4">
+                                            <div class="card card-body pro-card01">
+                                                <img src="{{ url('/doctor/real-doc.jpeg') }}" alt="" class="dtls-doc-img">
+                                                <!--for desktop-->
+                                                <div class="card card-body" style="background-color: #6f42c199;border: transparent;height: 35px;margin-top: -34.2px;border-radius: 0px;color: #fff;font-weight: 600;text-align: center;">
+                                                    Prime <img src="{{ url('/doctor/doctor-check.png') }}" alt="" style="width: 25px;margin-left:80px ;margin-top: -25px;"></div>
+                                                <!--desktop end-->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-8">
+                                            <!--foe mobile-->
+                                            <p><img src="{{ url('/doctor/real-doc.jpeg') }}" alt="" class="dtls-doc-img-circle">
+                                            <div class="card card-body prime-green-card">Prime</div>
+                                            </p>
+                                            <!--mobile end-->
+                                            <div class="dtls-doc-dtls">
+
+                                                <p class="dtls-text-doc1"><b>{{ $data->full_name}}</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:20px;margin-top: -1px;">
+                                                </p>
+                                                <p class="dtls-text-doc2" style="margin-top: 3px;">Prof at SCB Medical Cuttack 754021</p>
+                                                <p class="dtls-text-doc2 dtls-text-doc20" style="margin-top: 3px;">Overall 20 Years of
+                                                    Experience in <b>Cardiology</b>
+                                                    <img src="../assets/image/heart.png" alt="" class="wish-doc-img">
+                                                    <img src="../assets/image/share.png" alt="" class="share-doc-img">
+                                                </p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-xs-12 mob-xs-pd-12">
+                                <div class="card card-body pro-card-card1 dtls-card-card2 ">
+                                    <div class="row">
+                                        <div class="col-md-3 dtls-wd-3"></div>
+                                        <div class="col-md-3 dtls-wd1-3">
+                                            <p class="dtls-text-doc2 dtls-text-doc22">Public Ratings
+                                                <img src="../assets/image/senario/ty.png" alt="" class="dtls-doc-star">
+                                                (4.5)
                                             </p>
                                         </div>
-                                        <div class="toggle-wrap">
-                                            <i id="toggleIcon" class="fa fa-angle-down fa-angle fa-anglee" onclick="toggleSection()"></i>
-                                            <div id="content" class="content hidden">
-                                                <div id="newQual" class="hidden col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-md-12 col-12">
-                                                            <div class="form-control card-blue">
-                                                                <div class="row">
-                                                                    <div class="col-md-11 col-9">
-                                                                        <p class="text-award">{{ $data->doctorqualification}}</p>
+                                        <div class="col-md-3 dtls-wd2-3">
+                                            <img src="../assets/image/senario/dtls-gara.png" alt="" class="dtls-gara1">
+                                            <p class="dtls-text-doc3"> Expected Cons
+                                                <span class="dtls-txt1-count">1000+</span>
+                                            </p>
+                                            <p class="dtls-text-doc6 dtls-text-doc66">In Last Years</p>
+                                        </div>
+                                        <div class="col-md-3 dtls-wd3-3">
+                                            <img src="../assets/image/senario/dtls-gara.png" alt="" class="dtls-gara2">
+                                            <p class="dtls-text-doc4"> Visitors
+                                                <span class="dtls-txt1-count">2000+</span>
+                                            </p>
+                                            <p class="dtls-text-doc6">In Last Years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End Hero -->
+            <!--Start Time section-->
+            <section id="time">
+                <div class="container-fluid container-fluid-doc1 time-container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="card card-body card-locc col-12 ">
+
+                                <!--desktop view start-->
+                                <div class="col-md-12 desk-blck">
+                                    <div class="row">
+                                        <div class="col-md-6 dtls-6-doctor wow slideInUp">
+                                            <p class="doc-high-back">Doctor Features</p>
+                                            <p class="location-text location-details-1 mob-dtls-control2">
+                                                <img src="../assets/image/senario/hospital-1.png" alt="" class="pro-ctime"> Consult Location
+                                            </p>
+                                            <p class="form-control control-data mob-dtls-control" style="margin-top: -6px !important;margin-bottom: 20px;">Badambadi, Cuttack 754001</p>
+                                            <p class="location-text location-details-1 dtls-location-txt1 mob-dtls-control1" style="padding-top: 0px;padding-bottom: 0px;">
+                                                <img src="../assets/img/h-ftime.png" alt="" class="pro-ctime"> Consult Time
+                                            </p>
+                                            <p class="form-control control-data">10:00 AM - 02:30 PM</p>
+                                        </div>
+                                        <div class="col-md-6 dtls-6-doctor wow slideInUp">
+
+                                            <p class="location-text location-details-1 days-dtls-txt" style="padding-top:36px">
+                                                <img src="../assets/image/senario/calendar.png" alt="" class="pro-ctime"> Consult Days
+                                            </p>
+                                            <p class="form-control control-data" style="margin-top: -3px !important;">Mon, Fri, Sat</p>
+                                            <p class="location-text location-details-1" style="padding-bottom: 3px;">
+                                                <img src="../assets/image/senario/my-coin.png" alt="" class="pro-ctime"> Consult Fee
+                                            </p>
+                                            <p class="form-control control-data" style="margin-top: -3px !important;">
+                                                <i class="fa fa-rupee"></i> 300 - <i class="fa fa-rupee"></i> 400
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--desktop view end-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End time section-->
+            <!--Section award start-->
+            <section id="award">
+                <div class="container-fluid container-fluid-doc1 time-container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="card card-body pro-qual pro-background col-12 ">
+
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-12" style="text-align: center;">
+
+                                            <img src="{{ url('/doctor/a-trophy.gif') }}" alt="" class="pro-trophy">
+
+                                        </div>
+                                        <div class="col-md-6 col-12 wow slideInUp">
+
+                                            <div class="form-control loc-card-achieve">
+                                                <p class="loc-text" onclick="toggleSection()" style="color: #154e83 !important;font-weight: 600">
+                                                    <img src="{{ url('/doctor/qualif.png') }}" alt="" class="award-image">
+                                                    Qualification
+                                                </p>
+                                            </div>
+                                            <div class="toggle-wrap">
+                                                <i id="toggleIcon" class="fa fa-angle-down fa-angle fa-anglee" onclick="toggleSection()"></i>
+                                                <div id="content" class="content hidden">
+                                                    <div id="newQual" class="hidden col-md-12">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-12 " style="padding-left: 0px;padding-right: 0px;">
+                                                                <div class="form-control card-blue">
+                                                                    <div class="row">
+                                                                        <div class="col-md-11 col-9">
+                                                                            <p class="text-award">MBBS from Sanford 2013</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-control card-blue">
+                                                                    <div class="row">
+                                                                        <div class="col-md-11 col-9">
+                                                                            <p class="text-award">MBBS from Sanford 2013</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-control card-blue">
+                                                                    <div class="row">
+                                                                        <div class="col-md-11 col-9">
+                                                                            <p class="text-award">MBBS from Sanford 2013</p>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -496,470 +613,589 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6 col-12 wow slideInRight">
-                                        <div class="form-control loc-card-achieve">
-                                            <p class="loc-text" onclick="toggleAwardSection()" style="color: #154e83 !important;font-weight: 600">
-                                                <img src="{{ url('/doctor/acaw.png') }}" alt="" class="award-image"> Achievements & Awards
-                                            </p>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <i class="fa fa-angle-down fa-angle fa-anglee" onclick="toggleAwardSection()" id="awardToggleIcon"></i>
+                                        <div class="col-md-6 col-12 wow slideInUp">
+                                            <div class="form-control loc-card-achieve">
+                                                <p class="loc-text" onclick="toggleAwardSection()" style="color: #154e83 !important;font-weight: 600">
+                                                    <img src="{{ url('/doctor/acaw.png') }}" alt="" class="award-image"> Achievements & Awards
+                                                </p>
                                             </div>
-                                        </div>
-                                        <div id="newAward" class="hidden col-md-12">
                                             <div class="row">
-                                                <div class="col-md-12 col-12">
-                                                    <div class="form-control card-blue">
-                                                        <div class="row">
-                                                            <div class="col-md-11 col-9">
-                                                                <p class="text-award">{{ $data->achievement_award}}</p>
-                                                            </div>
-                                                            <div class="col-md-1 col-3">
-                                                                <div class="image-container">
-                                                                    <a href="{{ url('/doctor/pro-doc.jpg') }}" class="zoom-image">
-                                                                        <img src="{{ url('/'.$data->profile_picture) }}" alt="" class="doc-award" width="172" height="115">
-                                                                    </a>
-
+                                                <div class="col-md-12">
+                                                    <i class="fa fa-angle-down fa-angle fa-anglee" onclick="toggleAwardSection()" id="awardToggleIcon"></i>
+                                                </div>
+                                            </div>
+                                            <div id="newAward" class="hidden col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-12" style="padding-left: 0px;padding-right: 0px;">
+                                                        <div class="form-control card-blue" style="margin-top: 3px;">
+                                                            <div class="row">
+                                                                <div class="col-md-11 col-9">
+                                                                    <p class="text-award">National Award</p>
                                                                 </div>
-
+                                                                <div class="col-md-1 col-3">
+                                                                    <img src="{{ url('/doctor/pro-doc.jpg') }}" class="details-modal-img" data-toggle="modal" data-target="#myModaldelete">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
 
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <center>
-                                            <button type="button" class="btn btn-primary btn-prm" data-toggle="modal" data-target="#myModal">GET IN
-                                                TOUCH <img src="{{ url('/doctor/hand1.png') }}" alt="" class="icon-hand">
-                                            </button>
-                                        </center>
-                                    </div>
-                                </div>
+                                    <div class="row">
+                                        <div class="col-md-12" style="text-align: center;">
 
+                                            <a href="" class="btn btn-primary btn-prm" data-bs-toggle="modal" data-bs-target="#myModal">GET
+                                                IN TOUCH <img src="{{ url('/doctor/hand1.png') }}" alt="" class="icon-hand">
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Section award end-->
-        <!--Section Social media start-->
-        <section id="social-media">
-            <div class="container-fluid">
+            </section>
+            <!--Section award end-->
+            <section>
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="card card-body  card-web">
-                            <div class="card card-body loc-cardd loc-socialmedia">
-
-                                <div class="col-md-12 ">
-                                    <div class="row">
-                                        <div class="col-md-6 wow slideInRight">
-                                            <p class="location-text">
-                                                <img src="{{ url('/doctor/web.png') }}" alt="Website" class="icon-social"> &nbsp;Website
-                                            </p>
-                                            <p class="form-control control-data"><a href="" class="social-link-a">{{ $data->website_url}}</a></p>
-                                            <p class="location-text">
-                                                <img src="{{ url('/doctor/face.png') }}" alt="Facebook" class="icon-social">&nbsp;Facebook
-                                            </p>
-                                            <p class="form-control control-data"><a href="" class="social-link-a">{{ $data->social_media_link}}</a></p>
-                                            <p class="location-text">
-                                                <img src="{{ url('/doctor/instagram.png') }}" alt="Instagram" class="icon-social">&nbsp;Instagram
-                                            </p>
-                                            <p class="form-control control-data"><a href="" class="social-link-a">{{ $data->instagram_url}}</a></p>
-                                        </div>
-                                        <div class="col-md-6 wow slideInLeft">
-
-                                            <p class="location-text">
-                                                <img src="{{ url('/doctor/linked.png') }}" alt="linkedIn" class="icon-social">&nbsp;LinkedIn
-                                            </p>
-                                            <p class="form-control control-data"><a href="" class="social-link-a">https://dr.rabin/m.linkedin.com</a>
-                                            </p>
-                                            <p class="location-text">
-                                                <img src="{{ url('/doctor/youtube.png') }}" alt="Youtube" class="icon-social">&nbsp;Youtube
-                                            </p>
-                                            <p class="form-control control-data"><a href="" class="social-link-a">{{ $data->youth_profile_url}}</a>
-                                            </p>
-                                            <p class="location-text">
-                                                <img src="{{ url('/doctor/twitter.png') }}" alt="Twitter" class="icon-social">&nbsp;Twitter
-                                            </p>
-                                            <p class="form-control control-data"><a href="" class="social-link-a">{{$data->twiter_profile_url}}</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="card card-body loc-cardd wow slideInLeft">
-                                <p class="loc-des loc-text">{{$data->description}}...........
-                                    <a class="button loc-read" onclick="openPopup1()">Read More</a>
-                                </p>
-
-
-                                <div class="popup-overlay" id="popup1">
-                                    <div class="popup-content">
-                                        <span class="popup-close" onclick="closePopup1()">&times;</span>
-                                        <h5 class="h5">View Details</h5>
-
-                                        <div class="content">
-                                            <p class="comment-text">Description: Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                                                bookDescription: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                                printer took a galley of type and scrambled it to make a type specimen bookDescription: Lorem
-                                                Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                                                type and scrambled it to make a type specimen bookDescription: Lorem Ipsum is simply dummy text
-                                                of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                                make a type specimen bookDescription: Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                                                book</p>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-12 md-md">
+                    <div class="card card-body story-card-doc">
+                        <p class="story-doc-txt1">Doctor Stories</p>
+                        <div class="row">
+                            <div class="col-md-6">
                                 <div class="row">
+                                    <div class="col-md-2 col-3">
+                                        <img src="{{ url('/doctor/consultation.png') }}" alt="" class="doc-story-img">
+                                    </div>
+                                    <div class="col-md-10 col-9">
+                                        <p class="story-doc-txt2 wow slideInUp"><b>No of Consultation!</b><br>Around 4000+ consultation in
+                                            last 20 years.</p>
+                                    </div>
+                                </div>
+                                <hr class="dtls-hr1">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-2 col-3">
+                                        <img src="{{ url('/doctor/prescribing.png') }}" alt="" class="doc-story-img">
+                                    </div>
+                                    <div class="col-md-10 col-9">
+                                        <p class="story-doc-txt2 wow slideInUp"><b>No of Consultation at Clinic !</b><br> Around 10000+
+                                            consultation in last 15 years.</p>
+                                    </div>
+                                </div>
+                                <hr class="dtls-hr1">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-2 col-3">
+                                        <img src="{{ url('/doctor/search.png') }}" alt="" class="doc-story-img" style="width: 45px;">
+                                    </div>
+                                    <div class="col-md-10 col-9">
+                                        <p class="story-doc-txt2 wow slideInUp"> <b>No of Research in Career !</b><br> Around 100+
+                                            consultation in last 15 years.</p>
+                                        </p>
+                                    </div>
 
-                                    <div class="col-md-8 col-7 wow slideInLeft">
-                                        <div class="form-control loc-cardd loc-card-form">
-                                            <p class="loc-text" type="button" onclick="openPopup()">Comments</p>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <a class="button" onclick="openPopup()"> <i class="fa fa-eye fa-eyee"></i></a>
+                                </div>
+                                <hr class="dtls-hr2">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-2 col-3">
+                                        <img src="{{ url('/doctor/medical-service.png') }}" alt="" class="doc-story-img" style="width: 37px;margin-top: -6px;">
+                                    </div>
+                                    <div class="col-md-10 col-9">
+                                        <p class="story-doc-txt2 wow slideInUp"><b>Type of Language Known !</b><br> Doctor fluent speak in
+                                            Engish, Hindi & Odia</p>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <hr class="dtls-hr2">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="col-md-12 dtls-dtls-122">
+                    <div class="card card-body loc-cardd loc-socialmedia">
+
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-6 second-dtls-doc-6 second-dtls-doc-66  wow slideInUp">
+                                    <p class="doc-high-back1">Connect with Social Media</p>
+                                    <p class="location-text location-details-1 background-social-border">
+                                        <a href="" class="location-text location-details-1"> <img src="{{ url('/doctor/web.png') }}" alt="Website" class="icon-social"> &nbsp;Website URL</a>
+                                    </p>
+
+                                    <p class="location-text location-details-1 background-social-border">
+                                        <a href="" class="location-text location-details-1"> <img src="{{ url('/doctor/face.png') }}" alt="Facebook" class="icon-social">&nbsp;Facebook URL</a>
+                                    </p>
+
+                                    <p class="location-text location-details-1 background-social-border">
+                                        <a href="" class="location-text location-details-1"> <img src="{{ url('/doctor/instagram.png') }}" alt="Instagram" class="icon-social">&nbsp;Instagram URL</a>
+                                    </p>
+
+                                </div>
+                                <div class="col-md-6 second-dtls-doc-6 second-dtls-doc-66 second-dtls-doc-list-6 wow slideInUp">
+
+                                    <p class="location-text location-details-1 background-social-border">
+                                        <a href="" class="location-text location-details-1"> <img src="{{ url('/doctor/linked.png') }}" alt="linkedIn" class="icon-social">&nbsp;LinkedIn URL</a>
+                                    </p>
+
+                                    </p>
+                                    <p class="location-text location-details-1 background-social-border">
+                                        <a href="" class="location-text location-details-1 "> <img src="{{ url('/doctor/youtube.png') }}" alt="Youtube" class="icon-social">&nbsp;Youtube URL</a>
+                                    </p>
+
+                                    </p>
+                                    <p class="location-text location-details-1 background-social-border">
+                                        <a href="" class="location-text location-details-1 "> <img src="{{ url('/doctor/twitter.png') }}" alt="Twitter" class="icon-social">&nbsp;Twitter URL</a>
+                                    </p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Section Social media start-->
+            <section id="social-media">
+                <div class="container-fluid container-fluid-doc1">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="card card-body  card-web">
+
+                                <!--Doctor description modal start-->
+                                <!-- Make sure you include the necessary Bootstrap and jQuery libraries here -->
+
+                                <div class="card card-body loc-cardd wow slideInUp">
+                                    <p class="loc-des loc-text" style="font-weight: 500;">Description: Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book........... <a class="button loc-read" onclick="openPopup1()">Read More</a></p>
+
+                                    <!-- Modal -->
+                                    <div class="popup-overlay" id="popup1">
+                                        <div class="popup-content">
+                                            <span class="popup-close" onclick="closePopup1()">&times;</span>
+                                            <h5 class="h5">View Details</h5>
+
+                                            <div class="content">
+                                                <p class="comment-text">Description: Lorem Ipsum is simply dummy text of the printing and
+                                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                                    1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                                    specimen bookDescription: Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                                    an unknown printer took a galley of type and scrambled it to make a type specimen
+                                                    bookDescription: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+
                                             </div>
-                                            <div class="popup-overlay" id="popup">
-                                                <div class="popup-content">
-                                                    <span class="popup-close" onclick="closePopup()">&times;</span>
-                                                    <h5 class="h5">View Comments</h5>
 
-                                                    <div class="content">
-                                                        <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
-                                                        <p class="comment-text">{{$data->comments}}</p>
-                                                        <hr>
-                                                        <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
-                                                        <p class="comment-text">{{$data->comments}}</p>
-                                                        <hr>
-                                                    </div>
-                                                    <button class="comment-add btn btn-primary pri-share" onclick="openComment()">Add
-                                                        Comment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Doctor description modal end-->
+                                <div class="col-md-12 md-md">
+                                    <div class="row">
+                                        <!--Doctor comments modal start-->
+                                        <div class="col-md-8 col-7 wow slideInUp">
+                                            <div class="form-control loc-cardd loc-card-form">
+                                                <p class="loc-text" type="button" onclick="openPopup()">Comments</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <a class="button" onclick="openPopup()"> <i class="fa fa-eye fa-eyee"></i></a>
+                                                </div>
+                                                <div class="popup-overlay" id="popup">
+                                                    <div class="popup-content">
+                                                        <span class="popup-close" onclick="closePopup()">&times;</span>
+                                                        <h5 class="h5">View Comments</h5>
 
-                                                    <a href="#" class="comment-view btn btn-primary pri-view">View More</a>
-                                                    <div class="col-md-12">
-                                                        <form action="">
-                                                            <div id="myComment" class="hidden-div">
-                                                                <input type="date" name="" placeholder="" class="form-control">
-                                                                <input type="text" name="" placeholder="Add Your Name" class="form-control">
-                                                                <input type="textarea" name="" placeholder="Add Your Comment" class="form-control">
-                                                                <center><button class="btn btn-primary pri-share" name="">Submit</button></center>
-                                                            </div>
-                                                        </form>
+                                                        <div class="content">
+                                                            <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
+                                                            <p class="comment-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                                                1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                                                specimen book.</p>
+                                                            <hr>
+                                                            <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
+                                                            <p class="comment-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                                                1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                                                specimen book.</p>
+                                                            <hr>
+                                                        </div>
+                                                        <button class="comment-add btn btn-primary pri-share1" onclick="openComment()">Add
+                                                            Comment</button>
+
+                                                        <a href="#" class="comment-view btn btn-primary pri-view">View More</a>
+                                                        <div class="col-md-12">
+                                                            <form action="">
+                                                                <div id="myComment" class="hidden-div">
+                                                                    <input type="date" name="" placeholder="" class="form-control">
+                                                                    <input type="text" name="" placeholder="Add Your Name" class="form-control">
+                                                                    <input type="textarea" name="" placeholder="Add Your Comment" class="form-control">
+                                                                    <center><button class="btn btn-primary pri-share" name="">Submit</button></center>
+                                                                </div>
+                                                            </form>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
-                                    </div>
-
-                                    <div class="col-md-4 col-5 wow slideInLeft">
-                                        <div class="form-control loc-cardd loc-card-form view">
-                                            <p class="loc-text">Views</p>
+                                        <!--Doctor comments modal end-->
+                                        <div class="col-md-4 col-5 wow slideInUp">
+                                            <div class="form-control loc-cardd loc-card-form">
+                                                <p class="loc-text">Views</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="col-md-12 doctor-mt-top">
+                                    <div class="row">
+                                        <div class="col-md-4 offset-4 col-4">
+                                            <center>
+                                                <div class="card card-body card-pro">
+                                                    <img src="{{ url('/doctor/woman.png') }}" alt="" class="image-pro">
+                                                </div>
+                                            </center>
+                                        </div>
+                                        <div class="col-md-12 col-12" style="text-align: center;">
 
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4 offset-4 col-4">
-                                        <center>
-                                            <div class="card card-body card-pro">
-                                                <img src="{{ URL::asset('/doctor/doctor1.png') }}" alt="" class="image-pro">
-                                            </div>
-                                        </center>
-                                    </div>
-                                    <div class="col-md-12 col-12">
-                                        <center>
-                                            <p class="star-text">{{ $data->full_name}} <img src="{{ url('/doctor/verify.png') }}" alt="" class="star-veri">
+                                            <p class="star-text">Dr. Rabindra Kumar Das <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:20px;margin-top: -4px;">
                                             </p>
-                                        </center>
-                                    </div>
-                                    <div class="col-md-12 col-12">
-                                        <center>
-                                            <!-- <p class="star-text">
+                                        </div>
+                                        <div class="col-md-12 col-12">
+                                            <p class="star-text" style="text-align: center;">
                                                 <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="yl-star">
                                                 <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="yl-star">
                                                 <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="yl-star">
                                                 <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="yl-star">
                                                 <img src="{{ url('/doctor/g-star.png') }}" alt="" class="g-star">
-                                            </p> -->
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 col-12" style="text-align: center;">
 
+                                            <a href="" class="btn btn-primary pri-share">Share Now&nbsp;<i class="fa fa-share-square-o" style="font-size: 15px;margin-left: 5px;"></i>
+                                            </a>
 
-                                            @if(Session::get('userId'))
-                                            <!-- <form class="form-horizontal poststars" action="{{url('/doctor/detail/rating')}}" id="addStar" method="POST">
-                                                {{ csrf_field() }}
-                                                <div class="form-group required">
-                                                    <div class="col-sm-12">
-                                                        <input hidden value="{{Session::get('userId')}}" id="star-5" type="text" name="userid" />
-                                                        <input hidden value="{{$data->id}}" id="star-5" type="text" name="userdetail_id" />
-                                                        <input class="star" value="5" id="star-5" type="checkbox" name="star[]" />
-                                                        <input class="star " value="4" id="star-4" type="checkbox" name="star[]" />
-                                                        <input class="star " value="3" id="star-3" type="checkbox" name="star[]" />
-                                                        <input class="star" value="2" id="star-2" type="checkbox" name="star[]" />
-                                                        <input class="star" value="1" id="star-1" type="checkbox" name="star[]" />
-                                                    </div>
-                                                </div>
-                                                <input type="submit" class="btn-primary" name="Submit" id='submitstar' value="Rating">                                                
-                                            </form> -->
-                                            @endif
-                                            @if(!$rating)  @elseif($rating=floatval($rating)) @endif
-                                            @foreach(range(1,5) as $i)
-                                            <a @if(Session::get('userId')) @else href="javascript:confirm('hello world')" data-toggle="modal" data-target="#staticBackdrop" @endif>
-                                                <span class="fa-stack" style="width:1em">
-                                                    <i class="far fa-star fa-stack-1x"></i>
-                                                    @if($rating >0)
-                                                    @if($rating >0.5)
-                                                    <i class="fas fa-star fa-stack-1x" style="color: #ff9b00;"></i>
-                                                    @else
-                                                    <i class="fas fa-star-half fa-stack-1x" style="color: #ff9b00;"></i>
-                                                    @endif
-                                                    @endif
-                                                    @php $rating--; @endphp
-                                                </span>
-                                            </a>
-                                            @endforeach
-                                        </center>
-                                    </div>
-                                    <div class="col-md-12 col-12">
-                                        <center>
-                                        <button type="button" class="btn btn-primary pri-share" @if(Session::get('userId')) data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" @else href="javascript:confirm('hello world')" data-toggle="modal" data-target="#staticBackdrop" @endif>Add Feedback</button>
-                                            <a href="" class="btn btn-primary pri-share">Share Now&nbsp;
-                                            </a>
-                                        </center>
+                                        </div>
+                                        <div class="col-md-12 fot-dtls-back-img" style="background-image: url(/doctor/doctor-background-footer.png);background-size: contain;height: 120px;margin-top: -95px;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Star rating model start-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Feedback message</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="{{url('/doctor/detail/rating')}}" id="addStar" method="POST">
-                        {{ csrf_field() }}
-                            <div class="form-group required">
-                                <div class="col-sm-12">
-                                    <input hidden value="{{Session::get('userId')}}" id="star-5" type="text" name="userid" />
-                                    <input hidden value="{{$data->id}}" id="star-5" type="text" name="userdetail_id" />
-                                    <input class="star" value="1" id="star-5" type="checkbox" name="star[]" />
-                                    <input class="star " value="2" id="star-4" type="checkbox" name="star[]" />
-                                    <input class="star " value="3" id="star-3" type="checkbox" name="star[]" />
-                                    <input class="star" value="4" id="star-2" type="checkbox" name="star[]" />
-                                    <input class="star" value="5" id="star-1" type="checkbox" name="star[]" />
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="rating_message" name="rating_message"></textarea>
-                            </div>  
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <!-- <input type="submit" class="btn-primary" name="Submit" id='submitstar' value="Rating"> -->
-                        <button type="submit" class="btn btn-primary" id="submitstar">Send Feedback</button>
-                    </div>
-                    </form>
-                </div>
-            </div>
+            </section>
         </div>
-        <!--star rating model end -->
         <!--Section Social media end-->
-        <!--Section qna start-->
-        <section id="qna">
-            <div class="container-fluid">
+        <section id="qna" class="mob-open desk-scroll">
+            <div class="container-fluid container-fluid-doc1 cont-doc-fld">
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-12 card card-body card-qs">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <p class="qs-ass">Question & Answer</p>
+                                <h1 class="question1 qs-ass qs-doc-ans">View Question & Answer<span class="faq-tt"></span>
+                                </h1>
+                                <div class="topic" style="display: none;">
+                                    <div class="open">
+                                        <h2 class="question">What is the consult fee?</h2><span class="faq-t"></span>
+                                    </div>
+                                    <p class="answer">Rs 300 - Rs 400</p>
                                 </div>
-                                <div class="col-md-4 card card-body p-card wwd-100 wow slideInLeft">
-                                    <div class="form-control p-control">
-                                        <p class="p-text p-textx" onclick="toggleFee()">What is the consult fee ?</p>
+                                <div class="topic" style="display: none;">
+                                    <div class="open">
+                                        <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <i id="toggleIconFee" class="fa fa-eye eye-fa" onclick="toggleFee()"></i>
-                                        </div>
-                                    </div>
-                                    <div id="newFee" class="col-md-12" style="display: none;">
-                                        <div class="row">
-                                            <div class="col-md-12 col-12">
-                                                <div class="card card-body card-fee">
-                                                    <p class="">Rs {{$data->consul_fee_from}} - Rs {{$data->consul_fee_to}}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <p class="answer">10 am to 3 pm</p>
                                 </div>
-                                <div class="col-md-4 card card-body p-card wwd-100 wow slideInLeft">
-                                    <div class="form-control p-control">
-                                        <p class="p-text p-textx" onclick="toggleTime()">What is the consult time?</p>
+                                <div class="topic" style="display: none;">
+                                    <div class="open">
+                                        <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <i id="toggleIconTime" class="fa fa-eye eye-fa" onclick="toggleTime()"></i>
-                                        </div>
-                                    </div>
-                                    <div id="newTime" class="col-md-12" style="display: none;">
-                                        <div class="row">
-                                            <div class="col-md-12 col-12">
-                                                <div class="card card-body card-fee">
-
-                                                    <p class="">{{$data->from_time}} - {{$data->to_time}}</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <p class="answer">10 am to 3 pm</p>
                                 </div>
-                                <div class="col-md-4 card card-body p-card wwd-100 wow slideInLeft">
+                                <div class="topic" style="display: none;">
+                                    <div class="open">
+                                        <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
+                                    </div>
+                                    <p class="answer">10 am to 3 pm</p>
+                                </div>
+                                <div class="col-md-12 card card-body p-card wwd-100 wow slideInUp">
                                     <div class="">
                                         <form action="">
-                                            <a @if(Session::get('userId')) onclick="openSubmitButton()" @else href="javascript:confirm('hello world')" data-toggle="modal" data-target="#staticBackdrop" @endif><input type="text" name="" class="form-control p-control-card " id="myInput" placeholder="Add Your Question ?"></a>
-                                            <input type="submit" id="submitButton" name="" class="btn btn-primary pri-share" value="Submit" style="display: none;">
+                                            <input type="text" name="" class="form-control p-control-card " id="myInput" onclick="openSubmitButton2()" placeholder="Add Your Question ?" style="height: 50px !important;">
+                                            <div class="file-upload-doc" id="uploaded1" style="display: none;">
+                                                <label for="upload" class="file-upload__label-doc"><i class="fa fa-upload"></i>upload</label>
+                                                <input id="upload" class="file-upload__input-doc" type="file" name="file-upload">
+                                            </div>
+                                            <input type="submit" id="submitButton2" name="" class="btn btn-primary pri-share" value="Submit" style="display: none;">
                                         </form>
                                     </div>
                                 </div>
                             </div>
-                            <form class="form-inline" method="post" action="{{url('doctor/detail/questionanswarUpdate')}}">
-                                @csrf
-                                <!-- <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                    <div class="col-sm-10">
-                                    <input type="email" class="form-control" id="inputEmail3">
-                                    </div>
-                                </div> -->
-                                <div class="col-sm-3 col-md-4 card card-body p-card wwd-100 wow">
-                                    <select class=" form-control p-control" name="question_id" id="specificSizeSelect">
-                                    <option class="card card-body card-fee" selected>--Choose Question--</option>
-                                    @foreach($questionAnswar as $answer )
-                                    <option class="card card-body card-fee" value="{{$answer->id}}">{{$answer->question}}</option>
-                                    @endforeach
-                                    </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Section qna start-->
+        <div class="col-md-4 pd-lt-0-doc mobile-doctor-block">
+            <section>
+                <div class="col-md-12" style="padding-left: 0px !important;">
+                    <div class="count" style="background-color: #DEEBF7;">
+                        <div id="countdown95" style="padding-top: 0px !important;margin-left: -16px;">
+                            <ul>
+                                <li class="li2"><span id="days95"></span>Days</li>
+                                <li class="li2"><span id="hours95"></span>Hours</li>
+                                <li class="li2"><span id="minutes95"></span>Minutes</li>
+                                <li class="li2"><span id="seconds95"></span>Seconds</li>
+                            </ul>
+                        </div>
+                        <p class="get-doc-dtls">Get Up to 25% Cashback on Medicine Order</p>
+                        <div class="variantss">
+                            <div class='filen file--upload'>
+                                <label for='input-file'>
+                                    Upload Prescription
+                                </label>
+                                <input id='input-file' type='file' />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--Section Similar doctor start-->
+            <section id="similar-doc">
+                <div class="container-fluid container-fluid-doc1 cont-doc-fld">
+                    <div class="col-md-12">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="qs-ass">Similar doctor's profile</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12  wi-100 wii-100 wi-dtls-pd coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
                                 </div>
-                                <button type="submit" class="btn btn-primary pri-share">Submit</button>
-                            </form>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100 coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
+                                <div class="card card-body img-fluid">
+
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    </p>
+                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    <span class="ig-rit">
+                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <a href="" class="btn btn-dlts-view" style="float: right;">View More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Section qna end-->
-        <!--Section Similar doctor start-->
-        <section id="similar-doc">
-            <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="qs-ass">Similar doctor's profile</p>
-                        </div>
-                        @foreach($alldoctor as $key=>$val)
-                        @php $acb=explode(',',$val->star_ratings); $ratings = count($acb); @endphp
-                        <div class="col-xs-12 col-sm-6 col-md-4  wi-100 wii-100 coll-50 wow slideInLeft">
-                            <div class="card card-body img-fluid">
+            </section>
+            <section id="qna" class="desk-open desk-scroll">
+                <div class="container-fluid container-fluid-doc1 cont-doc-fld">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 card card-body card-qs">
+                                <div class="row">
 
-                                <p class="similar-text">Name: {{$val->full_name}}<img src="{{ url('/doctor/verify.png') }}" alt="" class="ig-fl">
-                                    <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                </p>
-                                <p class="similar-text">Department: {{$val->department}}</p>
-                                <p class="similar-text">Designation: {{$val->designation}} {{$val->orgnization_name}}</p>
-                                <p class="similar-text">Location: {{$val->location}}, {{$val->landmark_pincode}}</p>
-                                <p class="similar-text">Rating: {{$ratings}}</p>
-                                <span class="ig-rit">
-                                    <a href="{{ url('/doctor/detail/'.urlencode($val->full_name)) }}" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+                                    <h1 class="question1 qs-ass qs-doc-ans"> View Question & Answer<span class="faq-tt"></span>
+                                    </h1>
+                                    <div class="topic" style="display: none;">
+                                        <div class="open">
+                                            <h2 class="question">What is the consult fee?</h2><span class="faq-t"></span>
+                                        </div>
+                                        <p class="answer">Rs 300 - Rs 400</p>
+                                    </div>
+                                    <div class="topic" style="display: none;">
+                                        <div class="open">
+                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
+                                        </div>
+                                        <p class="answer">10 am to 3 pm</p>
+                                    </div>
 
-                                </span>
+                                    <div class="col-md-12 card card-body p-card wwd-100 wow slideInUp">
+                                        <div class="">
+                                            <form action="">
+                                                <input type="text" name="" class="form-control p-control-card" id="myInput" onclick="openSubmitButton1()" placeholder="Add Your Question ?">
+                                                <div class="file-upload-doc" id="uploaded" style="display: none;">
+                                                    <label for="upload" class="file-upload__label-doc"><i class="fa fa-upload"></i>
+                                                        Upload</label>
+                                                    <input id="upload" class="file-upload__input-doc" type="file" name="file-upload">
+                                                </div>
+                                                <input type="submit" id="submitButton1" name="" class="btn btn-primary pri-share" value="Submit" style="display: none;">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- <div class="col-xs-12 col-sm-6 col-md-4 wi-100 coll-50 wow slideInLeft">
-                            <div class="card card-body img-fluid">
-
-                                <p class="similar-text">Name: Dr. Rabindra Mohanty <img src="{{ url('/doctor/verify.png') }}" alt="" class="ig-fl">
-                                    <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                </p>
-                                <p class="similar-text">Department: Cardiology</p>
-                                <p class="similar-text">Designation: MD at SCB Medical Cuttack</p>
-                                <p class="similar-text">Location: Badambadi, Cuttack 754001</p>
-                                <p class="similar-text">Rating: 4.5</p>
-                                <span class="ig-rit">
-                                    <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 wi-100 wwi-100 coll-50 wow slideInLeft">
-                            <div class="card card-body img-fluid">
-
-                                <p class="similar-text">Name: Dr. Rabindra Mohanty <img src="{{ url('/doctor/verify.png') }}" alt="" class="ig-fl">
-                                    <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                </p>
-                                <p class="similar-text">Department: Cardiology</p>
-                                <p class="similar-text">Designation: MD at SCB Medical Cuttack</p>
-                                <p class="similar-text">Location: Badambadi, Cuttack 754001</p>
-                                <p class="similar-text">Rating: 4.5</p>
-                                <span class="ig-rit">
-                                    <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                </span>
-                            </div>
-                        </div> -->
-                        @endforeach
-                        <center> <a href="doctor-similar-doctor.html" class="btn btn-primary btn-view">View All</a></center>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Section similar doctor end-->
+            </section>
+        </div>
     </div>
 </div>
-<!--get in touch modal start-->
 <div class="modal" id="myModal">
     <div class="modal-dialog">
         <div class="modal-content">
-            <!-- Modal Header -->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <!-- Modal body -->
             <div class="modal-body card card-body mod-crd">
                 <p class="doc-mod-txt1">In order to securities concern need an <b>OTP</b> verification and proper reason for
                     it.</p>
@@ -996,7 +1232,6 @@
         </div>
     </div>
 </div>
-<!--get in touch modal end addStar-->
 @include('frontend-source.includes.login-popup')
 @endsection
 @push('script')
@@ -1128,7 +1363,7 @@
                 alert("Form Submited Successfully");
                 document.getElementById("addStar").reset();
                 $('#exampleModal').modal('hide');
-                if(response.success == true){ // if true (1)
+                if (response.success == true) { // if true (1)
                     window.location.reload();
                 }
             }
@@ -1140,5 +1375,92 @@
 
         // }
     });
+</script>
+<script>
+    function updateCountdown() {
+      const countdownElement = document.getElementById('countdown9');
+      const daysElement = document.getElementById('days9');
+      const hoursElement = document.getElementById('hours9');
+      const minutesElement = document.getElementById('minutes9');
+      const secondsElement = document.getElementById('seconds9');
+
+      // Get the stored timestamp or set a new one if it doesn't exist
+      let startTime = localStorage.getItem('countdownStartTime');
+      if (!startTime) {
+        // Start the countdown from 15 days (15 days * 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
+        startTime = new Date().getTime() + (15 * 24 * 60 * 60 * 1000);
+        localStorage.setItem('countdownStartTime', startTime);
+      }
+
+      // Calculate remaining time
+      const currentTime = new Date().getTime();
+      const remainingTime = startTime - currentTime;
+
+      if (remainingTime <= 0) {
+        // Countdown has finished, reset the timer
+        localStorage.setItem('countdownStartTime', currentTime + (15 * 24 * 60 * 60 * 1000));
+        startTime = currentTime + (15 * 24 * 60 * 60 * 1000);
+      }
+
+      const days = Math.floor(remainingTime / (24 * 60 * 60 * 1000));
+      const hours = Math.floor((remainingTime % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+      const minutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
+      const seconds = Math.floor((remainingTime % (60 * 1000)) / 1000);
+
+      daysElement.textContent = days.toString().padStart(2, '0');
+      hoursElement.textContent = hours.toString().padStart(2, '0');
+      minutesElement.textContent = minutes.toString().padStart(2, '0');
+      secondsElement.textContent = seconds.toString().padStart(2, '0');
+    }
+
+    // Initial update
+    updateCountdown();
+
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
+  </script>
+
+<script>
+  function updateCountdown() {
+    const countdownElement = document.getElementById('countdown95');
+    const daysElement = document.getElementById('days95');
+    const hoursElement = document.getElementById('hours95');
+    const minutesElement = document.getElementById('minutes95');
+    const secondsElement = document.getElementById('seconds95');
+
+    // Get the stored timestamp or set a new one if it doesn't exist
+    let startTime = localStorage.getItem('countdownStartTime5');
+    if (!startTime) {
+      // Start the countdown from 15 days (15 days * 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
+      startTime = new Date().getTime() + (15 * 24 * 60 * 60 * 1000);
+      localStorage.setItem('countdownStartTime5', startTime);
+    }
+
+    // Calculate remaining time
+    const currentTime = new Date().getTime();
+    const remainingTime = startTime - currentTime;
+
+    if (remainingTime <= 0) {
+      // Countdown has finished, reset the timer
+      localStorage.setItem('countdownStartTime5', currentTime + (15 * 24 * 60 * 60 * 1000));
+      startTime = currentTime + (15 * 24 * 60 * 60 * 1000);
+    }
+
+    const days = Math.floor(remainingTime / (24 * 60 * 60 * 1000));
+    const hours = Math.floor((remainingTime % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+    const minutes = Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000));
+    const seconds = Math.floor((remainingTime % (60 * 1000)) / 1000);
+
+    daysElement.textContent = days.toString().padStart(2, '0');
+    hoursElement.textContent = hours.toString().padStart(2, '0');
+    minutesElement.textContent = minutes.toString().padStart(2, '0');
+    secondsElement.textContent = seconds.toString().padStart(2, '0');
+  }
+
+  // Initial update
+  updateCountdown();
+
+  // Update the countdown every second
+  setInterval(updateCountdown, 1000);
 </script>
 @endpush
