@@ -643,20 +643,28 @@ class HomeController extends \App\Http\Controllers\Controller
         return view('frontend-source.users.doctors-detail',compact('data','alldoctor','rating','questionAnswar'));
     }
     public function QuestionAnswarUpdate(Request $request){
-        $new_Ques_answ=QuestionAnswar::find($request->question_id);
-       // dd($new_Ques_answ->category);
-        
-        if($new_Ques_answ->category=='Clinic'){
+        // $curl = curl_init();
+        // curl_setopt($curl, CURLOPT_URL, "http://httpbin.org/ip");
+        // curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        // $output = curl_exec($curl);
+        // curl_close($curl);
+        // $ip = json_decode($output, true);
+        // dd($ip['origin']);
+        // $new_Ques_answ=QuestionAnswar::find($request->question_id);
+        // if($new_Ques_answ->category=='Clinic'){
             
-            $category=3;
-        }
-        if($new_Ques_answ->category=='Vender'){
-            $category=4;
-        }
-        if($new_Ques_answ->category=='Medicalmate'){
-            $category=2;
-        }
-        $new_Ques_answ->user_type =$category;
+        //     $category=3;
+        // }
+        // if($new_Ques_answ->category=='Vender'){
+        //     $category=4;
+        // }
+        // if($new_Ques_answ->category=='Medicalmate'){
+        //     $category=2;
+        // }
+        // $new_Ques_answ->user_type =$category;
+        //dd($request->question);
+        $new_Ques_answ = new QuestionAnswar();
+        $new_Ques_answ->question = $request->question;
         $new_Ques_answ->save();
         return back();
 

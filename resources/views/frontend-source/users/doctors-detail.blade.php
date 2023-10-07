@@ -286,14 +286,14 @@
                             <div class="col-xs-12 col-sm-6 col-md-12  wi-100 wii-100 wi-dtls-pd coll-50 wow slideInUp">
                                 <div class="card card-body img-fluid">
                                     <p class="similar-text similar-dtls-doc"><b>{{$val->full_name}}</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                        <button class="btn btn-primary btn-prmr btn-year">{{$val->total_experience}} Years</button>
                                     </p>
                                     <p class="similar-text">MD in Cardiology at {{$val->orgnization_name}}</p>
                                     <p class="similar-text">Overall {{$val->total_experience}} Years of Experience in {{$val->department}}</p>
                                     <p class="similar-text">Public Rating: (<?php  echo number_format((float)$rating, 1, '.', ''); ?>)</p>
 
                                     <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+                                        <a href="{{ url('/doctor/detail/'.urlencode($val->full_name)) }}" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
 
                                     </span>
                                 </div>
@@ -389,50 +389,27 @@
                         <div class="row">
                             <div class="col-md-12 card card-body card-qs card-qsas">
                                 <div class="row">
-
                                     <h1 class="question1 qs-ass qs-doc-ans"> View Question & Answer<span class="faq-tt"></span>
                                     </h1>
+                                    @foreach($questionAnswar as $answer )
                                     <div class="topic" style="display: none;">
                                         <div class="open">
-                                            <h2 class="question">What is the consult fee?</h2><span class="faq-t"></span>
+                                            <h2 style="position: none;" class="question">{{$answer->question}}</h2><span class="faq-t"></span>
                                         </div>
-                                        <p class="answer">Rs 300 - Rs 400</p>
+                                        <p class="answer"> {{$answer->answar}}</p>
                                     </div>
-                                    <div class="topic" style="display: none;">
-                                        <div class="open">
-                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
-                                        </div>
-                                        <p class="answer">10 am to 3 pm</p>
-                                    </div>
-                                    <div class="topic" style="display: none;">
-                                        <div class="open">
-                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
-                                        </div>
-                                        <p class="answer">10 am to 3 pm</p>
-                                    </div>
-                                    <div class="topic" style="display: none;">
-                                        <div class="open">
-                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
-                                        </div>
-                                        <p class="answer">10 am to 3 pm</p>
-                                    </div>
-                                    <div class="topic" style="display: none;">
-                                        <div class="open">
-                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
-                                        </div>
-                                        <p class="answer">10 am to 3 pm</p>
-                                    </div>
-
+                                    @endforeach
                                     <div class="col-md-12 card card-body p-card wwd-100 wow slideInUp">
                                         <div class="">
-                                            <form action="">
-                                                <input type="text" name="" class="form-control p-control-card" id="myInput" onclick="openSubmitButton1()" placeholder="Add Your Question ?">
+                                            <form action="{{url('doctor/detail/questionanswarUpdate')}}" method="post">
+                                            @csrf
+                                                <input type="text" class="form-control p-control-card" name="question" onclick="openSubmitButton1()" placeholder="Add Your Question ?">
                                                 <div class="file-upload-doc" id="uploaded" style="display: none;">
                                                     <label for="upload" class="file-upload__label-doc"><i class="fa fa-upload"></i>
                                                         Upload</label>
                                                     <input id="upload" class="file-upload__input-doc" type="file" name="file-upload">
                                                 </div>
-                                                <input type="submit" id="submitButton1" name="" class="btn btn-primary pri-share" value="Submit" style="display: none;">
+                                                <button type="submit" id="submitButton1" name="" class="btn btn-primary pri-share" value="Submit" style="display: none;">Submit</button>
                                             </form>
                                         </div>
                                     </div>
@@ -472,9 +449,9 @@
 
                                                 <p class="dtls-text-doc1"><b>{{ $data->full_name}}</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:20px;margin-top: -1px;">
                                                 </p>
-                                                <p class="dtls-text-doc2" style="margin-top: 3px;">Prof at SCB Medical Cuttack 754021</p>
-                                                <p class="dtls-text-doc2 dtls-text-doc20" style="margin-top: 3px;">Overall 20 Years of
-                                                    Experience in <b>Cardiology</b>
+                                                <p class="dtls-text-doc2" style="margin-top: 3px;">Prof at {{$data->orgnization_name}} {{$data->landmark_pincode}}</p>
+                                                <p class="dtls-text-doc2 dtls-text-doc20" style="margin-top: 3px;">Overall {{$data->total_experience}} Years of
+                                                    Experience in <b>{{$data->department}}</b>
                                                     <img src="../assets/image/heart.png" alt="" class="wish-doc-img">
                                                     <img src="../assets/image/share.png" alt="" class="share-doc-img">
                                                 </p>
@@ -488,10 +465,11 @@
                                 <div class="card card-body pro-card-card1 dtls-card-card2 ">
                                     <div class="row">
                                         <div class="col-md-3 dtls-wd-3"></div>
+                                        <?php $rating = App\Rating::where('userdetail_id',$data->id)->avg('rating'); ?>
                                         <div class="col-md-3 dtls-wd1-3">
                                             <p class="dtls-text-doc2 dtls-text-doc22">Public Ratings
                                                 <img src="../assets/image/senario/ty.png" alt="" class="dtls-doc-star">
-                                                (4.5)
+                                                (<?php  echo number_format((float)$rating, 1, '.', ''); ?>)
                                             </p>
                                         </div>
                                         <div class="col-md-3 dtls-wd2-3">
@@ -530,23 +508,23 @@
                                             <p class="location-text location-details-1 mob-dtls-control2">
                                                 <img src="../assets/image/senario/hospital-1.png" alt="" class="pro-ctime"> Consult Location
                                             </p>
-                                            <p class="form-control control-data mob-dtls-control" style="margin-top: -6px !important;margin-bottom: 20px;">Badambadi, Cuttack 754001</p>
+                                            <p class="form-control control-data mob-dtls-control" style="margin-top: -6px !important;margin-bottom: 20px;">{{$data->landmark_pincode}}</p>
                                             <p class="location-text location-details-1 dtls-location-txt1 mob-dtls-control1" style="padding-top: 0px;padding-bottom: 0px;">
                                                 <img src="../assets/img/h-ftime.png" alt="" class="pro-ctime"> Consult Time
                                             </p>
-                                            <p class="form-control control-data">10:00 AM - 02:30 PM</p>
+                                            <p class="form-control control-data">{{$data->from_time}} - {{$data->to_time}}</p>
                                         </div>
                                         <div class="col-md-6 dtls-6-doctor wow slideInUp">
 
                                             <p class="location-text location-details-1 days-dtls-txt" style="padding-top:36px">
                                                 <img src="../assets/image/senario/calendar.png" alt="" class="pro-ctime"> Consult Days
                                             </p>
-                                            <p class="form-control control-data" style="margin-top: -3px !important;">Mon, Fri, Sat</p>
+                                            <p class="form-control control-data" style="margin-top: -3px !important;">{{$data->avl_days}}</p>
                                             <p class="location-text location-details-1" style="padding-bottom: 3px;">
                                                 <img src="../assets/image/senario/my-coin.png" alt="" class="pro-ctime"> Consult Fee
                                             </p>
                                             <p class="form-control control-data" style="margin-top: -3px !important;">
-                                                <i class="fa fa-rupee"></i> 300 - <i class="fa fa-rupee"></i> 400
+                                                <i class="fa fa-rupee"></i> {{$data->consul_fee_from}} - <i class="fa fa-rupee"></i> {{$data->consul_fee_to}}
                                             </p>
                                         </div>
                                     </div>
@@ -589,24 +567,24 @@
                                                                 <div class="form-control card-blue">
                                                                     <div class="row">
                                                                         <div class="col-md-11 col-9">
-                                                                            <p class="text-award">MBBS from Sanford 2013</p>
+                                                                            <p class="text-award">{{$data->doctorqualification}} from {{$data->univercity}} {{$data->university_date}}</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-control card-blue">
+                                                                <!-- <div class="form-control card-blue">
                                                                     <div class="row">
                                                                         <div class="col-md-11 col-9">
-                                                                            <p class="text-award">MBBS from Sanford 2013</p>
+                                                                            <p class="text-award">{{$data->doctorqualification}} from {{$data->univercity}} {{$data->university_date}}</p>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="form-control card-blue">
+                                                                </div> -->
+                                                                <!-- <div class="form-control card-blue">
                                                                     <div class="row">
                                                                         <div class="col-md-11 col-9">
-                                                                            <p class="text-award">MBBS from Sanford 2013</p>
+                                                                            <p class="text-award">{{$data->doctorqualification}} from {{$data->univercity}} {{$data->university_date}}</p>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                </div> -->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -630,10 +608,10 @@
                                                         <div class="form-control card-blue" style="margin-top: 3px;">
                                                             <div class="row">
                                                                 <div class="col-md-11 col-9">
-                                                                    <p class="text-award">National Award</p>
+                                                                    <p class="text-award">{{$data->achievement_award}}</p>
                                                                 </div>
                                                                 <div class="col-md-1 col-3">
-                                                                    <img src="{{ url('/doctor/pro-doc.jpg') }}" class="details-modal-img" data-toggle="modal" data-target="#myModaldelete">
+                                                                   @if(!empty($data->profile_picture))<img src="{{ url($data->profile_picture)}}" class="details-modal-img" data-toggle="modal" data-target="#myModaldelete"> @else <img src="{{ url('/doctor/pro-doc.jpg') }}" class="details-modal-img" data-toggle="modal" data-target="#myModaldelete"> @endif
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -777,10 +755,7 @@
                                 <!-- Make sure you include the necessary Bootstrap and jQuery libraries here -->
 
                                 <div class="card card-body loc-cardd wow slideInUp">
-                                    <p class="loc-des loc-text" style="font-weight: 500;">Description: Lorem Ipsum is simply dummy text of the printing and
-                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                                        book........... <a class="button loc-read" onclick="openPopup1()">Read More</a></p>
+                                    <p class="loc-des loc-text" style="font-weight: 500;">Description: {{$data->description}}........... <a class="button loc-read" onclick="openPopup1()">Read More</a></p>
 
                                     <!-- Modal -->
                                     <div class="popup-overlay" id="popup1">
@@ -789,14 +764,7 @@
                                             <h5 class="h5">View Details</h5>
 
                                             <div class="content">
-                                                <p class="comment-text">Description: Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                    1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                                                    specimen bookDescription: Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                                                    an unknown printer took a galley of type and scrambled it to make a type specimen
-                                                    bookDescription: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                                                <p class="comment-text">Description:{{$data->description}}  </p>
 
                                             </div>
 
@@ -822,16 +790,10 @@
 
                                                         <div class="content">
                                                             <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
-                                                            <p class="comment-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                                1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                                                                specimen book.</p>
+                                                            <p class="comment-text">{{$data->comments}}</p>
                                                             <hr>
                                                             <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
-                                                            <p class="comment-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                                1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                                                                specimen book.</p>
+                                                            <p class="comment-text">{{$data->comments}}</p>
                                                             <hr>
                                                         </div>
                                                         <button class="comment-add btn btn-primary pri-share1" onclick="openComment()">Add
@@ -865,22 +827,34 @@
                                         <div class="col-md-4 offset-4 col-4">
                                             <center>
                                                 <div class="card card-body card-pro">
-                                                    <img src="{{ url('/doctor/woman.png') }}" alt="" class="image-pro">
+                                                    @if(!empty($data->profile_picture))<img src="{{ url($data->profile_picture)}}" alt="" class="image-pro"> @else <img src="{{ url('/doctor/woman.png') }}" alt="" class="image-pro"> @endif
                                                 </div>
                                             </center>
                                         </div>
                                         <div class="col-md-12 col-12" style="text-align: center;">
-
-                                            <p class="star-text">Dr. Rabindra Kumar Das <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:20px;margin-top: -4px;">
+                                            <p class="star-text">{{ $data->full_name}}<img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:20px;margin-top: -4px;">
                                             </p>
                                         </div>
                                         <div class="col-md-12 col-12">
+                                        <?php $rating = App\Rating::where('userdetail_id',$data->id)->avg('rating');
+                                          $ratings = App\Rating::where('userdetail_id',$data->id)->avg('rating'); ?>
                                             <p class="star-text" style="text-align: center;">
-                                                <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="yl-star">
-                                                <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="yl-star">
-                                                <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="yl-star">
-                                                <img src="{{ url('/doctor/yl-star.png') }}" alt="" class="yl-star">
-                                                <img src="{{ url('/doctor/g-star.png') }}" alt="" class="g-star">
+                                            <a @if(Session::get('userId')) @else href="javascript:confirm('hello world')" data-toggle="modal" data-target="#staticBackdrop" @endif>
+                                                @if(!$ratings)  @elseif($ratings=floatval($ratings)) @endif
+                                                @foreach(range(1,5) as $i)
+                                                <span class="fa-stack" style="width:2em">
+                                                    <i class="far fa-stack-1x"><img src="{{ url('/doctor/g-star.png') }}" alt="" class="yl-star"></i>
+                                                    @if($ratings >0)
+                                                    @if($ratings >0.5)
+                                                    <i class="fas  fa-stack-1x"><img src="{{ url('/doctor/yl-star.png') }}" alt="" class="yl-star"></i>
+                                                    @else
+                                                    <i class="fas fa-star-half fa-stack-1x" style="color: #ff9b00;"></i>
+                                                    @endif
+                                                    @endif
+                                                    @php $ratings--;  @endphp 
+                                                </span>
+                                                @endforeach
+                                            </a>
                                             </p>
                                         </div>
                                         <div class="col-md-12 col-12" style="text-align: center;">
@@ -1254,6 +1228,43 @@
 @endif
 <script src="{{ asset('frontend-source/js/booking-validate.js') }}?v={{time()}}" type="text/javascript"></script>
 <script>
+    function openSubmitButton2() {
+    // Show the file input and submit button
+    document.getElementById("uploaded1").style.display = "block";
+    document.getElementById("submitButton2").style.display = "block";
+    }
+    function openSubmitButton1() {
+    // Show the file input and submit button
+    document.getElementById("uploaded").style.display = "block";
+    document.getElementById("submitButton1").style.display = "block";
+    }
+
+    $(document).ready(function () {
+      // Toggle FAQ topics when clicking the FAQ header
+      $(".question1").click(function () {
+        $(".topic").slideToggle(200);
+
+      });
+    });
+    $(".open").click(function () {
+      var container = $(this).parents(".topic");
+      var answer = container.find(".answer");
+      var trigger = container.find(".faq-t");
+
+      answer.slideToggle(200);
+
+      if (trigger.hasClass("faq-o")) {
+        trigger.removeClass("faq-o");
+      } else {
+        trigger.addClass("faq-o");
+      }
+
+      if (container.hasClass("expanded")) {
+        container.removeClass("expanded");
+      } else {
+        container.addClass("expanded");
+      }
+    });
     document.addEventListener("DOMContentLoaded", function() {
         function openOptionotp() {
             var div = document.getElementById("newotpCard");

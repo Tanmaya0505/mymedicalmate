@@ -766,14 +766,15 @@
                                                                     <div class="col-md-12  col-12">
                                                                     @if(Auth::user()->id==1)
                                                                         <center>
-                                                                            @php 
-                                                                            $datalogs=array_slice($datalog->toArray(),4);
-                                                                            $resultcustomers=array_slice($resultcustomer,2);
-                                                                            $arrydiff=array_diff_assoc($datalogs, $resultcustomers) === array_diff_assoc($resultcustomers, $datalogs);
-                                                                            
-                                                                            @endphp
-                                                                            @if(!empty($datalogs) && $arrydiff !=1)
-                                                                            <a href="{{ url('/cms-admin/alltype-user/adminDoctorview/'.$data->id) }}" class="btn view" >View Previous</a>
+                                                                            @if(Request::segment(4)=='edit')
+                                                                                @php 
+                                                                                $datalogs=array_slice($datalog->toArray(),4);
+                                                                                $resultcustomers=array_slice($resultcustomer,2);
+                                                                                $arrydiff=array_diff_assoc($datalogs, $resultcustomers) === array_diff_assoc($resultcustomers, $datalogs);
+                                                                                @endphp
+                                                                                @if(!empty($datalogs) && $arrydiff !=1)
+                                                                                <a href="{{ url('/cms-admin/alltype-user/adminDoctorview/'.$data->id) }}" class="btn view" >View Previous</a>
+                                                                                @endif
                                                                             @endif
                                                                             <button class="btn btn-success suc-sub" id="alltypeuserlogsubmit" type="submit">Save Change</button>
                                                                         </center>
