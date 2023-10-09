@@ -131,6 +131,8 @@ Route::get('exams/detail/{name}','frontend\HomeController@ExamsDetail');
 Route::get('diseases/detail/{name}','frontend\HomeController@DiseasesDetail');
 Route::get('achievement/{type}/{name}','frontend\HomeController@AchievementDetail');
 Route::get('video/list','frontend\HomeController@Videolist');
+//comment
+Route::post('detail/comments','frontend\HomeController@Comments');
 //rating
 Route::post('doctor/detail/rating','frontend\RatingController@store');
 Route::post('doctor/detail/questionanswarUpdate','frontend\HomeController@QuestionAnswarUpdate');

@@ -20,6 +20,7 @@ use App\Http\Controllers\BonusController;
 use App\Rating;
 use App\QuestionAnswar;
 use Illuminate\Support\Facades\Session;
+use App\Comment;
 
 class HomeController extends \App\Http\Controllers\Controller
 {
@@ -666,6 +667,16 @@ class HomeController extends \App\Http\Controllers\Controller
         $new_Ques_answ = new QuestionAnswar();
         $new_Ques_answ->question = $request->question;
         $new_Ques_answ->save();
+        return back();
+
+    }
+    public function Comments(Request $request){
+        $comment = new Comment();
+        $comment->user_id = $request->user_id;
+        $comment->userdetail_id=$request->usedetails_id;
+        $comment->comments=$request->comments;
+        $comment->date=$request->date;
+        $comment->save();
         return back();
 
     }

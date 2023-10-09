@@ -7,18 +7,15 @@
 <link rel="stylesheet" type="text/css" href="{{asset('frontend-source/doctorlistcss/style.css')}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
-    .row {
+    /* .row {
         display: block;
-    }
-
+    } */
     .p-control-card {
         height: 50px;
     }
-
     .carousel-indicators {
         bottom: -100px !important;
     }
-
     @media screen and (min-width: 768px) and (max-width: 960px) {
         .wwd-100 {
             width: 100%;
@@ -230,13 +227,6 @@
         color: #ff9b00;
     }
 </style>
-<style type="text/css">
-    .input-group-addon {
-        position: absolute;
-        right: 16px;
-        bottom: 12px;
-    }
-</style>
 @endsection
 @section('content')
 <div class="">
@@ -246,6 +236,7 @@
         $photo = url($data->profile_picture);
     }
     ?>
+    <main id="main" class="main-doc">
     <div class="row">
         <!--Section qna start-->
         <div class="col-md-4 pd-lt-0-doc desktop-doctor-block">
@@ -299,82 +290,6 @@
                                 </div>
                             </div>
                             @endforeach
-                            <!-- <div class="col-xs-12 col-sm-6 col-md-12 wi-100 coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc"><b>Dr. Rabindra Mohanty</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div> -->
-
                             <div class="col-md-12">
                                 <a href="" class="btn btn-dlts-view" style="float: right;">View More</a>
                             </div>
@@ -386,9 +301,9 @@
                 <div class="container-fluid container-fluid-doc1 cont-doc-fld">
                     <div class="col-md-12">
 
-                        <div class="row">
+                        <div class="">
                             <div class="col-md-12 card card-body card-qs card-qsas">
-                                <div class="row">
+                                <div class="">
                                     <h1 class="question1 qs-ass qs-doc-ans"> View Question & Answer<span class="faq-tt"></span>
                                     </h1>
                                     @foreach($questionAnswar as $answer )
@@ -542,7 +457,6 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="card card-body pro-qual pro-background col-12 ">
-
                                 <div class="col-md-12">
                                     <div class="row">
                                         <div class="col-md-12" style="text-align: center;">
@@ -551,7 +465,6 @@
 
                                         </div>
                                         <div class="col-md-6 col-12 wow slideInUp">
-
                                             <div class="form-control loc-card-achieve">
                                                 <p class="loc-text" onclick="toggleSection()" style="color: #154e83 !important;font-weight: 600">
                                                     <img src="{{ url('/doctor/qualif.png') }}" alt="" class="award-image">
@@ -611,7 +524,7 @@
                                                                     <p class="text-award">{{$data->achievement_award}}</p>
                                                                 </div>
                                                                 <div class="col-md-1 col-3">
-                                                                   @if(!empty($data->profile_picture))<img src="{{ url($data->profile_picture)}}" class="details-modal-img" data-toggle="modal" data-target="#myModaldelete"> @else <img src="{{ url('/doctor/pro-doc.jpg') }}" class="details-modal-img" data-toggle="modal" data-target="#myModaldelete"> @endif
+                                                                @if(!empty($data->profile_picture))<img src="{{ url($data->profile_picture)}}" class="details-modal-img" data-toggle="modal" data-target="#myModaldelete"> @else <img src="{{ url('/doctor/pro-doc.jpg') }}" class="details-modal-img" data-toggle="modal" data-target="#myModaldelete"> @endif
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -624,7 +537,7 @@
                                     <div class="row">
                                         <div class="col-md-12" style="text-align: center;">
 
-                                            <a href="" class="btn btn-primary btn-prm" data-bs-toggle="modal" data-bs-target="#myModal">GET
+                                            <a href="" class="btn btn-primary btn-prm" data-toggle="modal" data-target="#myModal">GET
                                                 IN TOUCH <img src="{{ url('/doctor/hand1.png') }}" alt="" class="icon-hand">
                                             </a>
 
@@ -750,13 +663,8 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="card card-body  card-web">
-
-                                <!--Doctor description modal start-->
-                                <!-- Make sure you include the necessary Bootstrap and jQuery libraries here -->
-
                                 <div class="card card-body loc-cardd wow slideInUp">
                                     <p class="loc-des loc-text" style="font-weight: 500;">Description: {{$data->description}}........... <a class="button loc-read" onclick="openPopup1()">Read More</a></p>
-
                                     <!-- Modal -->
                                     <div class="popup-overlay" id="popup1">
                                         <div class="popup-content">
@@ -789,6 +697,12 @@
                                                         <h5 class="h5">View Comments</h5>
 
                                                         <div class="content">
+                                                            @php $comments=App\Comment::where('userdetail_id',$data->id)->get(); @endphp
+                                                            @foreach($comments as $comment)
+                                                            <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
+                                                            <p class="comment-text">{{$comment->comments}}</p>
+                                                            <hr>
+                                                            @endforeach
                                                             <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
                                                             <p class="comment-text">{{$data->comments}}</p>
                                                             <hr>
@@ -796,17 +710,19 @@
                                                             <p class="comment-text">{{$data->comments}}</p>
                                                             <hr>
                                                         </div>
-                                                        <button class="comment-add btn btn-primary pri-share1" onclick="openComment()">Add
+                                                        <button class="comment-add btn btn-primary pri-share1" @if(Session::get('userId')) onclick="openComment()" @else onclick="javascript:confirm('Please login')"  @endif>Add
                                                             Comment</button>
 
                                                         <a href="#" class="comment-view btn btn-primary pri-view">View More</a>
                                                         <div class="col-md-12">
-                                                            <form action="">
+                                                            <form action="{{url('detail/comments')}}" method="post">
+                                                                @csrf
                                                                 <div id="myComment" class="hidden-div">
-                                                                    <input type="date" name="" placeholder="" class="form-control">
-                                                                    <input type="text" name="" placeholder="Add Your Name" class="form-control">
-                                                                    <input type="textarea" name="" placeholder="Add Your Comment" class="form-control">
-                                                                    <center><button class="btn btn-primary pri-share" name="">Submit</button></center>
+                                                                    <input type="date" name="date" placeholder="" class="form-control">
+                                                                    <input type="hidden" name="user_id" value="{{Session::get('userId')}}" class="form-control">
+                                                                    <input type="hidden" name="usedetails_id" value="{{$data->id}}" class="form-control">
+                                                                    <input type="textarea" name="comments" placeholder="Add Your Comment" class="form-control">
+                                                                    <center><button type="submit" class="btn btn-primary pri-share" name="">Submit</button></center>
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -837,7 +753,7 @@
                                         </div>
                                         <div class="col-md-12 col-12">
                                         <?php $rating = App\Rating::where('userdetail_id',$data->id)->avg('rating');
-                                          $ratings = App\Rating::where('userdetail_id',$data->id)->avg('rating'); ?>
+                                        $ratings = App\Rating::where('userdetail_id',$data->id)->avg('rating'); ?>
                                             <p class="star-text" style="text-align: center;">
                                             <a @if(Session::get('userId')) @else href="javascript:confirm('hello world')" data-toggle="modal" data-target="#staticBackdrop" @endif>
                                                 @if(!$ratings)  @elseif($ratings=floatval($ratings)) @endif
@@ -882,39 +798,24 @@
                             <div class="row">
                                 <h1 class="question1 qs-ass qs-doc-ans">View Question & Answer<span class="faq-tt"></span>
                                 </h1>
+                                @foreach($questionAnswar as $answer )
                                 <div class="topic" style="display: none;">
                                     <div class="open">
-                                        <h2 class="question">What is the consult fee?</h2><span class="faq-t"></span>
+                                        <h2 class="question">{{$answer->question}}</h2><span class="faq-t"></span>
                                     </div>
-                                    <p class="answer">Rs 300 - Rs 400</p>
+                                    <p class="answer">{{$answer->answar}}</p>
                                 </div>
-                                <div class="topic" style="display: none;">
-                                    <div class="open">
-                                        <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
-                                    </div>
-                                    <p class="answer">10 am to 3 pm</p>
-                                </div>
-                                <div class="topic" style="display: none;">
-                                    <div class="open">
-                                        <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
-                                    </div>
-                                    <p class="answer">10 am to 3 pm</p>
-                                </div>
-                                <div class="topic" style="display: none;">
-                                    <div class="open">
-                                        <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
-                                    </div>
-                                    <p class="answer">10 am to 3 pm</p>
-                                </div>
+                                @endforeach
                                 <div class="col-md-12 card card-body p-card wwd-100 wow slideInUp">
                                     <div class="">
-                                        <form action="">
-                                            <input type="text" name="" class="form-control p-control-card " id="myInput" onclick="openSubmitButton2()" placeholder="Add Your Question ?" style="height: 50px !important;">
+                                        <form action="{{url('doctor/detail/questionanswarUpdate')}}" method="post">
+                                        @csrf
+                                            <input type="text" name="question" class="form-control p-control-card " id="myInput" onclick="openSubmitButton2()" placeholder="Add Your Question ?" style="height: 50px !important;">
                                             <div class="file-upload-doc" id="uploaded1" style="display: none;">
                                                 <label for="upload" class="file-upload__label-doc"><i class="fa fa-upload"></i>upload</label>
                                                 <input id="upload" class="file-upload__input-doc" type="file" name="file-upload">
                                             </div>
-                                            <input type="submit" id="submitButton2" name="" class="btn btn-primary pri-share" value="Submit" style="display: none;">
+                                            <button type="submit" id="submitButton2" name="" class="btn btn-primary pri-share"  style="display: none;">Submit</button>
                                         </form>
                                     </div>
                                 </div>
@@ -954,163 +855,30 @@
             <section id="similar-doc">
                 <div class="container-fluid container-fluid-doc1 cont-doc-fld">
                     <div class="col-md-12">
-
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="qs-ass">Similar doctor's profile</p>
                             </div>
+                            @foreach($alldoctor as $key=>$val)
+                            @php $acb=explode(',',$val->star_ratings);  @endphp
                             <div class="col-xs-12 col-sm-6 col-md-12  wi-100 wii-100 wi-dtls-pd coll-50 wow slideInUp">
                                 <div class="card card-body img-fluid">
 
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
+                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>{{$val->full_name}}</b> <img src="{{ url('/doctor/blue-tick.png') }}" alt="" style="width:15px;margin-top: -4px;">
+                                        <button class="btn btn-primary btn-prmr btn-year">{{$val->total_experience}} Years</button>
                                     </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
+                                    @php $rating = App\Rating::where('userdetail_id',$val->id)->avg('rating'); @endphp
+                                    <p class="similar-text" style="font-size: 15px;">MD in{{$val->department}} at {{$val->landmark_pincode}}</p>
+                                    <p class="similar-text" style="font-size: 15px;">Overall {{$val->total_experience}} Years of Experience in {{$val->department}}</p>
+                                    <p class="similar-text" style="font-size: 15px;">Public Rating: (<?php  echo number_format((float)$rating, 1, '.', ''); ?>)</p>
 
                                     <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
+                                        <a href="{{ url('/doctor/detail/'.urlencode($val->full_name)) }}" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
 
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100 coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-12 wi-100  coll-50 wow slideInUp">
-                                <div class="card card-body img-fluid">
-
-                                    <p class="similar-text similar-dtls-doc" style="font-size: 18px !important;"><b>Dr. Rabindra Mohanty</b> <img src="../assets/image/senario/blue-tick.png" alt="" style="width:15px;margin-top: -4px;">
-                                        <button class="btn btn-primary btn-prmr btn-year">20 Years</button>
-                                    </p>
-                                    <p class="similar-text" style="font-size: 15px;">MD in Cardiology at SCB Medical Cuttack</p>
-                                    <p class="similar-text" style="font-size: 15px;">Overall 20 Years of Experience in Cardiology</p>
-                                    <p class="similar-text" style="font-size: 15px;">Public Rating: 4.5</p>
-                                    <span class="ig-rit">
-                                        <a href="doctor-details.html" class="ig-a">Know More <i class="fa fa-arrow-right"></i></a>
-
-                                    </span>
-                                </div>
-                            </div>
-
+                            @endforeach		
                             <div class="col-md-12">
                                 <a href="" class="btn btn-dlts-view" style="float: right;">View More</a>
                             </div>
@@ -1127,29 +895,26 @@
 
                                     <h1 class="question1 qs-ass qs-doc-ans"> View Question & Answer<span class="faq-tt"></span>
                                     </h1>
+                                    @foreach($questionAnswar as $answer )
                                     <div class="topic" style="display: none;">
                                         <div class="open">
-                                            <h2 class="question">What is the consult fee?</h2><span class="faq-t"></span>
+                                            <h2 class="question">{{$answer->question}}</h2><span class="faq-t"></span>
                                         </div>
-                                        <p class="answer">Rs 300 - Rs 400</p>
+                                        <p class="answer">{{$answer->answar}}</p>
                                     </div>
-                                    <div class="topic" style="display: none;">
-                                        <div class="open">
-                                            <h2 class="question">What is the consult time?</h2><span class="faq-t"></span>
-                                        </div>
-                                        <p class="answer">10 am to 3 pm</p>
-                                    </div>
+                                    @endforeach
 
                                     <div class="col-md-12 card card-body p-card wwd-100 wow slideInUp">
                                         <div class="">
-                                            <form action="">
-                                                <input type="text" name="" class="form-control p-control-card" id="myInput" onclick="openSubmitButton1()" placeholder="Add Your Question ?">
+                                            <form action="{{url('doctor/detail/questionanswarUpdate')}}" method="post">
+                                                @csrf
+                                                <input type="text" name="question" class="form-control p-control-card" id="myInput" onclick="openSubmitButton1()" placeholder="Add Your Question ?">
                                                 <div class="file-upload-doc" id="uploaded" style="display: none;">
                                                     <label for="upload" class="file-upload__label-doc"><i class="fa fa-upload"></i>
                                                         Upload</label>
                                                     <input id="upload" class="file-upload__input-doc" type="file" name="file-upload">
                                                 </div>
-                                                <input type="submit" id="submitButton1" name="" class="btn btn-primary pri-share" value="Submit" style="display: none;">
+                                                <button type="submit" id="submitButton1" name="" class="btn btn-primary pri-share" value="Submit" style="display: none;">Submit</button>
                                             </form>
                                         </div>
                                     </div>
@@ -1161,6 +926,7 @@
             </section>
         </div>
     </div>
+    </main>
 </div>
 <div class="modal" id="myModal">
     <div class="modal-dialog">
