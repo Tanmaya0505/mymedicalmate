@@ -136,6 +136,7 @@ Route::post('detail/comments','frontend\HomeController@Comments');
 //rating
 Route::post('doctor/detail/rating','frontend\RatingController@store');
 Route::post('doctor/detail/questionanswarUpdate','frontend\HomeController@QuestionAnswarUpdate');
+Route::post('doctor/detail/doctorVeryfiyOtp','frontend\HomeController@doctorVeryfiyOtp');
 
 //Pages
 Route::get('about', 'frontend\PageController@about');
