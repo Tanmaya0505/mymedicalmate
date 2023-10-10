@@ -297,9 +297,9 @@
                     </div>
                 </div>
             </section>
-            <section id="qna" class="desk-open desk-scroll">
+            <section id="qna" class="desk-open desk-scroll ">
                 <div class="container-fluid container-fluid-doc1 cont-doc-fld">
-                    <div class="col-md-12">
+                    <div class="col-md-12 doctor-wd-12-wd-12">
 
                         <div class="">
                             <div class="col-md-12 card card-body card-qs card-qsas">
@@ -314,7 +314,7 @@
                                         <p class="answer"> {{$answer->answar}}</p>
                                     </div>
                                     @endforeach
-                                    <div class="col-md-12 card card-body p-card wwd-100 wow slideInUp">
+                                    <div class="col-md-12 card card-body p-card wwd-100 wow slideInUp" style="padding-right:0px">
                                         <div class="">
                                             <form action="{{url('doctor/detail/questionanswarUpdate')}}" method="post">
                                             @csrf
@@ -536,11 +536,15 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12" style="text-align: center;">
-
-                                            <a href="" class="btn btn-primary btn-prm" data-toggle="modal" data-target="#myModal">GET
-                                                IN TOUCH <img src="{{ url('/doctor/hand1.png') }}" alt="" class="icon-hand">
-                                            </a>
-
+                                            <form action="{{url('doctor/detail/doctorVeryfiyOtp')}}" method="post" id="getintochformedit">
+                                                @csrf
+                                                <input hidden value="{{$data->full_name}}"  type="text"  name="name" id="name" />
+                                                <input hidden  value="{{$data->mobile}}" type="text" name="mobile" id="mobile" />
+                                                <input hidden  type="text"  value="{{$data->email}}" name="email" id="email" />  
+                                                <button type="button" id="editsubmit_data" class="btn btn-primary btn-prm getin-tochOtp" data-toggle="modal" data-id="{{$data->id}}" data-target="#myModal">GET
+                                                    IN TOUCH <img src="{{ url('/doctor/hand1.png') }}" alt="" class="icon-hand">
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
 
@@ -664,14 +668,14 @@
                         <div class="row">
                             <div class="card card-body  card-web">
                                 <div class="card card-body loc-cardd wow slideInUp">
-                                    <p class="loc-des loc-text" style="font-weight: 500;">Description: {{$data->description}}........... <a class="button loc-read" onclick="openPopup1()">Read More</a></p>
+                                    <p class="loc-des loc-text"  style="font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 1000px;">Description: {{$data->description}}........... <a class="button loc-read" onclick="openPopup1()">Read More</a></p>
                                     <!-- Modal -->
                                     <div class="popup-overlay" id="popup1">
                                         <div class="popup-content">
                                             <span class="popup-close" onclick="closePopup1()">&times;</span>
                                             <h5 class="h5">View Details</h5>
 
-                                            <div class="content">
+                                            <div class="content" style="padding-top:8px">
                                                 <p class="comment-text">Description:{{$data->description}}  </p>
 
                                             </div>
@@ -693,9 +697,10 @@
                                                 </div>
                                                 <div class="popup-overlay" id="popup">
                                                     <div class="popup-content">
+                                                        <div style="position: fixed;width: 63.5%;background-color: #fff;margin-top:-18px">
                                                         <span class="popup-close" onclick="closePopup()">&times;</span>
                                                         <h5 class="h5">View Comments</h5>
-
+                                                        </div>
                                                         <div class="content">
                                                             @php $comments=App\Comment::where('userdetail_id',$data->id)->get(); @endphp
                                                             @foreach($comments as $comment)
@@ -703,6 +708,9 @@
                                                             <p class="comment-text">{{$comment->comments}}</p>
                                                             <hr>
                                                             @endforeach
+                                                            <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
+                                                            <p class="comment-text">{{$data->comments}}</p>
+                                                            <hr>
                                                             <p class="comment-date">Justin Beiber&nbsp;&nbsp;Date: 08-07-2023</p>
                                                             <p class="comment-text">{{$data->comments}}</p>
                                                             <hr>
@@ -948,18 +956,15 @@
                 </select>
                 <p class="doc-mod-txt2">OTP has been sent to your register email address.</p>
                 <p class="doc-mod-txt3">sharatzone@gmail.com</p>
-                <form>
+                <form action="" method="post" id="formsubmedititopt">
+                    @csrf
                     <div class="card card-body otp-card " id="newotpCard" style="display: none;">
                         <div class="verification-code">
                             <label class="control-label">Enter the OTP</label>
                             <div class="verification-code--inputs">
-                                <input type="text" maxlength="1" />
-                                <input type="text" maxlength="1" />
-                                <input type="text" maxlength="1" />
-                                <input type="text" maxlength="1" />
-                                <input type="text" maxlength="1" />
+                                <input type="text"  style="width: 283px;" name="otp"/>
                             </div>
-                            <input type="hidden" id="verificationCode" />
+                            <input type="hidden" id="verificationeditCode" name="editverifyCode" value=""/>
                         </div>
                         <center><button class="btn btn-otp" name="">Submit Now</button></center>
                     </div>
@@ -972,6 +977,20 @@
         </div>
     </div>
 </div>
+<!--get in touch modal end-->
+<div class="modal fade" id="myModaldelete" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color: #fff0;box-shadow: 0 5px 15px rgb(0 0 0 / 0%);border: none !important;">
+        <div class="modal-body">
+          <img src="{{ url($data->profile_picture)}}" style="height: 430px;
+          width: 100%;
+          margin-top: 35px;">
+         
+        </div>
+      </div>
+    </div>
+  </div>
 @include('frontend-source.includes.login-popup')
 @endsection
 @push('script')
@@ -1011,6 +1030,35 @@
         $(".topic").slideToggle(200);
 
       });
+    });
+    $('.getin-tochOtp').click( function(){
+        var id= $(this).data('id');
+        $(".modal-body #verificationeditCode").val(id);
+    });
+    $("#editsubmit_data").click(function(e){
+        e.preventDefault();
+        let form =$(this).closest('#getintochformedit');
+        let name=form.find("input[name=name]").val();
+        let email=form.find("input[name=email]").val();
+        let mobile=form.find("input[name=mobile]").val();
+        let _token =$("meta[name='csrf-token']").attr('content');
+        //alert(token);
+        let url = form.attr('action');
+        $.ajax({
+            type:"POST",
+            url:url,
+            data:{
+            name:name,
+            email:email,
+            mobile :mobile,
+            _token: _token,
+             },
+             FormElement:form,
+             success: function(data){
+                $("#myModal").modal('show');
+                alert("Form Submited Successfully"); 
+             }
+        });
     });
     $(".open").click(function () {
       var container = $(this).parents(".topic");
