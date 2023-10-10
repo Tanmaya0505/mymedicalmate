@@ -643,6 +643,61 @@ class HomeController extends \App\Http\Controllers\Controller
         $questionAnswar = QuestionAnswar::get();
         return view('frontend-source.users.doctors-detail',compact('data','alldoctor','rating','questionAnswar'));
     }
+    public function doctorVeryfiyOtp(Request $request){
+        // $json=json_decode($request->input('submit-data'));
+         //dd($json->email);
+         //dd($request->email);
+         if(Session::get('otp')) {
+                 Session::forget('otp');
+         }
+         $otp = mt_rand(100000, 999999);
+         Session::put('otp', $otp);
+         //Send an email to the customer from the admin email address to confirm an email address.
+         $data = array(
+             'email' => $request->email,
+             'guest_name' => $request->name,
+             'subject' => 'OTP Verification',
+             'logo_url' => env('LOGO_URL'),
+             'otp' => $otp
+         );
+         //$email = true;
+         if(env('APP_ENV')!='local'){
+         $email = Mail::send('frontend-source.emails.verification-code', compact('data'), function($message) use ($data) {
+                     $message->to($data['email']);
+                     $message->subject($data['subject']);
+                     $message->from(Helper::adminInfo()->email, Helper::adminInfo()->name);
+                 });
+         }
+         //End email function
+         //if($email) {
+             return response()->json(['code' => 200,'response' => "SUCCESS",'otp' => $otp, 'message' => "Verification code sent to ".$request->input('email')])
+             ->header('Access-Control-Allow-Origin', '*')->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+         //}else{
+             //return response()->json(['code' => 204,'response' => "ERROR", 'message' => "Oops!! Verification code not sent"]);
+         //}
+     }
+     public function DoctorSubmitOtp(Request $request){
+
+        $id= $request->verifyId;
+        $type='doctor';
+        //dd($request->otp);
+        if($request->otp != Session::get('otp')) {
+            return response()->json(['code' => 204,'response' => "ERROR", 'message' => "Please enter valid PIN"]);
+        }
+
+        $config = CustomerHelper::configData('admin_config');
+        $pageConfigs = ['pageHeader' => true];
+        $breadcrumbs = [
+            ["link" => "/".$config['route']."/", "name" => "Home"], ["name" => "All Type User"]
+        ];
+        
+            $data = CustomerDetail::with('diseasedetails')->where('id',$id)->orderBy('id','desc')->first();
+            $data2 = CustomerDetail::where('id',$id)->orderBy('id','desc')->first();
+            $resultcustomer = array_diff_key($data2->toArray(), array_flip((array) ['status']));
+        
+        return view('pages.add_all_type_users', ['config' => $config,'resultcustomer'=>$resultcustomer, 'pageConfigs' => $pageConfigs, 'breadcrumbs' => $breadcrumbs,'data'=> $data,'type'=> $type]);
+
+    }
     public function QuestionAnswarUpdate(Request $request){
         // $curl = curl_init();
         // curl_setopt($curl, CURLOPT_URL, "http://httpbin.org/ip");

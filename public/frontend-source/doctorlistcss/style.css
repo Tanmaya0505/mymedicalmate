@@ -1452,7 +1452,7 @@ h6 {
 
 .card-qsas {
   overflow-y: scroll;
-  max-height: 168px;
+  max-height: 190px;
 }
 
 
@@ -1827,14 +1827,14 @@ h6 {
 
 .file-upload__label-doc {
   display: block;
-  padding: 8px 10px;
+  padding: 12px 15px;
   color: #154e83;
   background: #2220;
   border-radius: 5px;
   transition: background .3s;
   border: 1px solid #154e83;
-  margin-top: -45px;
-  margin-right: 3px;
+  margin-top: -51px;
+  margin-right: 0px;
 }
 
 .file-upload__label-doc:hover {
@@ -1933,6 +1933,7 @@ h6 {
   padding-top: 13px !important;
   margin-left: -1px !important;
   padding-left: 12px;
+  margin-right: -16px;
 }
 
 .doc-prime {
@@ -3551,13 +3552,23 @@ h6 {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  max-width: 100%;
+  max-width: 65%;
+  overflow: scroll;
+  max-height: 600px;
 }
 
 /* Style for the close button */
 .popup-close {
   float: right;
   cursor: pointer;
+  margin-right: 16px;
+  margin-top: 10px;
+}
+
+.doctor-wd-12-wd-12 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: -14px !important;
 }
 
 /* Style for the rest of the content */
@@ -4068,6 +4079,7 @@ h6 {
   float: right;
   font-weight: 600;
   padding-top: 0px;
+  cursor: pointer;
 }
 
 .loc-card-form {
@@ -4100,6 +4112,7 @@ h6 {
   float: right !important;
   margin-top: -33px !important;
   margin-right: 15px !important;
+  cursor: pointer;
 }
 
 .card-pro {
@@ -4110,6 +4123,12 @@ h6 {
   border: 5px solid #c3c2c2 !important;
   padding: 0px !important;
   margin-left: -15px;
+}
+
+.image-pro {
+  border-radius: 50% !important;
+  width: 90px;
+  height: 100px;
 }
 
 .star-text {
@@ -4211,14 +4230,14 @@ h6 {
 
 .comment-text {
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
 }
 
 .h5 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 30px;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-bottom: 30px !important;
 }
 
 .overlay {
@@ -4275,9 +4294,10 @@ h6 {
 }
 
 .content {
-  padding-top: 10px;
+  padding-top: 68px;
 }
-.doctor-mt-top{
+
+.doctor-mt-top {
   margin-top: -406px !important;
 }
 
@@ -4588,7 +4608,8 @@ h6 {
   border-color: transparent !important;
   margin-bottom: 4px;
   margin-top: -10px !important;
-  width: 103.5%;
+  width: 109.8% !important;
+  margin-left: -3px;
 }
 
 .card-fee {
