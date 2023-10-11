@@ -644,31 +644,22 @@ class HomeController extends \App\Http\Controllers\Controller
         return view('frontend-source.users.doctors-detail',compact('data','alldoctor','rating','questionAnswar'));
     }
     public function doctorVeryfiyOtp(Request $request){
-        // $json=json_decode($request->input('submit-data'));
-         //dd($json->email);
-         //dd($request->email);
+        
          if(Session::get('otp')) {
                  Session::forget('otp');
          }
          $otp = mt_rand(100000, 999999);
          Session::put('otp', $otp);
-         //Send an email to the customer from the admin email address to confirm an email address.
-         $data = array(
-             'email' => $request->email,
-             'guest_name' => $request->name,
-             'subject' => 'OTP Verification',
-             'logo_url' => env('LOGO_URL'),
-             'otp' => $otp
-         );
-         //$email = true;
-         if(env('APP_ENV')!='local'){
-         $email = Mail::send('frontend-source.emails.verification-code', compact('data'), function($message) use ($data) {
-                     $message->to($data['email']);
-                     $message->subject($data['subject']);
-                     $message->from(Helper::adminInfo()->email, Helper::adminInfo()->name);
-                 });
-         }
-         //End email function
+         
+         $details = [
+            'title' => 'Mail from My MedicalMate',
+            'body' => 'This is for OTP email using that',
+            'logo_url' => env('LOGO_URL'),
+            'guest_name' => $request->name,
+            'otp' => $otp
+        ];
+   
+        Mail::to($request->email)->send(new \App\Mail\MyOtpMail($details));
          //if($email) {
              return response()->json(['code' => 200,'response' => "SUCCESS",'otp' => $otp, 'message' => "Verification code sent to ".$request->input('email')])
              ->header('Access-Control-Allow-Origin', '*')->header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');

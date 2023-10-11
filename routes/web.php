@@ -138,6 +138,18 @@ Route::post('doctor/detail/rating','frontend\RatingController@store');
 Route::post('doctor/detail/questionanswarUpdate','frontend\HomeController@QuestionAnswarUpdate');
 Route::post('doctor/detail/doctorVeryfiyOtp','frontend\HomeController@doctorVeryfiyOtp');
 
+Route::get('send-mail', function () {
+   
+    $details = [
+        'title' => 'Mail from My MedicalMate',
+        'body' => 'This is for testing email using smtp'
+    ];
+   
+    \Mail::to('tanmayarout101@gmail.com')->send(new \App\Mail\MyTestMail($details));
+   
+    dd("Email is Sent.");
+});
+
 //Pages
 Route::get('about', 'frontend\PageController@about');
 Route::get('terms', 'frontend\PageController@terms');
