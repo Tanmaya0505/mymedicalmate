@@ -757,6 +757,45 @@
                                                                         </div>
 
                                                                     </div>
+                                                                </div>  
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap"> 
+                                                                            <input type="text" name="full_name"  id="full_name" value=""   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            <label class="floating-label">No of Consultation ! </label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg6.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">
+                                                                            <input type="text" name="full_name"  id="full_name" value=""   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            <label class="floating-label">No of Consultation at Clinic ! </label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg6.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                        </div> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">
+                                                                           
+                                                                            <input type="text" name="full_name"  id="full_name" value=""   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                           
+                                                                           
+                                                                            <label class="floating-label">No of Research in Career ! </label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg6.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                        </div> 
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <div class="input_wrap">  
+                                                                            <input type="text" name="full_name"  id="full_name" value=""   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            <label class="floating-label">Type of Language Known ! </label>
+                                                                            <img src="{{asset('csm-admin/all_type_doctor/img/reg6.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="col-md-4 ">
 
