@@ -1388,7 +1388,7 @@ h6 {
 }
 
 .doc-list-card3 {
-  border: 1px solid #F2F2F2;
+  border: 1px solid #d3d3d3;
   margin-top: -45px;
   width: 300px;
 }
@@ -4627,41 +4627,45 @@ h6 {
 .doc-list-card-profile1 {
   background-color: #6f42c1;
   text-align: center;
-  height: 55px;
+  height: 42px;
   margin-top: 13px;
   width: 80%;
   margin-left: 8px;
   border: none;
+  padding-top: 9px;
 }
 
 .doc-list-card-profile2 {
   background-color: #ffc107;
   text-align: center;
-  height: 55px;
+  height: 42px;
   margin-top: 13px;
   width: 80%;
   margin-left: 8px;
   border: none;
+  padding-top: 9px;
 }
 
 .doc-list-card-profile3 {
   background-color: #b5b3b3;
   text-align: center;
-  height: 55px;
+  height: 42px;
   margin-top: 13px;
   width: 80%;
   margin-left: 8px;
   border: none;
+  padding-top: 9px;
 }
 
 .doc-list-card-profile4 {
   background-color: #055160;
   text-align: center;
-  height: 55px;
+  height: 42px;
   margin-top: 13px;
   width: 80%;
   margin-left: 8px;
   border: none;
+  padding-top: 9px;
 }
 
 .doc-list-card-profile-txt {

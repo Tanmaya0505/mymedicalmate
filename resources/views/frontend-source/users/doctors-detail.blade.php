@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('frontend-source/css/custom.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('frontend-source/doctorlistcss/style.css')}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     /* .row {
         display: block;
@@ -349,7 +350,7 @@
                                             <div class="card card-body pro-card01">
                                                 <img src="{{ url('/doctor/real-doc.jpeg') }}" alt="" class="dtls-doc-img">
                                                 <!--for desktop-->
-                                                <div class="card card-body" style="background-color: #6f42c199;border: transparent;height: 35px;margin-top: -34.2px;border-radius: 0px;color: #fff;font-weight: 600;text-align: center;">
+                                                <div class="card card-body" style="background-color: #6f42c199;border: transparent;height: 40px;margin-top: -40.2px;border-radius: 0px;color: #fff;font-weight: 600;text-align: center;">
                                                     Prime <img src="{{ url('/doctor/doctor-check.png') }}" alt="" style="width: 25px;margin-left:80px ;margin-top: -25px;"></div>
                                                 <!--desktop end-->
                                             </div>
@@ -392,14 +393,14 @@
                                             <p class="dtls-text-doc3"> Expected Cons
                                                 <span class="dtls-txt1-count">1000+</span>
                                             </p>
-                                            <p class="dtls-text-doc6 dtls-text-doc66">In Last Years</p>
+                                            <p class="dtls-text-doc6 dtls-text-doc66">In Last Three Months</p>
                                         </div>
                                         <div class="col-md-3 dtls-wd3-3">
                                             <img src="../assets/image/senario/dtls-gara.png" alt="" class="dtls-gara2">
                                             <p class="dtls-text-doc4"> Visitors
                                                 <span class="dtls-txt1-count">2000+</span>
                                             </p>
-                                            <p class="dtls-text-doc6">In Last Years</p>
+                                            <p class="dtls-text-doc6">In Last Three Months</p>
                                         </div>
                                     </div>
                                 </div>
@@ -477,7 +478,7 @@
                                                     <div id="newQual" class="hidden col-md-12">
                                                         <div class="row">
                                                             <div class="col-md-12 col-12 " style="padding-left: 0px;padding-right: 0px;">
-                                                                <div class="form-control card-blue">
+                                                                <div class="form-control card-blue" style="margin-top: -65px;">
                                                                     <div class="row">
                                                                         <div class="col-md-11 col-9">
                                                                             <p class="text-award">{{$data->doctorqualification}} from {{$data->univercity}} {{$data->university_date}}</p>
@@ -567,7 +568,7 @@
                                     </div>
                                     <div class="col-md-10 col-9">
                                         <p class="story-doc-txt2 wow slideInUp"><b>No of Consultation!</b><br>Around 4000+ consultation in
-                                            last 20 years.</p>
+                                            last {{$data->total_experience}} years.</p>
                                     </div>
                                 </div>
                                 <hr class="dtls-hr1">
@@ -579,7 +580,7 @@
                                     </div>
                                     <div class="col-md-10 col-9">
                                         <p class="story-doc-txt2 wow slideInUp"><b>No of Consultation at Clinic !</b><br> Around 10000+
-                                            consultation in last 15 years.</p>
+                                            consultation in last {{$data->total_experience}} years.</p>
                                     </div>
                                 </div>
                                 <hr class="dtls-hr1">
@@ -591,7 +592,7 @@
                                     </div>
                                     <div class="col-md-10 col-9">
                                         <p class="story-doc-txt2 wow slideInUp"> <b>No of Research in Career !</b><br> Around 100+
-                                            consultation in last 15 years.</p>
+                                            consultation in last {{$data->total_experience}} years.</p>
                                         </p>
                                     </div>
 
@@ -630,7 +631,7 @@
                                     </p>
 
                                     <p class="location-text location-details-1 background-social-border">
-                                        <a href="" class="location-text location-details-1"> <img src="{{ url('/doctor/face.png') }}" alt="Facebook" class="icon-social">&nbsp;Facebook URL</a>
+                                        <a href="https://www.facebook.com/" class="location-text location-details-1"> <img src="{{ url('/doctor/face.png') }}" alt="Facebook" class="icon-social">&nbsp;Facebook URL</a>
                                     </p>
 
                                     <p class="location-text location-details-1 background-social-border">

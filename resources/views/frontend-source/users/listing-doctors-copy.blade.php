@@ -56,13 +56,13 @@
 
 <!-- ======= Hero Section ======= -->
 
-<section class="hero-list2">
+<section class="">
   <div class="container-fluid container-fluid-doc-list">
-    <div class="col-md-12 doc-list-colmd-12" style="padding-right: 0px;width: 101%;">
+    <!-- <div class="col-md-12 doc-list-colmd-12" style="padding-right: 0px;width: 101%;">
       <input type="text" name="" class="form-control search-control-list" placeholder="What you are looking for?">
       <img src="{{ url('/doctor/adv-search.png') }}"
         style="width: 35px;float: right;z-index: 2;position: sticky;margin-top: 5px;margin-right: 20px;">
-    </div>
+    </div> -->
     <div class="col-md-12 doc-list-colmd-12">
 
       <div class="row row-doc-list">
@@ -107,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-9 doctor-list-tab-9" style="margin-top: 62px;padding-left:22px">
+        <div class="col-md-9 doctor-list-tab-9" style="margin-top: 16px;padding-left:22px">
         @if(count($data))
         @foreach($data as $key=>$val)
         @php
@@ -173,7 +173,7 @@
         @else
         <h1>Sorry, no results found!</h1>
         @endif 
-          <!-- <div class="card card-body doc-list-card1">
+          <div class="card card-body doc-list-card1">
             <div class="row row-doc-list">
               <div class="col-md-3 desk-wd-list-3 ">
                 <img src="{{ url('/doctor/real-doc.jpeg') }}" alt="" class="doc-list-img1">
@@ -212,8 +212,8 @@
                 </div>
               </div>
             </div>
-          </div> -->
-          <!-- <div class="card card-body doc-list-card1">
+          </div>
+          <div class="card card-body doc-list-card1">
             <div class="row row-doc-list">
               <div class="col-md-3 desk-wd-list-3">
                 <img src="{{ url('/doctor/real-doc.jpeg') }}" alt="" class="doc-list-img1">
@@ -252,8 +252,8 @@
                 </div>
               </div>
             </div>
-          </div> -->
-          <!-- <div class="card card-body doc-list-card1">
+          </div>
+          <div class="card card-body doc-list-card1">
             <div class="row row-doc-list">
               <div class="col-md-3 desk-wd-list-3">
                 <img src="{{ url('/doctor/real-doc.jpeg') }}" alt="" class="doc-list-img1">
@@ -293,7 +293,7 @@
               </div>
 
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>

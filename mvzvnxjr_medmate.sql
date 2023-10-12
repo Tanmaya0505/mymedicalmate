@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 10, 2023 at 06:54 AM
+-- Generation Time: Oct 12, 2023 at 12:13 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -644,8 +644,8 @@ CREATE TABLE `customer_details` (
 --
 
 INSERT INTO `customer_details` (`id`, `account_id`, `full_name`, `gender`, `doctorqualification`, `univercity`, `university_date`, `slefemp_emplaye`, `orgnization_name`, `state_city`, `landmark_pincode`, `avl_days`, `status`, `from_time`, `to_time`, `consul_fee_from`, `consul_fee_to`, `instagram_url`, `youth_profile_url`, `twiter_profile_url`, `doctorachievement_file`, `designation`, `department`, `total_experience`, `location`, `mobile`, `email`, `website_url`, `social_media_link`, `description`, `comments`, `comments_date`, `star_ratings`, `profile_picture`, `created_at`, `updated_at`, `etablished_year`, `type_hospital`, `specialized`, `telephone`, `achievement_award`, `multi_specialist`, `available_test`, `course_offered`, `last_date_of_apply`, `total_vacancy`, `exam_date`, `references_site`, `references_hos_doc`, `doc_profile`, `prime_contain`, `sec_contain`) VALUES
-(13, 1, 'Harish das', 'Male', 'MMBSS', 'Utkal', '2010', 'Self-Employed', 'Hanshupal', 'bhunaswar', 'Jaydev Vihar, Bhubaneswar 754234', 'TUESDAY,SUNDAY,MONDAY', 1, '5:30 am', '5:30 am', '300', '350', 'https://www.instagram.com/', 'https://www.youtube.com/', 'https://twitter.com/i/flow/login', NULL, 'aBCD', 'dfdf', '30', 'jaidevbihar', '8904756345', 'tanmayarout101@gmail.com', 'https://stackoverflow.com/questions', 'https://www.facebook.com/', 'Lead Developer Snowflake Architect - As a Lead Developer Snowflake Architect, you will play a crucial role in designing\r\n                                                                    and implementing data solutions using the Snowflake cloud data platform. Your primary responsibility will be to lead a\r\n                                                                    team of developers and data high-performance Develop custom user-defined functions (UDFs) to extend Snowflake\'s\r\n                                                                    native capabilities and optimize query performance. Technical Leadership: Lead a team of developers and data\r\n                                                                    engineers, providing technical guidance, mentoring, and support throughout the development lifecycle. Drive best\r\n                                                                    practices, code reviews, and ensure the team follows industry standards and conventions.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', NULL, NULL, 'images/GnH8uMPvicVfFt8MyopBsNTkmLjfcxWIw8Rna4ef.jpg', '2023-08-28 06:17:53', '2023-09-30 10:49:57', NULL, NULL, NULL, NULL, 'goalachive', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(14, 1, 'Dr.Susanta ku dasxx', 'Other', 'MMB', 'Utkala', '2010', 'Self-Employed', 'Hanshupal', 'bhunaswar', '754234', 'TUESDAY', 1, '11:29 am', '5:30 am', '300', '360', 'https://www.instagram.com/', 'https://www.youtube.com/', 'https://twitter.com/i/flow/login', NULL, 'aBCD', 'dfdf', '30', 'jaidevbihar', '8904756346', 'tykab43@GMAIL.COM', 'https://stackoverflow.com/questions', 'https://www.facebook.com/', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', NULL, NULL, 'images/MHmsdylPDmp7UDtpjfzZqzmbpkr82GcsqVxoSGkI.jpg', '2023-08-28 06:26:31', '2023-09-28 10:38:11', NULL, NULL, NULL, NULL, 'goalachive', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(13, 1, 'Harish das', 'Male', 'MMBSS', 'Utkal', '2010', 'Self-Employed', 'Hanshupal', 'bhunaswar', 'Jaydev Vihar, Bhubaneswar 754234', 'TUESDAY,SUNDAY,MONDAY', 1, '5:30 am', '5:30 am', '300', '350', 'https://www.instagram.com/', 'https://www.youtube.com/', 'https://twitter.com/i/flow/login', NULL, 'aBCD', 'dfdf', '30', 'jaidevbihar', '8904756345', 'tanmayarout54@gmail.com', 'https://stackoverflow.com/questions', 'https://www.facebook.com/', 'Lead Developer Snowflake Architect - As a Lead Developer Snowflake Architect, you will play a crucial role in designing\r\n                                                                    and implementing data solutions using the Snowflake cloud data platform. Your primary responsibility will be to lead a\r\n                                                                    team of developers and data high-performance Develop custom user-defined functions (UDFs) to extend Snowflake\'s\r\n                                                                    native capabilities and optimize query performance. Technical Leadership: Lead a team of developers and data\r\n                                                                    engineers, providing technical guidance, mentoring, and support throughout the development lifecycle. Drive best\r\n                                                                    practices, code reviews, and ensure the team follows industry standards and conventions.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', NULL, NULL, 'images/GnH8uMPvicVfFt8MyopBsNTkmLjfcxWIw8Rna4ef.jpg', '2023-08-28 06:17:53', '2023-09-30 10:49:57', NULL, NULL, NULL, NULL, 'goalachive', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(14, 1, 'Dr.Susanta ku dasxx', 'Other', 'MMB', 'Utkala', '2010', 'Self-Employed', 'Hanshupal', 'bhunaswar', 'Acharya vihar Bhubaneswar 754234', 'TUESDAY', 1, '11:29 am', '5:30 am', '300', '360', 'https://www.instagram.com/', 'https://www.youtube.com/', 'https://twitter.com/i/flow/login', NULL, 'aBCD', 'dfdf', '30', 'jaidevbihar', '8904756346', 'tykab43@GMAIL.COM', 'https://stackoverflow.com/questions', 'https://www.facebook.com/', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', NULL, NULL, 'images/MHmsdylPDmp7UDtpjfzZqzmbpkr82GcsqVxoSGkI.jpg', '2023-08-28 06:26:31', '2023-09-28 10:38:11', NULL, NULL, NULL, NULL, 'goalachive', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (16, 1, 'Dr.Debasis das', 'Male', 'MMB', NULL, NULL, 'Self-Employed', 'Hanshupal', 'bhunaswar', 'Jaydev Vihar Bhubaneswar 754234', 'SUNDAY,MONDAY,TUESDAY', 2, '11:29 am', '12:29 am', '300', '350', 'https://www.instagram.com/', 'https://www.youtube.com/', 'https://twitter.com/i/flow/login', NULL, 'aBCD', 'dfdf', '30', 'jaidevbihar', '8904756345', 'znmse123@GMAIL.COM', 'https://stackoverflow.com/questions', 'https://www.facebook.com/', 'newValuedc', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.', NULL, NULL, 'images/DZpdZz6sj4qyqXaV7NOIAAOCGDyHMkFmeM78iD2d.jpg', '2023-08-28 07:03:39', '2023-09-18 10:24:06', NULL, NULL, NULL, NULL, 'goalachive', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (18, 1, 'Sukanta das', 'Male', 'MMB', NULL, NULL, 'Self-Employed', 'Hanshupal', 'bhunaswar', '754234', 'SUNDAY', 0, '11:29 am', '12:29 am', '300', '350', 'https://www.instagram.com/', 'https://www.youtube.com/', 'https://twitter.com/i/flow/login', 'D:\\xampp\\tmp\\php6396.tmp', 'aBCD', 'dfdf', '30', 'jaidevbihar', '8904756345', 'axcd123@GMAIL.COM', 'https://stackoverflow.com/questions', 'https://www.facebook.com/', 'Description', '', NULL, '1,2,3,4,5', 'images/QYiTsDQn99V8TESX6ZO0F2d74JKtU4nCi6F76Atg.jpg', '2023-08-28 07:10:14', '2023-08-29 11:49:53', NULL, NULL, NULL, NULL, 'goalachive', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (19, 1, 'Dr. Ansuman', 'Female', 'MMB', NULL, NULL, 'Self-Employed', 'Hanshupal', 'bhunaswar', 'Nayapalli, Bhubaneswar 754234', 'SUNDAY,MONDAY,TUESDAY', 0, '2:57 pm', '2:58 pm', '200', '250', 'instagram', 'youtub', 'twiter', 'D:\\xampp\\tmp\\phpCF3C.tmp', 'aBCD', 'dfdf', '30', 'jaidevbihar', '8904756345', 'qwopcrf13@GMAIL.COM', 'https://stackoverflow.com/questions', 'facebook', 'description', NULL, NULL, '1,2,3,4', 'images/nTU4H0NgyxlCCReADGbn52Rh6bZOKv1nLSoRbOt1.jpg', '2023-08-31 09:28:44', '2023-08-31 09:28:44', NULL, NULL, NULL, NULL, 'goalachive', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -1212,7 +1212,8 @@ INSERT INTO `question_answars` (`id`, `category`, `user_type`, `question`, `answ
 (2, 'Clinic', 3, 'what is your name', 'i am Husain daszxcddwd', '2023-09-07 01:58:45', '2023-09-07 07:48:24'),
 (3, 'Vender', 4, 'question', 'answer', '2023-09-07 04:45:08', '2023-09-07 07:48:47'),
 (4, NULL, NULL, 'what is the person Free', NULL, '2023-10-07 13:40:50', '2023-10-07 13:40:50'),
-(5, NULL, NULL, 'what is the daily free', NULL, '2023-10-09 06:24:59', '2023-10-09 06:24:59');
+(5, NULL, NULL, 'what is the daily free', NULL, '2023-10-09 06:24:59', '2023-10-09 06:24:59'),
+(6, NULL, NULL, NULL, NULL, '2023-10-10 10:50:02', '2023-10-10 10:50:02');
 
 -- --------------------------------------------------------
 
@@ -1608,7 +1609,10 @@ INSERT INTO `staff_working_hours` (`id`, `staff_id`, `login_date`, `login_date_t
 (166, 1, '2023-10-06', '2023-10-06 12:09:55', NULL, '2023-10-06 06:39:55', '2023-10-06 06:39:55'),
 (167, 1, '2023-10-07', '2023-10-07 10:20:28', NULL, '2023-10-07 04:50:28', '2023-10-07 04:50:28'),
 (168, 1, '2023-10-09', '2023-10-09 10:17:54', NULL, '2023-10-09 04:47:54', '2023-10-09 04:47:54'),
-(169, 1, '2023-10-10', '2023-10-10 10:19:21', NULL, '2023-10-10 04:49:21', '2023-10-10 04:49:21');
+(169, 1, '2023-10-10', '2023-10-10 10:19:21', NULL, '2023-10-10 04:49:21', '2023-10-10 04:49:21'),
+(170, 1, '2023-10-11', '2023-10-11 10:31:13', NULL, '2023-10-11 05:01:13', '2023-10-11 05:01:13'),
+(171, 1, '2023-10-11', '2023-10-11 11:10:23', NULL, '2023-10-11 05:40:23', '2023-10-11 05:40:23'),
+(172, 1, '2023-10-12', '2023-10-12 10:37:41', NULL, '2023-10-12 05:07:41', '2023-10-12 05:07:41');
 
 -- --------------------------------------------------------
 
@@ -2296,7 +2300,7 @@ ALTER TABLE `permissions`
 -- AUTO_INCREMENT for table `question_answars`
 --
 ALTER TABLE `question_answars`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `ratings`
@@ -2332,7 +2336,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `staff_working_hours`
 --
 ALTER TABLE `staff_working_hours`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=173;
 
 --
 -- AUTO_INCREMENT for table `suggetions`
