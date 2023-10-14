@@ -567,7 +567,7 @@
                                         <img src="{{ url('/doctor/consultation.png') }}" alt="" class="doc-story-img">
                                     </div>
                                     <div class="col-md-10 col-9">
-                                        <p class="story-doc-txt2 wow slideInUp"><b>No of Consultation!</b><br>Around 4000+ consultation in
+                                        <p class="story-doc-txt2 wow slideInUp"><b>No of Consultation!</b><br>Around {{$data->consultation}}+ consultation in
                                             last {{$data->total_experience}} years.</p>
                                     </div>
                                 </div>
@@ -579,7 +579,7 @@
                                         <img src="{{ url('/doctor/prescribing.png') }}" alt="" class="doc-story-img">
                                     </div>
                                     <div class="col-md-10 col-9">
-                                        <p class="story-doc-txt2 wow slideInUp"><b>No of Consultation at Clinic !</b><br> Around 10000+
+                                        <p class="story-doc-txt2 wow slideInUp"><b>No of Consultation at Clinic !</b><br> Around {{$data->consultation_clinic}}+
                                             consultation in last {{$data->total_experience}} years.</p>
                                     </div>
                                 </div>
@@ -591,7 +591,7 @@
                                         <img src="{{ url('/doctor/search.png') }}" alt="" class="doc-story-img" style="width: 45px;">
                                     </div>
                                     <div class="col-md-10 col-9">
-                                        <p class="story-doc-txt2 wow slideInUp"> <b>No of Research in Career !</b><br> Around 100+
+                                        <p class="story-doc-txt2 wow slideInUp"> <b>No of Research in Career !</b><br> Around {{$data->no_research}}+
                                             consultation in last {{$data->total_experience}} years.</p>
                                         </p>
                                     </div>
@@ -606,7 +606,7 @@
                                     </div>
                                     <div class="col-md-10 col-9">
                                         <p class="story-doc-txt2 wow slideInUp"><b>Type of Language Known !</b><br> Doctor fluent speak in
-                                            Engish, Hindi & Odia</p>
+                                        {{$data->no_language}}</p>
                                         </p>
                                     </div>
 

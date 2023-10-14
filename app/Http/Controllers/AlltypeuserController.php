@@ -241,6 +241,10 @@ class AlltypeuserController extends Controller {
                         $doctorlog->achievement_award=$request->achivement_award;
                         $doctorlog->doctorachievement_file=$request->doctorachievement_file;
                         $doctorlog->description=$request->descriptions;
+                        $doctorlog->consultation=$request->consultation;
+                        $doctorlog->consultation_clinic=$request->consultation_clinic;
+                        $doctorlog->no_research=$request->research;
+                        $doctorlog->no_language=$request->language;
                         $doctorlog->star_ratings=$request->star_ratings;
                         if ($request->hasFile('profile_picture'))
                         {
@@ -371,6 +375,18 @@ class AlltypeuserController extends Controller {
                         if(!empty($request->descriptions)){
                             $doctorlog->description=$request->descriptions;
                         }
+                        if(!empty($request->consultation)){
+                            $doctorlog->consultation=$request->consultation;
+                        }
+                        if(!empty($request->consultation_clinic)){
+                            $doctorlog->consultation_clinic=$request->consultation_clinic;
+                        }
+                        if(!empty($request->research)){
+                            $doctorlog->no_research=$request->research;
+                        }
+                        if(!empty($request->language)){
+                            $doctorlog->no_language=$request->language;
+                        }
                         $doctorlog->star_ratings=$request->star_ratings;
                         if ($request->hasFile('profile_picture'))
                         {
@@ -427,6 +443,10 @@ class AlltypeuserController extends Controller {
                     'consul_fee_from' => 'required|numeric|gte:0',
                     'consul_fee_to' => 'required|numeric|gte:consul_fee_from',
                     'website_url' => 'required|url',
+                    'consultation' => 'required',
+                    'consultation_clinic' => 'required',
+                    'research' => 'required',
+                    'language' => 'required',
                     //'profile_picture' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
 
 
@@ -475,6 +495,10 @@ class AlltypeuserController extends Controller {
                 $customerdetail->achievement_award=$request->achivement_award;
                 $customerdetail->doctorachievement_file=$request->doctorachievement_file;
                 $customerdetail->description=$request->descriptions;
+                $customerdetail->consultation=$request->consultation;
+                $customerdetail->consultation_clinic=$request->consultation_clinic;
+                $customerdetail->no_research=$request->research;
+                $customerdetail->no_language=$request->language;
                 $customerdetail->star_ratings=$request->star_ratings;
                 if ($request->hasFile('profile_picture'))
                 {
