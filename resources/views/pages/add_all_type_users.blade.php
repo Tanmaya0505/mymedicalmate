@@ -761,46 +761,63 @@
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="input_wrap"> 
-                                                                            <input type="text" name="full_name"  id="full_name" value=""   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->consultation) && $datalog->consultation !=$data->consultation)
+                                                                            <input type="text" name="consultation"  id="consultation" value="{{old('consultation',$datalog->consultation?? '')}}"   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            @else
+                                                                            <input type="text" name="consultation"  id="consultation" value="{{old('consultation',$data->consultation?? '')}}"   style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            @endif
                                                                             <label class="floating-label">No of Consultation ! </label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg6.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                            @if($errors->has('consultation')) <span class="error" style="color: red;">{{$errors->first('consultation')}}</span> @endif
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="input_wrap">
-                                                                            <input type="text" name="full_name"  id="full_name" value=""   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->consultation_clinic) && $datalog->consultation_clinic !=$data->consultation_clinic)
+                                                                            <input type="text" name="consultation_clinic"  id="consultation_clinic" value="{{old('consultation_clinic',$datalog->consultation_clinic?? '')}}"   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            @else
+                                                                            <input type="text" name="consultation_clinic"  id="consultation_clinic" value="{{old('consultation_clinic',$data->consultation_clinic?? '')}}"   style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            @endif
                                                                             <label class="floating-label">No of Consultation at Clinic ! </label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg6.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                            @if($errors->has('consultation_clinic')) <span class="error" style="color: red;">{{$errors->first('consultation_clinic')}}</span> @endif
                                                                         </div> 
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
                                                                         <div class="input_wrap">
-                                                                           
-                                                                            <input type="text" name="full_name"  id="full_name" value=""   style="padding-left: 40px;color:red;padding-bottom: 10px;">
-                                                                           
-                                                                           
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->no_research) && $datalog->no_research !=$data->no_research)
+                                                                            <input type="text" name="research"  id="research" value="{{old('research',$datalog->no_research?? '')}}"   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            @else
+                                                                            <input type="text" name="research"  id="research" value="{{old('research',$data->no_research?? '')}}"   style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            @endif
                                                                             <label class="floating-label">No of Research in Career ! </label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg6.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                            @if($errors->has('research')) <span style="color:red;">{{$errors->first('research')}}</span> @endif
                                                                         </div> 
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-4">
                                                                     <div class="form-group">
-                                                                        <div class="input_wrap">  
-                                                                            <input type="text" name="full_name"  id="full_name" value=""   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                        <div class="input_wrap"> 
+                                                                            @if(Auth::user()->id==1 && !empty($datalog->no_language) && $datalog->no_language !=$data->no_language)
+                                                                            <input type="text" name="language"  id="language" value="{{old('language',$datalog->no_language?? '')}}"   style="padding-left: 40px;color:red;padding-bottom: 10px;">
+                                                                            @else
+                                                                            <input type="text" name="language"  id="language" value="{{old('language',$data->no_language?? '')}}"   style="padding-left: 40px;padding-bottom: 10px;">
+                                                                            @endif 
                                                                             <label class="floating-label">Type of Language Known ! </label>
                                                                             <img src="{{asset('csm-admin/all_type_doctor/img/reg6.png')}}" alt="" class="booking-agent1-img fixed-image">
+                                                                            @if($errors->has('language')) <span style="color: red;">{{$errors->first('language')}}</span> @endif
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-md-4 ">
+                                                               
 
 
-                                                                </div>
+                                                                
                                                                 <div class="row">
                                                                     <div class="col-md-12  col-12">
                                                                     @if(Auth::user()->id==1)
@@ -2325,17 +2342,37 @@
             var gender= $(this).val();
             save_description('','','','','','','','','','','','','','','','','','','','','','','','','',gender);
 
-        });
+        }); 
         $('#full_name').on('change',function(){
             var full_name= $(this).val();
             save_description('','','','','','','','','','','','','','','','','','','','','','','','','','',full_name);
+
+        });
+        $('#consultation').on('change',function(){
+            var consultation= $(this).val();
+            save_description('','','','','','','','','','','','','','','','','','','','','','','','','','','',consultation);
+
+        }); 
+        $('#consultation_clinic').on('change',function(){
+            var consultation_clinic= $(this).val();
+            save_description('','','','','','','','','','','','','','','','','','','','','','','','','','','','',consultation_clinic);
+
+        });
+        $('#research').on('change',function(){
+            var research= $(this).val();
+            save_description('','','','','','','','','','','','','','','','','','','','','','','','','','','','','',research);
+
+        });
+        $('#language').on('change',function(){
+            var language= $(this).val();
+            save_description('','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',language);
 
         });
         function save_description(descriptions,achivement_award,twiter_profile_url,
         youth_profile_url,instagram_url,facebook_url,website_url,ninetyPercent,consul_fee_to,
         from_time,to_time,avl_days,landmark_pincode,state_city,orgnization_location,
         orgnization_name,totalexprience,department,designation,slefemp_emplaye,univercity,
-        university_date,doctorqualification,doctor_email,dmobile_no,gender,full_name){
+        university_date,doctorqualification,doctor_email,dmobile_no,gender,full_name,consultation,consultation_clinic,research,language){
             let _token   = $('meta[name="csrf-token"]').attr('content');
             var data_id = $('input[name=data_id]').val();
             //alert(data_id);
@@ -2355,7 +2392,8 @@
                     department:department,designation:designation,
                     slefemp_emplaye:slefemp_emplaye,univercity:univercity,
                     university_date:university_date,doctorqualification:doctorqualification,
-                    doctor_email:doctor_email,dmobile_no:dmobile_no,gender:gender,full_name:full_name},
+                    doctor_email:doctor_email,dmobile_no:dmobile_no,gender:gender,full_name:full_name,
+                    consultation:consultation,consultation_clinic:consultation_clinic,research:research,language:language},
                 success: function(data){
                     console.log(data);
                     alert('submit successfully');
